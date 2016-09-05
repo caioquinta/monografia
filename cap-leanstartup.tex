@@ -1,0 +1,77 @@
+%% ------------------------------------------------------------------------- %%
+\chapter{Lean Startup}
+\label{cap:leanstartup}
+\section{Lean Startup: O que é}
+
+TO DO 
+
+\section{Produto Mínimo Viável (MVP)}
+
+\par Uma definição de Produto Mínimo Viável por Eric Ries:
+\textit{"A Minimum Viable Product is that version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort."}.
+	\par A idéia central do conceito de MVP é maximizar a validação de aprendizado sobre um produto utilizando o menor esforço possível. Como na maioria das startups os recursos financeiros e humanos são bastante escassos o tempo de validação do produto e determinação do interesse do público é um fator decisivo para o sucesso da mesma.
+	\par Um MVP deve possuir 3 características:
+	\begin{enumerate}
+		\item Ter valor suficiente para que uma pessoa queira utilizá-lo ou comprá-lo.
+		\item Possui suficientes benefícios para reter os chamados usuários pioneiros.
+		\item Ser capaz de prover um ciclo de feedback suficiente para guiar o desenvolvimento.
+\end{enumerate}
+	\par Durante a concepção do projeto são definidas algumas hipóteses sobre o produto e  na etapa do MVP é definido então qual será o seu núcleo, ou seja, quais funcionalidades ou estratégias queremos testar de modo que possamos validar  as nossas hipóteses iniciais e obter o máximo de aprendizado possível.
+	\par Além da validação de aprendizado outra vantagem significativa provida pelo MVP é evitar desperdícios de tempo e recursos como por exemplo através do  aprendizado resultante do MVP é possível evitar que  se desperdice mais tempo em recurso em uma funcionalidade  que  a princípio parecesse útil e necessária mas que  foi constatado através de uma validação bem construída que a mesma não era interessante para os usuários podendo assim ser revista antes que fossem gastas mais horas de desenvolvimento.
+	\par Os termos  de "mínimo" e "máximo" frequentemente se mostram vagos na documentação do que é um MVP, citando Eric Ries: \textit{"[...]the definition's use of the words maximum and minimum means it is decidedly not formulaic. It requires judgment to figure out, for any given context, what MVP makes sense. "}, levando em consideração é importante frisar que um MVP não é necessariamente  um produto completo com as funcionalidades  mínimas e sim um conjunto de características mínimas que configuram o serviço ou produto que está sendo oferecido. Dessa forma um MVP pode ser apenas um protótipo, um produto completo ou mesmo apenas um \textit{mock-up} do que será oferecido na versão completa. 
+	\par Alguns tipos de MVP são:
+\begin{itemize}
+\item \emph{ Vídeo Explicativo:} 
+Um vídeo curto contendo uma explicação clara do que o seu produto faz e porque as pessoas deveriam utilizá-lo. Esse é o caso do dropbox que fez um video com cerca de 5 minutos explicando o que era o seu serviço.
+\item \emph{Landing Page:}
+Criar uma página inicial contendo uma explicação detalhada do que é o produto que você irá oferecer juntamente com um formulário de contato. Através de uma configuração simples pelo Google Analytics é possível manter um registro de conversões (no caso cadastros do formulario)  a fim de medir o interesse das pessoas no seu produto. 
+\item \emph{MVP "Mago de OZ":}
+A idéia é criar uma página visutalmente compelta que funcione como se fosse o produto final mas que por trás existe alguém manualmente executando as tarefas. Esse foi o caso da Zappos hoje a maior vendedora de sapatos dos Estados Unidos.
+\item \emph{ MVP com Consierge:}
+Ao invés de prover um produto você realiza manualmente o serviço realizando
+exatamente os mesmos passos que  o usuário teria utilizando seu serviço. É um método não escalável e lento para executar pois requer que você esteja em contato direto com o cliente e realize as tarefas manualmente porém isso permite um rápido aprendizado sobre o produto e o cliente.
+\\A empresa Food on the Table ajuda seus consumidores a criarem listas de compras, acharem receitas e conseguirem descontos nos ingredientes em seus supermercados favoritos, inicialmente seus fundadores encontraram uma senhora interessada no serviço e por 10 doláres/semana eles mantinham as listas de compra e procurava, por descontos nos supermercados em que ela fazia  compras.
+\end{itemize}
+
+\section{O ciclo de Build Measure Learn}
+
+	\par Um ciclo de build measure learn é uma abordagem de desenvolvimento do produto que aprimora  o tradicional modelo de desenvolvimento "Cascata" utilizado de forma abrangente durante o século XX.
+\subsection{O modelo Cascata}
+	\par O nome "Cascata" (Waterfall) é bastante literal e tem origem na própria estrutura do método que seguia uma série de passos de forma sequencial de maneira bastante direta, como se fosse uma cascata.
+\begin{figure}[htb]
+\includegraphics[width=10cm]{figuras/waterfall}
+\caption{\label{fig:watefall}O Modelo Cascata.}
+\end{figure}
+\par O método consiste em um desenvolvimento sequencial e não-interativo inicializando com a parte de análise de requisitos e de forma subsquente temos as etapas de design de projeto, implementação, verificação e manutenção.
+	
+Uma rápida explicação dos passos:
+\begin{itemize}
+\item \emph{ Requerimentos:} Realizar a análise de requisitos do projeto.
+\item \emph{ Design de Projeto:}  Focando na estrutura de dados, arquitetura do software, detalhes procedais e caracterização das interfaces é formulado um documento de forma a apresentar os requerimentos de uma forma que possa ser interpretado pelos programadores.
+\item \emph{ Implementação:} Etapa da codificação do projeto propriamente dita.
+\item \emph{  Verificação: } Etapa para teste do produtos visando eliminar qualquer bug que possa ter passado despercebido refinar a lógica interna do sofware caso necessário.
+\item \emph{ Manutenção: } Etapa para instalação do sistema no cliente, configuração de servidores, etc.
+\end{itemize}
+
+\par Algumas das críticas dessa abordagem é que dificilmente um desenvolvimento de software segue todas as etapas da forma como é proposto e nem sempre o cliente sabe definir bem os requisitos resultando em tempod e desenvolvimento desperdiçado em funcionalidades que no fim não atenderam as expectativas do cliente além de mudanças tardias no escopo do projeto  que, além de encarecer o custo total, poderiam ter sido evitadas e contornadas de maneira mais satisfatória  em um modelo com uma maior interação entre cliente e desenvolvedor.
+\par Ao contrário do modelo cascasta no qual o contato do cliente com o software se dá apenas no fim do processo de desenvolvimento na etapa de testes o método de Build Measure Learn privilegia desde o início uma interação contínua com o cliente.
+
+\subsection{Build Measure Learn}
+\par O ciclo de Build Measure Learn é uma das idéias fundamentais do Lean Startup e consiste de um ciclo de feedback rápido cujo principal objetivo é eliminar as incertezas sobre as hipóteses do produto através de um aprendizado rápido sobre o mesmo assim minimizando os riscos  e custos desnecessários que persistir em uma idéia equivocada poderiam causar.
+\par Além das 3 idéias fases do ciclo vamos incluir no diagrama outras 3 menores (\textit{ideas, data e code}) para ilustrar melhor o objetivo de cada uma das etapas.
+\begin{figure}[htb]
+\includegraphics[width=10cm]{figuras/buildmeasurelearn}
+\caption{\label{fig:buildmeasurelearn}O ciclo de Build Measure Learn.}
+\end{figure}
+
+\begin{itemize}
+\item \emph{Build:} Inicialmente temos algumas idéias que foram definidas a partir das hipóteses do produto que precisam ser implementadas (\textit{code}) no MVP.
+\item \emph{Measure:} Implementado o MVP coletamos dados(\textit{data}) de uso e seguindo algumas métricas já definidas avaliamos seu desempenho. Todo o ciclo é baseado na idéia de aprendizado rápido para aprender o máximo possível sobre como os usuários reagem as idéias implementadas.
+\item \emph{Learn:} A partir então da análise dos dados coletados podemos inferir sobre continuar sobre como continuar o desenvolvimento e o que funcionou ou não. Feito isso implementamos as novas idéias geradas e começamos novamente o ciclo para validá-las. 
+\end{itemize}
+
+\par As etapas do ciclo não precisam necessariamente ocorrer em ordem podendo se sobrepor  ou mesmo serem unidas dependendo de como for o ciclo de desenvolvimento. 
+\par As alterações de software precisam ser feitas de maneira rápida de modo a testar o mais rápido possível novas idéias portanto é importante ressaltar que as funcionalidades devem se manter simples e diretas pois o foco é o aprendizado gerado e não desenvolver um software ou um protótipo completo pois dessa maneira é possível evitar que sejam desperdiçados recursos em uma funcionalidade que pode não ser bem recebida e não ter continuidade.
+\par Apesar do desenvolvimento ser focado na simplicidade isso não quer dizer produzir um produto de baixa qualidade. Existem ferramentas que auxiliam na integração contínua do software e é comum realizar testes automatizados  garantindo que seja possível manter um desenvolvimento consistente e confiável sem comprometer o tempo de execução pois  um produto de baixa qualidade ou que possua bugs pode resultar em uma taxa de rejeição inesperada devido a problemas de imeplementação fazendo com que as conclusões do ciclo possam ser enviesadas.
+\par Cada ciclo de build measure learn testa idéias específicas portanto é comum realizar diversos ciclos implementando e testando idéias diferentes 
+\par Dada sua natureza interativa e o desenvolvimento incremental que o o ciclo de Build Measure Learn propõe o o projeto final costuma estar mais refinado e alinhado com as expectativas dos clientes em contraponto aos problemas apresentados pelo modelo em Cascata sendo assim uma evolução bastante interessante do mesmo.
