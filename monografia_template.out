@@ -4,9 +4,18 @@
 \BOOKMARK [1][]{section.1.2}{Cap\355tulos}{chapter.1}% 4
 \BOOKMARK [0][]{chapter.2}{Lean Startup}{}% 5
 \BOOKMARK [1][]{section.2.1}{Lean Startup: O que \351}{chapter.2}% 6
-\BOOKMARK [1][]{section.2.2}{Produto M\355nimo Vi\341vel \(MVP\)}{chapter.2}% 7
-\BOOKMARK [1][]{section.2.3}{O ciclo de Build Measure Learn}{chapter.2}% 8
-\BOOKMARK [2][]{subsection.2.3.1}{O modelo Cascata}{section.2.3}% 9
-\BOOKMARK [2][]{subsection.2.3.2}{Build Measure Learn}{section.2.3}% 10
-\BOOKMARK [0][]{chapter.3}{Conclus\365es}{}% 11
-\BOOKMARK [0][]{appendix.A}{T\355tulo do ap\352ndice}{}% 12
+\BOOKMARK [2][]{subsection.2.1.1}{Startup: uma defini\347\343o}{section.2.1}% 7
+\BOOKMARK [2][]{subsection.2.1.2}{Lean Startup}{section.2.1}% 8
+\BOOKMARK [1][]{section.2.2}{Produto M\355nimo Vi\341vel \(MVP\)}{chapter.2}% 9
+\BOOKMARK [1][]{section.2.3}{O ciclo de Build-Measure-Learn}{chapter.2}% 10
+\BOOKMARK [2][]{subsection.2.3.1}{O modelo Cascata}{section.2.3}% 11
+\BOOKMARK [2][]{subsection.2.3.2}{Build-Measure-Learn \(Construir-medir-aprender\)}{section.2.3}% 12
+\BOOKMARK [0][]{chapter.3}{Tecnologias}{}% 13
+\BOOKMARK [1][]{section.3.1}{Ruby on Rails}{chapter.3}% 14
+\BOOKMARK [2][]{subsection.3.1.1}{Ruby}{section.3.1}% 15
+\BOOKMARK [2][]{subsection.3.1.2}{Rails}{section.3.1}% 16
+\BOOKMARK [1][]{section.3.2}{Heroku}{chapter.3}% 17
+\BOOKMARK [1][]{section.3.3}{Travis CI}{chapter.3}% 18
+\BOOKMARK [1][]{section.3.4}{Google Analytics}{chapter.3}% 19
+\BOOKMARK [0][]{chapter.4}{Conclus\365es}{}% 20
+\BOOKMARK [0][]{appendix.A}{T\355tulo do ap\352ndice}{}% 21

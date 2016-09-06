@@ -1,0 +1,74 @@
+%% ------------------------------------------------------------------------- %%
+\chapter{Tecnologias}
+\label{cap:tecnologias}
+\section{Ruby on Rails}
+\subsection{Ruby}
+	\par A criação da linguagem Ruby data de 1995 no Japão por Yukihiro "Matz" Matsumoto sob forte influência de outras linguagens como Perl, SmallTalk, Eiffel, Ada e Lisp e tinha como objetivo equilibrar programação funcional, imperativa e orientação a objetos, segundo o próprio Matz: "Eu queria uma linguagem interpretada que fosse mais poderosa do que Perl e mais orientada as objetos do que Python2.".
+\begin{itemize}
+\item{Flexibilidade:}
+	\par Ruby cresceu devido a sua grande flexibilidade sendo possível alterar, remover ou acrescentar partes da linguagem à vontade, imagine o seguinte exemplo: um usuário prefere utilizar a palavra plus ao invés do operador matemático(  +  ), ele poderia então adicionar esse método à classe natica do Ruby Numeric pois em ruby os operadores matemáticos são considerados açúcares sintáticos.
+\\Exemplo:
+\begin{lstlisting}[frame=single]
+class Numeric
+  		def plus(x)
+    			self.+(x)
+  		end
+	end
+
+	y = 5.plus 6
+	# y agora é igual a 11
+\end{lstlisting}
+	
+
+\item{Closures:}
+	\par Em ruby o closures são chamadas de blocos e são funções que podem ser tratadas como uma variável, isso quer dizer que podem ser pasasdas como argumentos de métodos, serem atribuidas a outras variáveis, etc.
+	\par As closures armazenam os valores das variávies que estavam no escopo quando a função foi denifida e são capazes de acessar tais variávies mesmo que sejam executadas em um escopo diferente.
+\\
+Exemplo:
+\begin{lstlisting}[frame=single]
+search_engines =
+  %w[Google Yahoo MSN].map do |engine|
+    "http://www." + engine.downcase + ".com"
+  end
+\end{lstlisting}
+\item{Módulos:}
+	\par Diferente de outras linguagens orientadas a objetos o Ruby suporta apenas herança simples de forma proposital porém existe o conceito de módulos que são coleções de métodos que podem ser adcionadas à uma classe por meio de um mixin.
+	As classes podem fazer o mixin de um método e receber todos os métodos dele diretament.
+Exemplo:
+\begin{lstlisting}[frame=single]
+class MyArray
+  		include Enumerable
+	end
+\end{lstlisting}
+
+\end{itemize}
+\subsection{Rails}
+
+\par David Heinemeier Hansson extraiu o Ruby on Rails do seu próprio trabalho realizado na empresa Basecamp e foi lançado de maneira open-source pela primeira vez em 2004, inicialmente ele estava desenvolvendo seu projeto utilizando PHP porém apesar de conseguir desenvolver de maneira bastante ágil a repetição de código 	
+\par Rails é um framework web escrito em Ruby implementado seguindo o padrão mvc ( model-view-controller) totalmente server-side sendo considerado portanto um framework back-end provendo uma estruturas para banco de dados, web service e web pages além de encorajar padrões de engenharia de software já consagrados tais como: 
+\begin{itemize}
+
+\item {\textit{Convention over Configuration} (CoC):} 
+	
+	\par Apesar de algumas críticas por adicionar obscuridade pois não existe uma forma clara de verificar o comportamento esperado ruby adota alguns padrões de configuração visando padronizar o código e tirar do desenvoveldor a decisão de como usar o framework sem que isso tire sua flexibilidade. Por exemplo se existir um objeto chamado User então sua tabela por convenção se chamará users e correspondente controller será UsersController ( no plural) pois esse é padrão definido para o framework e de outra forma o seu controller ou database não estaria associado ao modelo User.
+
+\item {\textit{Don't Repeat yourself} (DRY):} 
+	
+	\par Visando diminuir a repetição de informações de qualquer tipo de todas as formas. Em rails frequentemente ao utilizar o comportamento padrão vai parecer sem explicação já que sua implementação está escondida dentro do código do próprio Rails porém evitando que dessa forma o propgramador tenha que reescrever várias vezes um mesmo código para determinado comportamento.
+
+\item { \textit{Active Record Pattern}:}
+	\par O padrão Active Record sugere uma interface específica para acessar objetos em um banco de dados relacional contendo funções tais como INSERT, UPDATE, DELETE, etc.
+	\par Uma tabela ou view será associada a uma classe então uma instância de objeto estará associada a uma única entrada na respectiva tabela.
+	\par Em Rails a biblioteca ActiveRecord imeplementa o padrão ORM e além disso acrescenta herança e associações resolvendo dois problemas substanciais do padrão.
+	\par ActiveRecord é o "model" padrão do compomente MVC porém é possível trocá-lo por outra implementação do framework Rails caso o desenvolvedor prefira.
+\end{itemize}
+
+	\par Em um sentido mais amplo Rails é mais que uma biblioteca de Software ou API: é um projeto central de uma vasta comunidade que produz plugins para facilitar e construir projetos complexos de web site. Foi graças a essa comunidade que compartilham ferramentas e contribuem para o projeto Rails criando bibliotecas open source ( chamads de Ruby Gems ou apenas Gems) que o o uso de rails tem crescidos de forma significante nos últimos anos ganhando fama entre startups devido a sua  facilidade e desevolvimento rápido que permite criar sistemas complexos e testar idéias rapidamente.
+
+\section{Heroku}
+TODO
+\section{Travis CI}
+TODO
+\section{Google Analytics}
+TODO
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=latex 2016.9.3)  5 SEP 2016 14:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=latex 2016.9.3)  6 SEP 2016 12:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -619,95 +619,84 @@ Chapter 1.
 ]
 Chapter 2.
 [3]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
-
-
-LaTeX Warning: Reference `fig:waterfall' on page 4 undefined on input line 41.
-
-<figuras/waterfall.png, id=133, 516.93124pt x 397.485pt>
-File: figuras/waterfall.png Graphic file (type png)
-
-<use figuras/waterfall.png>
-Package pdftex.def Info: figuras/waterfall.png used on input line 43.
-(pdftex.def)             Requested size: 284.52756pt x 218.78725pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] <figuras/buildmeasurelearn.png, id=142, 381.425pt x 381.425pt>
+[4]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+ <figuras/waterfall.png, id=190, 516.93124pt x 397.485pt>
+File: figuras/waterfall.png Graphic file (type png)
+
+<use figuras/waterfall.png>
+Package pdftex.def Info: figuras/waterfall.png used on input line 50.
+(pdftex.def)             Requested size: 284.52756pt x 218.78725pt.
+ [5]
+<figuras/buildmeasurelearn.png, id=197, 381.425pt x 381.425pt>
 File: figuras/buildmeasurelearn.png Graphic file (type png)
 
 <use figuras/buildmeasurelearn.png>
-Package pdftex.def Info: figuras/buildmeasurelearn.png used on input line 64.
+Package pdftex.def Info: figuras/buildmeasurelearn.png used on input line 71.
 (pdftex.def)             Requested size: 284.52756pt x 284.53735pt.
- [5 <./figuras/waterfall.png>])
-(./cap-conclusoes.tex [6 <./figuras/buildmeasurelearn.png>]
-Chapter 3.
-) [7
+ [6 <./figuras/waterfall.png>])
+(./cap-tecnologias.tex [7 <./figuras/buildmeasurelearn.png>] [8
 
 ]
+Chapter 3.
+[9] [10]) (./cap-conclusoes.tex [11] [12
+
+]
+Chapter 4.
+) [13]
 \openout2 = `ape-exemplo.aux'.
 
- (./ape-exemplo.tex [8
+ (./ape-exemplo.tex [14
 
 
 ]
 Appendix A.
-) [9] [10
+) [15] [16
 
 
 ]
 No file monografia_template.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
 (./monografia_template.aux (./ape-exemplo.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
-
-
-Package rerunfilecheck Warning: File `monografia_template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `monografia_template.out':
-(rerunfilecheck)             Before: 32AFBD061E3E6EF5640E79ABEB32BD51;681
-(rerunfilecheck)             After:  C5C7ED50E3AD2AE9891403CECE8FEF81;753.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
+Package rerunfilecheck Info: File `monografia_template.out' has not changed.
+(rerunfilecheck)             Checksum: 88245B61D45C42CC2695687D556B9F10;1317.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 10017 strings out of 494978
- 148205 string characters out of 6180210
- 276510 words of memory out of 5000000
- 13040 multiletter control sequences out of 15000+600000
- 19189 words of font info for 44 fonts, out of 8000000 for 9000
+ 10416 strings out of 494978
+ 151628 string characters out of 6180210
+ 303510 words of memory out of 5000000
+ 13401 multiletter control sequences out of 15000+600000
+ 20651 words of font info for 46 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 36i,12n,43p,808b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,12n,43p,1043b,1280s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/ca
 io/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/caio/.texmf-va
-r/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/caio/.texmf-var/fonts/pk/l
-jfour/jknappen/ec/ecbx1095.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecbx1440.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm10
-00.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </
-home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/caio/.t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/caio/.texmf-var/fon
-ts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/caio/.texmf-var/fonts/pk/ljfour
-/jknappen/ec/ecrm1728.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec
-/ecrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb>
-Output written on monografia_template.pdf (22 pages, 282882 bytes).
+r/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/caio/.texmf-var/fonts/pk/l
+jfour/jknappen/ec/ecbx1000.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecti1095.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx10
+95.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </
+home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/caio/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/caio/.texmf-var/fon
+ts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/caio/.texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecbx2488.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec
+/ecbx1728.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.60
+0pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on monografia_template.pdf (28 pages, 319647 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 43 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 787 PDF objects out of 1000 (max. 8388607)
+ 305 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 179 words of extra memory for PDF output out of 10000 (max. 10000000)
 

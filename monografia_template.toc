@@ -4,10 +4,19 @@
 \contentsline {section}{\numberline {1.2}Cap\IeC {\'\i }tulos}{1}{section.1.2}
 \contentsline {chapter}{\numberline {2}Lean Startup}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Lean Startup: O que \'e}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Produto M\IeC {\'\i }nimo Vi\'avel (MVP)}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}O ciclo de Build Measure Learn}{4}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}O modelo Cascata}{4}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Build Measure Learn}{5}{subsection.2.3.2}
-\contentsline {chapter}{\numberline {3}Conclus\~oes}{7}{chapter.3}
-\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do ap\^endice}{9}{appendix.A}
+\contentsline {subsection}{\numberline {2.1.1}Startup: uma defini\c c\~ao}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Lean Startup}{3}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Produto M\IeC {\'\i }nimo Vi\'avel (MVP)}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}O ciclo de Build-Measure-Learn}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}O modelo Cascata}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Build-Measure-Learn (Construir\discretionary {-}{}{}-medir-\discretionary {-}{}{}aprender)}{6}{subsection.2.3.2}
+\contentsline {chapter}{\numberline {3}Tecnologias}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Ruby on Rails}{9}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Ruby}{9}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Rails}{10}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Heroku}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Travis CI}{11}{section.3.3}
+\contentsline {section}{\numberline {3.4}Google Analytics}{11}{section.3.4}
+\contentsline {chapter}{\numberline {4}Conclus\~oes}{13}{chapter.4}
+\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do ap\^endice}{15}{appendix.A}
 \contentsfinish 
