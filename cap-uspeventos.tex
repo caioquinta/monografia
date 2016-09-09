@@ -1,0 +1,75 @@
+%% ------------------------------------------------------------------------- %%
+\chapter{Usp Eventos}
+\label{cap:uspeventos}
+\section{Definição do Projeto}
+\subsection{Motivação}
+"Uma startup é uma instituição humana projetada para criar novos produtos e serviços sob condições de extrema
+incerteza." - Eric Ries, Lean Startup.
+\\
+	\par A idéia de desenvolver um sistema utilizando métodos agéis e conceitos de Lean Startup surgiu em dezembro de  2015 quando entrei em contato com o professor Alfredo.
+	\par O intuito seria desenvolver um sistema web ou aplicativo voltado para a comunidade USP com o intuito de facilitar o dia-a-dia dentro do campus.
+	\par Como inicialmente existiam algumas opções de projeto foi proposto realizar uma enquete junto a comunidade a fim de que a mesma participasse do processo de decisão pois essa seria nosso público alvo. 
+\subsection{Enquete e definição do projeto}
+	\par Inicialmente haviam duas propostas iniciais de projeto:
+		\begin{itemize}
+		\item {Usp avisa eventos e incidentes:} Um sistema para reportar desde eventos acontecendo no campus (palestras, festas, etc) até outros incidentes (buracos, perigos, etc).
+		\item {Usp doações e trocas: } Um sistema voltado para os membros da comunidade que desejam fazer doações ( sejam móveis, roupas usadas, etc) para outros e aqueles dispostos a receber. organizando filas de interesse,disponibilidade e urgência.
+		\end{itemize}
+	\par Como não havia nenhuma informação sobre qual das propostas teria maior adesão da comnunidade além de estarmos abertos à outras sugestões precisávamos de um sistema que suportasse não só uma votação fechada como também permitisse que os próprios usuários fossem capazes de adicionar outras propostas de forma dinâmica àquelas já existentes pensando nisso resolvemos utilizar o sistema POP para efetuar a enquete.
+	\par A enquete foi feita utilizando o Sistema POP (Painel de Opinião Pública) através de uma instância do sistema adaptada chamada POP-TCC utilizando o Heroku como web-server que poderia ser acessada pelo endereço pop-tcc.herokuapp.com. 
+	\par A única diferença dessa versão do pop foi uma pequena adaptaçãõ na qual os usuários só poderiam votar de maneira positiva nas enquete ao contrário do sistema original que permitia votos negativos e até ocultamento dos itens da enquete que fossem muito negativados pelos usuários.
+	\par Em 11/01 foi enviado o primeiro e-mail com a enquete do POP-TCC aberta para a lista de e-mails dos alunos do IME com as duas opções iniciais de projeto supracitadas além disso a divulgação da enquete concentrou-se principalmente via facebook nas seguintes comunidades:
+	
+	
+\begin{table}[]
+\centering
+\caption{Comunidades do Facebook na qual foram feitas divulgações}
+\label{my-label}
+\begin{tabular}{ll}
+{\color[HTML]{3531FF} \textbf{Comunidade}} & {\color[HTML]{3531FF} \textbf{Número de Membros}} \\
+USP - Universidade de São Paulo            &                                                   \\
+FAU USP                                    & 4000                                              \\
+IME USP                                    & 3000                                              \\
+Universidade de São Paulo                  & 5000                                              \\
+Baladas USP                                & 15000                                            
+\end{tabular}
+\end{table}
+
+<INSERIR IMAGENS DO POP-TCC>
+
+Ao longo dessas duas semanas outras opções de projeto surgiram e o resultado final da enquete segue abaixo:
+\begin{itemize}
+\item{ 1º Lugar (39 votos):} Usp avisa eventos e incidentes: Um sistema para reportar desde eventos acontecendo no campus (palestras, festas, etc) até outros incidentes (buracos, perigos, etc).
+\item {2º Lugar (21 votos):} Usp doações e trocas: Um sistema voltado para os membros da comunidade que desejam fazer doações ( sejam móveis, roupas usadas, etc) para outros e aqueles dispostos a receber. organizando filas de interesse,disponibilidade e urgência.
+\item {3º Lugar (20 votos):} Usp caronas: os motorizados colocam horário, bairro, quantidade de lugares disponíveis, ponte de embarque e desembarque. os interessados enviam um alerta para os motorizados confirmarem até preencherem as vagas.
+\item {4º Lugar (18 votos):} Mapa de crimes na usp: um app onde roubos, furtos, assaltos, agressões, assédios, discriminações e outros crimes podem ser relatados, georreferenciados no campus.
+\item {5º Lugar  (14 votos):} Volta pedalusp - volta e desenvolvimento da ideia que já teve adesão, mas morreu por falta de manutenção. implementação de novos pontos de troca de bikes mais próximos das faculdades e outros pontos estratégicos.
+\item {6º Lugar (13 votos): } Usp extensão: uma plataforma de apoio mútuo para organização, contato, criação e divulgação de projetos de extensão dentro da universidade.
+\item {7º Lugar (12 votos):} Usp gigabyte: um ponto de encontro virtual pra reunir o pessoal e tomar uma rodada de suco com a galera. curtição, azaração e muita gente bonita neste, que é o ponto mais quente da internet!
+\item {8ºLugar  (8 votos):} Monitoria voluntária: pessoas divulgam horário e local no qual pessoas podem procurá-las para tirar dúvidas sobre certas disciplinas comuns a vários cursos.
+\end{itemize}
+
+\begin{figure}[htb]
+\includegraphics[width=10cm]{figuras/poll_chart}
+\caption{\label{fig:watefall} Gráfico gerado pelo resultado da Enquete.}
+\end{figure}
+
+\par O projeto escolhido então foi o Usp Avisa Eventos e acidentes que seria renomeado apenas para USP Eventos.
+
+\section{Definindo as características do Sistema}
+\subsection{Pesquisa de Sistemas Semelhantes}
+\par Definido o tema do projeto teve início uma pesquisa para levantar sistemas que tivessem uma proposta semelhante de divulgação de eventos e atividades porém que não necessariamente fossem voltados para a universidade tendo como objetivo principal obter uma base de conhecimento de quais funcionalidades um sistema de divulgação possui ou mesmo encontra uma  solução em código aberto que pudesse ser utilizada como base.
+ \par Foi enviado um e-mail em março para a lista de Representantes Discentes do próprio IME questionando sobre funcionalidades e sugestões. 
+\par  Das compilações sobre a pesquisa e resposta obtidas por e-mail selecionei 3 sites com proposta e conteúdos semelhantes:
+\begin{itemize}
+\item{Eventos USP (http://www.eventos.usp.br/):} 
+Canal de divulgação oficial da USP para eventos ocorrendo em suas depêndencias para todos os campus. É uma via de mão única na qual o usuário apenas se informa dos detalhes do evento mas não tem oportunidade de criar ou divulgar o seu próprio.
+\item {Catraca-Livre (https://catracalivre.com.br/brasil/):} Principal Portal de atividades culturais e divulgação de eventos costuma ser bastante eclético e nos últimos anos passou a ter uma redação própria para não só divulgar eventos como também produzir reportagens próprias. Como divulga eventos por toda a cidade sua navegação é bastante complexa levando o usuário a facilmente perder-se devido à grande quantidade de informações e poucas opções de personalização aos interesses pessoais de quem acessa página. Soma-se a isso o fato de que o site é uma forma de comunicação unilateral não permitindo que usuários divulguem e organizem seus próprios eventos.
+\item {SP Cultura (http://spcultura.prefeitura.sp.gov.br/):} Portal oficial da prefeitura para divulgação de atividades por toda a cidade por meio de um mapa geo-referenciado no qual você pode navegar e selecionar os eventos que bem entender.Possui bastante opções de filtros além de permitir que um usuário intereressado crie um evento e submeta-o para aprovação, bastante intuitivo e de fácil acessso.
+\end{itemize}
+
+\subsection{Definição da Plataforma}
+\subsubsection{Mobile x Web}
+TO DO 
+\subsubsection{Porque Ruby on Rails}
+TO DO 

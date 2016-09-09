@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=latex 2016.9.3)  6 SEP 2016 12:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=latex 2016.9.3)  9 SEP 2016 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -602,13 +602,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--195
 
 [5] [6
 
-] (./monografia_template.toc)
+] (./monografia_template.toc [7])
 \tf@toc=\write5
 \openout5 = `monografia_template.toc'.
 
- [7] [8
+ [8] [9
 
-] [9] [10
+] [10
 
 ] (./cap-introducao.tex
 Chapter 1.
@@ -628,14 +628,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [4]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
- <figuras/waterfall.png, id=190, 516.93124pt x 397.485pt>
+ <figuras/waterfall.png, id=230, 516.93124pt x 397.485pt>
 File: figuras/waterfall.png Graphic file (type png)
 
 <use figuras/waterfall.png>
 Package pdftex.def Info: figuras/waterfall.png used on input line 50.
 (pdftex.def)             Requested size: 284.52756pt x 218.78725pt.
  [5]
-<figuras/buildmeasurelearn.png, id=197, 381.425pt x 381.425pt>
+<figuras/buildmeasurelearn.png, id=237, 381.425pt x 381.425pt>
 File: figuras/buildmeasurelearn.png Graphic file (type png)
 
 <use figuras/buildmeasurelearn.png>
@@ -646,37 +646,62 @@ Package pdftex.def Info: figuras/buildmeasurelearn.png used on input line 71.
 
 ]
 Chapter 3.
-[9] [10]) (./cap-conclusoes.tex [11] [12
+[9] [10]) (./cap-uspeventos.tex [11] [12
 
 ]
 Chapter 4.
-) [13]
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
+
+ []
+
+[13] <figuras/poll_chart.png, id=299, 522.95375pt x 360.34625pt>
+File: figuras/poll_chart.png Graphic file (type png)
+
+<use figuras/poll_chart.png>
+Package pdftex.def Info: figuras/poll_chart.png used on input line 53.
+(pdftex.def)             Requested size: 284.52756pt x 196.05765pt.
+ [14]
+Overfull \hbox (0.60674pt too wide) in paragraph at lines 67--68
+[]\T1/cmr/m/n/12 Catraca-Livre (https://catracalivre.com.br/brasil/): Prin-ci-p
+al Por-tal de ativi-dades cul-
+ []
+
+[15 <./figuras/poll_chart.png>]) (./cap-conclusoes.tex [16]
+Chapter 5.
+) [17
+
+]
 \openout2 = `ape-exemplo.aux'.
 
- (./ape-exemplo.tex [14
+ (./ape-exemplo.tex [18
 
 
 ]
 Appendix A.
-) [15] [16
+) [19] [20
 
 
 ]
 No file monografia_template.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
 (./monografia_template.aux (./ape-exemplo.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
 Package rerunfilecheck Info: File `monografia_template.out' has not changed.
-(rerunfilecheck)             Checksum: 88245B61D45C42CC2695687D556B9F10;1317.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
+(rerunfilecheck)             Checksum: FA47032311ABB50F5FDA6AB0805B4BAF;1896.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
  ) 
 Here is how much of TeX's memory you used:
- 10416 strings out of 494978
- 151628 string characters out of 6180210
- 303510 words of memory out of 5000000
- 13401 multiletter control sequences out of 15000+600000
+ 10452 strings out of 494978
+ 152172 string characters out of 6180210
+ 302510 words of memory out of 5000000
+ 13417 multiletter control sequences out of 15000+600000
  20651 words of font info for 46 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  36i,12n,43p,1043b,1280s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -685,18 +710,18 @@ io/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/caio/.texmf-va
 r/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/caio/.texmf-var/fonts/pk/l
 jfour/jknappen/ec/ecbx1000.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknapp
 en/ec/ecti1095.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx10
-95.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </
-home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/caio/.t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/caio/.texmf-var/fon
+95.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </
+home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/caio/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/caio/.texmf-var/fon
 ts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/caio/.texmf-var/fonts/pk/ljfour
 /jknappen/ec/ecbx2488.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec
 /ecbx1728.600pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.60
 0pk> </home/caio/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on monografia_template.pdf (28 pages, 319647 bytes).
+Output written on monografia_template.pdf (32 pages, 389525 bytes).
 PDF statistics:
- 787 PDF objects out of 1000 (max. 8388607)
- 305 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 903 PDF objects out of 1000 (max. 8388607)
+ 365 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 
