@@ -15,9 +15,8 @@ incerteza." - Eric Ries, Lean Startup.
 		\item {Usp avisa eventos e incidentes:} Um sistema para reportar desde eventos acontecendo no campus (palestras, festas, etc) até outros incidentes (buracos, perigos, etc).
 		\item {Usp doações e trocas: } Um sistema voltado para os membros da comunidade que desejam fazer doações ( sejam móveis, roupas usadas, etc) para outros e aqueles dispostos a receber. organizando filas de interesse,disponibilidade e urgência.
 		\end{itemize}
-	\par Como não havia nenhuma informação sobre qual das propostas teria maior adesão da comnunidade além de estarmos abertos à outras sugestões precisávamos de um sistema que suportasse não só uma votação fechada como também permitisse que os próprios usuários fossem capazes de adicionar outras propostas de forma dinâmica àquelas já existentes pensando nisso resolvemos utilizar o sistema POP para efetuar a enquete.
-	\par A enquete foi feita utilizando o Sistema POP (Painel de Opinião Pública) através de uma instância do sistema adaptada chamada POP-TCC utilizando o Heroku como web-server que poderia ser acessada pelo endereço pop-tcc.herokuapp.com. 
-	\par A única diferença dessa versão do pop foi uma pequena adaptaçãõ na qual os usuários só poderiam votar de maneira positiva nas enquete ao contrário do sistema original que permitia votos negativos e até ocultamento dos itens da enquete que fossem muito negativados pelos usuários.
+	\par Como não havia nenhuma informação sobre qual das propostas teria maior adesão da comnunidade além de estarmos abertos à outras sugestões precisávamos de um sistema que suportasse não só uma votação fechada como também permitisse que os próprios usuários fossem capazes de adicionar outras propostas de forma dinâmica àquelas já existentes pensando nisso resolvemos utilizar o sistema POP (Painel de Opinião Pública) para efetuar a enquete criando  de uma instância independente do sistema adaptada chamada POP-TCC utilizando o Heroku como web-server que poderia ser acessada pelo endereço pop-tcc.herokuapp.com. 
+	\par A única diferença entre o POP e o POP-TCC foi uma pequena adaptaçãõ na qual os usuários só poderiam votar de maneira positiva nas enquete ao contrário do sistema original que permitia votos negativos e até ocultamento dos itens da enquete que fossem muito negativados pelos usuários.
 	\par Em 11/01 foi enviado o primeiro e-mail com a enquete do POP-TCC aberta para a lista de e-mails dos alunos do IME com as duas opções iniciais de projeto supracitadas além disso a divulgação da enquete concentrou-se principalmente via facebook nas seguintes comunidades:
 	
 	
@@ -68,8 +67,28 @@ Canal de divulgação oficial da USP para eventos ocorrendo em suas depêndencias p
 \item {SP Cultura (http://spcultura.prefeitura.sp.gov.br/):} Portal oficial da prefeitura para divulgação de atividades por toda a cidade por meio de um mapa geo-referenciado no qual você pode navegar e selecionar os eventos que bem entender.Possui bastante opções de filtros além de permitir que um usuário intereressado crie um evento e submeta-o para aprovação, bastante intuitivo e de fácil acessso.
 \end{itemize}
 
-\subsection{Definição da Plataforma}
-\subsubsection{Mobile x Web}
-TO DO 
-\subsubsection{Porque Ruby on Rails}
+\subsection{Plataforma Web x Móvel}
+\par Para decidir em qual plataforma desenvolver nosso sistema levamos em considerações fatores técnicos e do público-alvo.
+\par De acordo com o gráfico~\ref{fig:global_market_sharing} <inserir referencia> (referencia gráfico marketshare mobile) observa-se que as plataformas Android e IOS hoje em dia correspondem respectivamente à 86,2\%  e 12,9\% do mercado mundial de sistemas operacionais mobile totalizando juntas 99,1\% do mercado o que significaria que ao desenvolver dois aplicativos nativos para ambas as plataformas corresponderia à ter a acesso à quase totalidade do mercado móvel.
+\begin{figure}[htb]
+\includegraphics[width=500px]{figuras/global_market_sharing}
+\caption{\label{fig:watefall} Distribuição de mercado para Sistemas Mobile.}
+\end{figure}
+
+\par Foram feitas  as seguintes considerações quanto ao desenvolvimento de uma aplicação nativa:
+\begin{itemize}
+\item O desenvolvimento para Android é feito utilizando a linguagem  Java usando o sdk fornecido pelo próprio Google enquanto um aplicativo para IOS utiliza objective-c ou Swift por meio das APIs fornecidadas pela Apple, portanto não há correspondencia de código entre ambas plataformas tornando necessário o desenvolvimento de duas aplicações distintas caso queira-se atingir a totalidade do mercado.
+\item Os aplicativos nativos seguem um padrão bastante rídigo de UI/UX que divergem bastante entre si, um aplicativo Android diverge totalmente de um aplicativo IOS  quanto a sua usabilidade e layout fazendo com que seja necessário pensar em duas interfaces distintas de navegação.
+\item A maior vantagem de um aplicativo nativo é ter acesso a recursos de hardware do smartphone tais como câmera ou acelerômetro. Como nossa aplicação não faria uso de nenhum recurso específico do hardware de um smartphone tais vantagens não seriam imediatamente aplicadas.
+\item Os aplicativos nativos estão sujeitos às normas e aprovações de suas lojas virtuais, Play Store para  o Andriod e Apple Store para o IOS, fazendo com que o tempo de públicação de uma atualização  aumente devido a necessidade de aprovação da loja em questão.
+\item Não seria possível utilizar a plataforma em Desktops reduzindo o público-alvo.
+\end{itemize}
+\par Para tomar a decisão de desenvolver uma plataforma web foi levado em consideração principalmente a facilidade de atualização de uma aplicação web por não necessitar da aprovação de um loja online devido a necessidade de desenvolvimento segundo o modelo proposto pelo Lean Startup e possibilidade de acesso por meio de diversas plataformas (tanto via desktop como móveis) com uma única versão da aplicação pois ainda que exista o custo de abrir mão de uma interface específica com a identidade visual de cada plataforma demos prioridade a esse modelo pro atingir um número maior de usuários.
+\par Apesar da escolhe de um sistema web ao análiser o crescimento do acesso móvel no Brasil~\ref{fig:mobile_internet} <inserir referencia> houve a preocupação de desenvolver-se uma aplicação web híbrida com uma interface totalmente responsiva dessa forma apesar do acesso em um smartphone não ser tão intuitivo quanto uma aplicação mobile ainda sim teria uma interface funcional garantindo que  a navegação em uma plataforma móvel fosse feita sem  dificuldades.
+\begin{figure}[htb]
+\includegraphics[width=500px]{figuras/mobile_internet}
+\caption{\label{fig:watefall} Crescimento do Uso de internet móvel no Brasil.}
+\end{figure}
+\\
+\subsection{Porque Ruby on Rails}
 TO DO 
