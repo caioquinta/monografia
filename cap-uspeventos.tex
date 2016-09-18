@@ -3,23 +3,22 @@
 \label{cap:uspeventos}
 \section{Definição do Projeto}
 \subsection{Motivação}
-"Uma startup é uma instituição humana projetada para criar novos produtos e serviços sob condições de extrema
-incerteza." - Eric Ries, Lean Startup.
-\\
-	\par A idéia de desenvolver um sistema utilizando métodos agéis e conceitos de Lean Startup surgiu em dezembro de  2015 quando entrei em contato com o professor Alfredo.
-	\par O intuito seria desenvolver um sistema web ou aplicativo voltado para a comunidade USP com o intuito de facilitar o dia-a-dia dentro do campus.
-	\par Como inicialmente existiam algumas opções de projeto foi proposto realizar uma enquete junto a comunidade a fim de que a mesma participasse do processo de decisão pois essa seria nosso público alvo. 
+	\par A idéia de desenvolver um sistema utilizando métodos agéis e conceitos de Lean Startup surgiu em dezembro de  2015 com o intuito de desenvolver um sistema web ou aplicativo voltado para a comunidade USP para facilitar o dia-a-dia dentro do campus.
+	\par Partindo do pressuposto de que o projeto seria voltado para os usuários da Cidade Universitária sendo esse o público alvo existiam algumas idéias de projetos para serem desenvolvidos que precisavam ter seu interesse confirmado.
+	\par As idéias iniciais foram então formalizadas em hipóteses de interesse para o projeto e a partir delas realizada uma enquete para obter informações sobre qual despertaria um maior interesse e adesão.
 \subsection{Enquete e definição do projeto}
-	\par Inicialmente haviam duas propostas iniciais de projeto:
+	\par  No início as seguintes hipóteses de interesse foram disponibilizadas para votação:
 		\begin{itemize}
 		\item {Usp avisa eventos e incidentes:} Um sistema para reportar desde eventos acontecendo no campus (palestras, festas, etc) até outros incidentes (buracos, perigos, etc).
 		\item {Usp doações e trocas: } Um sistema voltado para os membros da comunidade que desejam fazer doações ( sejam móveis, roupas usadas, etc) para outros e aqueles dispostos a receber. organizando filas de interesse,disponibilidade e urgência.
 		\end{itemize}
-	\par Como não havia nenhuma informação sobre qual das propostas teria maior adesão da comnunidade além de estarmos abertos à outras sugestões precisávamos de um sistema que suportasse não só uma votação fechada como também permitisse que os próprios usuários fossem capazes de adicionar outras propostas de forma dinâmica àquelas já existentes pensando nisso resolvemos utilizar o sistema POP (Painel de Opinião Pública) para efetuar a enquete criando  de uma instância independente do sistema adaptada chamada POP-TCC utilizando o Heroku como web-server que poderia ser acessada pelo endereço pop-tcc.herokuapp.com. 
-	\par A única diferença entre o POP e o POP-TCC foi uma pequena adaptaçãõ na qual os usuários só poderiam votar de maneira positiva nas enquete ao contrário do sistema original que permitia votos negativos e até ocultamento dos itens da enquete que fossem muito negativados pelos usuários.
+	\par Com o intuito de entender melhor nosso público alvo além de estarmos abertos à outras sugestões precisávamos de um sistema que suportasse não só uma votação fechada como também permitisse que os próprios usuários fossem capazes de adicionar outras propostas de forma dinâmica àquelas já existentes.
+	\par Pensando nisso resolvemos utilizar o sistema POP (Painel de Opinião Pública) para efetuar a enquete criando  de uma instância independente do sistema adaptada chamada POP-TCC (figura \ref{fig:pop-tcc}) utilizando o Heroku como servidor web que poderia ser acessada pelo endereço pop-tcc.herokuapp.com. 
 	\par Em 11/01 foi enviado o primeiro e-mail com a enquete do POP-TCC aberta para a lista de e-mails dos alunos do IME com as duas opções iniciais de projeto supracitadas além disso a divulgação da enquete concentrou-se principalmente via facebook nas seguintes comunidades:
-	
-	
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/pop-tcc}
+\caption{\label{fig:pop-tcc} Sistema POP-TCC com a enquete para votação.}
+\end{figure}
 \begin{table}[]
 \centering
 \caption{Comunidades do Facebook na qual foram feitas divulgações}
@@ -34,9 +33,7 @@ Baladas USP                                & 15000
 \end{tabular}
 \end{table}
 
-<INSERIR IMAGENS DO POP-TCC>
-
-Ao longo dessas duas semanas outras opções de projeto surgiram e o resultado final da enquete segue abaixo:
+\par Ao longo dessas duas semanas outras opções de projeto surgiram. o resultado final \ref{fig:poll_chart} da enquete e a descrição das sugestões seguem abaixo:
 \begin{itemize}
 \item{ 1º Lugar (39 votos):} Usp avisa eventos e incidentes: Um sistema para reportar desde eventos acontecendo no campus (palestras, festas, etc) até outros incidentes (buracos, perigos, etc).
 \item {2º Lugar (21 votos):} Usp doações e trocas: Um sistema voltado para os membros da comunidade que desejam fazer doações ( sejam móveis, roupas usadas, etc) para outros e aqueles dispostos a receber. organizando filas de interesse,disponibilidade e urgência.
@@ -50,45 +47,138 @@ Ao longo dessas duas semanas outras opções de projeto surgiram e o resultado fin
 
 \begin{figure}[htb]
 \includegraphics[width=10cm]{figuras/poll_chart}
-\caption{\label{fig:watefall} Gráfico gerado pelo resultado da Enquete.}
+\caption{\label{fig:poll_chart} Gráfico gerado pelo resultado da Enquete.}
 \end{figure}
-
-\par O projeto escolhido então foi o Usp Avisa Eventos e acidentes que seria renomeado apenas para USP Eventos.
-
+\par O projeto escolhido então foi o Usp Avisa Eventos e Acidentes que seria renomeado apenas para USP Eventos.
 \section{Definindo as características do Sistema}
 \subsection{Pesquisa de Sistemas Semelhantes}
-\par Definido o tema do projeto teve início uma pesquisa para levantar sistemas que tivessem uma proposta semelhante de divulgação de eventos e atividades porém que não necessariamente fossem voltados para a universidade tendo como objetivo principal obter uma base de conhecimento de quais funcionalidades um sistema de divulgação possui ou mesmo encontra uma  solução em código aberto que pudesse ser utilizada como base.
+\par Definido o tema do projeto teve início uma pesquisa para levantar a existência de sistemas que tivessem uma proposta semelhante de divulgação de eventos e atividades.
+\par Ao realizar essa pesquisa expandimos o escopo para que os sistemas não necessariamente fossem voltados para a universidade tendo como objetivo principal obter uma base de conhecimento de quais funcionalidades um sistema de divulgação possui ou mesmo encontrar uma  solução em código aberto que pudesse ser utilizada como base.
+\par Tal abordagem de pesquisas de concorrentes e projetos semelhantes está presente na metodologia Lean Startup cuja principal justificativa é obter o máximo de conhecimento prévio por meio de idéias já consolidadas e aplicadas por outros.
  \par Foi enviado um e-mail em março para a lista de Representantes Discentes do próprio IME questionando sobre funcionalidades e sugestões. 
-\par  Das compilações sobre a pesquisa e resposta obtidas por e-mail selecionei 3 sites com proposta e conteúdos semelhantes:
+\par  Das compilações sobre a pesquisa e resposta obtidas por e-mail destacam-se 3 sites com proposta e conteúdos semelhantes:
 \begin{itemize}
 \item{Eventos USP (http://www.eventos.usp.br/):} 
-Canal de divulgação oficial da USP para eventos ocorrendo em suas depêndencias para todos os campus. É uma via de mão única na qual o usuário apenas se informa dos detalhes do evento mas não tem oportunidade de criar ou divulgar o seu próprio.
-\item {Catraca-Livre (https://catracalivre.com.br/brasil/):} Principal Portal de atividades culturais e divulgação de eventos costuma ser bastante eclético e nos últimos anos passou a ter uma redação própria para não só divulgar eventos como também produzir reportagens próprias. Como divulga eventos por toda a cidade sua navegação é bastante complexa levando o usuário a facilmente perder-se devido à grande quantidade de informações e poucas opções de personalização aos interesses pessoais de quem acessa página. Soma-se a isso o fato de que o site é uma forma de comunicação unilateral não permitindo que usuários divulguem e organizem seus próprios eventos.
-\item {SP Cultura (http://spcultura.prefeitura.sp.gov.br/):} Portal oficial da prefeitura para divulgação de atividades por toda a cidade por meio de um mapa geo-referenciado no qual você pode navegar e selecionar os eventos que bem entender.Possui bastante opções de filtros além de permitir que um usuário intereressado crie um evento e submeta-o para aprovação, bastante intuitivo e de fácil acessso.
+Canal de divulgação oficial da USP para eventos ocorrendo em suas depêndencias para todos os campus.\\
+Ponto Fortes: Sendo o canal de comunicação oficial da universidade ele mostra-se com uma ótima fonte de conteúdo sobre eventos oficiais.\\
+Ponto Fracos:  É uma via de mão única na qual o usuário apenas se informa dos detalhes do evento mas não tem oportunidade de criar ou divulgar o seu próprio.
+\item {Catraca-Livre (https://catracalivre.com.br/brasil/):} Principal Portal de atividades culturais e divulgação de eventos costuma ser bastante eclético. \\
+Pontos Fracos:Como divulga eventos por toda a cidade sua navegação é bastante confusa levando o usuário a facilmente perder-se devido à grande quantidade de informações e poucas opções de personalização. Soma-se a isso o fato de que o site é uma forma de comunicação unilateral não permitindo que usuários divulguem e organizem seus próprios eventos.\\
+Pontos Fortes: Apesar de não ter um conteúdo personalizável a página de Agenda possui uma grande variedade de opções de filtro.
+\item {SP Cultura (http://spcultura.prefeitura.sp.gov.br/):} Portal oficial da prefeitura para divulgação de atividades por toda a cidade.
+ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dando mais enfase à localização do evento do que sobre sua descrição obrigando o usuário a selecionar primeiro um evento em uma localização para então obter informações do mesmo.
+Pontos Fortes: Possui bastante opções de filtros além de permitir que um usuário intereressado crie um evento e submeta-o para aprovação, bastante intuitivo e de fácil acessso.
 \end{itemize}
 
 \subsection{Plataforma Web x Móvel}
 \par Para decidir em qual plataforma desenvolver nosso sistema levamos em considerações fatores técnicos e do público-alvo.
-\par De acordo com o gráfico~\ref{fig:global_market_sharing} <inserir referencia> (referencia gráfico marketshare mobile) observa-se que as plataformas Android e IOS hoje em dia correspondem respectivamente à 86,2\%  e 12,9\% do mercado mundial de sistemas operacionais mobile totalizando juntas 99,1\% do mercado o que significaria que ao desenvolver dois aplicativos nativos para ambas as plataformas corresponderia à ter a acesso à quase totalidade do mercado móvel.
+\par De acordo com o gráfico \ref{fig:global_market_sharing} observa-se que as plataformas Android e IOS hoje em dia correspondem respectivamente à 86,2\%  e 12,9\% do mercado mundial de sistemas operacionais mobile totalizando juntas 99,1\% do mercado o que significaria que ao desenvolver dois aplicativos nativos para ambas as plataformas corresponderia à ter a acesso à quase totalidade do mercado móvel. \footnote{Fonte: Statista   \url{http://www.statista.com/statistics/254653/mobile-internet-user-penetration-in-brazil/}}
 \begin{figure}[htb]
-\includegraphics[width=500px]{figuras/global_market_sharing}
-\caption{\label{fig:watefall} Distribuição de mercado para Sistemas Mobile.}
+\includegraphics[height=10cm]{figuras/global_market_sharing}
+\caption{\label{fig:global_market_sharing} Distribuição de mercado para Sistemas Mobile.}
 \end{figure}
 
-\par Foram feitas  as seguintes considerações quanto ao desenvolvimento de uma aplicação nativa:
+\par Foram feitas  as seguintes considerações quanto ao desenvolvimento de uma aplicação nativa. \footnote{Fonte: Caelum \url{http://blog.caelum.com.br/aplicacoes-mobile-web-ou-nativa/}}
 \begin{itemize}
-\item O desenvolvimento para Android é feito utilizando a linguagem  Java usando o sdk fornecido pelo próprio Google enquanto um aplicativo para IOS utiliza objective-c ou Swift por meio das APIs fornecidadas pela Apple, portanto não há correspondencia de código entre ambas plataformas tornando necessário o desenvolvimento de duas aplicações distintas caso queira-se atingir a totalidade do mercado.
-\item Os aplicativos nativos seguem um padrão bastante rídigo de UI/UX que divergem bastante entre si, um aplicativo Android diverge totalmente de um aplicativo IOS  quanto a sua usabilidade e layout fazendo com que seja necessário pensar em duas interfaces distintas de navegação.
-\item A maior vantagem de um aplicativo nativo é ter acesso a recursos de hardware do smartphone tais como câmera ou acelerômetro. Como nossa aplicação não faria uso de nenhum recurso específico do hardware de um smartphone tais vantagens não seriam imediatamente aplicadas.
-\item Os aplicativos nativos estão sujeitos às normas e aprovações de suas lojas virtuais, Play Store para  o Andriod e Apple Store para o IOS, fazendo com que o tempo de públicação de uma atualização  aumente devido a necessidade de aprovação da loja em questão.
-\item Não seria possível utilizar a plataforma em Desktops reduzindo o público-alvo.
+\item O desenvolvimento para Android é feito utilizando a linguagem Java a partir de APIs fornecidas pelo próprio Google enquanto um aplicativo para IOS utiliza Objective-c ou Swift por meio das APIs fornecidadas pela Apple. Devido a isso não há correspondencia de código entre ambas plataformastornando necessário o desenvolvimento de duas aplicações distintas caso queira-se atingir a totalidade do mercado.
+\item Os aplicativos nativos seguem um padrão bastante rígido de UI/UX que divergem bastante entre si. Os padrões de desenvolvimento para interfaces  de um aplicativo Android diverge totalmente de um aplicativo IOS  quanto a sua usabilidade e layout fazendo com que seja necessário pensar em duas interfaces distintas.
+\item A maior vantagem de um aplicativo nativo é ter acesso aos recursos de \emph{hardware} do smartphone tais como câmera ou acelerômetro. Como nossa aplicação não faria uso de nenhum recurso específico tais vantagens não seriam aproveitadas.
+\item Os aplicativos nativos estão sujeitos às normas e aprovações de suas lojas virtuais, Play Store para  o Android e Apple Store para o IOS, fazendo com que o tempo de publicação de uma atualização  aumente devido a necessidade de aprovação da loja em questão.
+\item Não seria possível utilizar a plataforma em Desktops restringindo o público alvo.
 \end{itemize}
-\par Para tomar a decisão de desenvolver uma plataforma web foi levado em consideração principalmente a facilidade de atualização de uma aplicação web por não necessitar da aprovação de um loja online devido a necessidade de desenvolvimento segundo o modelo proposto pelo Lean Startup e possibilidade de acesso por meio de diversas plataformas (tanto via desktop como móveis) com uma única versão da aplicação pois ainda que exista o custo de abrir mão de uma interface específica com a identidade visual de cada plataforma demos prioridade a esse modelo pro atingir um número maior de usuários.
-\par Apesar da escolhe de um sistema web ao análiser o crescimento do acesso móvel no Brasil~\ref{fig:mobile_internet} <inserir referencia> houve a preocupação de desenvolver-se uma aplicação web híbrida com uma interface totalmente responsiva dessa forma apesar do acesso em um smartphone não ser tão intuitivo quanto uma aplicação mobile ainda sim teria uma interface funcional garantindo que  a navegação em uma plataforma móvel fosse feita sem  dificuldades.
+\par Para tomar a decisão de desenvolver uma plataforma web foi levado em consideração principalmente a facilidade de atualização de uma aplicação web por não necessitar da aprovação de um loja online devido a necessidade de desenvolvimento segundo o modelo proposto pelo modelo \emph{Lean Startup} e possibilidade de acesso por meio de diversas plataformas (tanto via desktop como móveis) com uma única versão da aplicação pois ainda que exista o custo de abrir mão de uma interface específica com a identidade visual de cada plataforma demos prioridade a esse modelo pro atingir um número maior de usuários.
+\par Apesar da escolha de um sistema web ao analisar o crescimento do acesso móvel no Brasil~\ref{fig:mobile_internet} que vem aumentando a passos largos no país houve a preocupação de desenvolver-se uma aplicação web híbrida com uma interface totalmente responsiva desde o princípio.
 \begin{figure}[htb]
-\includegraphics[width=500px]{figuras/mobile_internet}
+\includegraphics[height=10cm]{figuras/mobile_internet}
 \caption{\label{fig:watefall} Crescimento do Uso de internet móvel no Brasil.}
 \end{figure}
-\\
-\subsection{Porque Ruby on Rails}
-TO DO 
+\par Dessa forma apesar do acesso em um smartphone não ser tão intuitivo quanto em uma aplicação nativa ainda sim teria uma interface funcional garantindo que a navegação em uma plataforma móvel fosse feita sem  dificuldades.
+\subsection{Porquê Ruby on Rails ? }
+\par O uso do Ruby on Rails entre startups tem crescido  nos últimos anos isso devido a alguns fatores intrisicamente ligados a própria estrutura do arcabouço rails e também à necessidade que startups e o próprio modelo de \emph{Lean Startup} exigem para iterações e alterações de códigos rápidas.
+\par Uma das principais filosofias do Rails, o CoC \- Convenção sobre Configuração, permite que o desenvolvedor possa, a partir de um conjunto pré-definido de configurações padrões, agilizar o desenvolimento do código ao tirar de sua responsabilidade fatores de configuração em detrimento de um padrão já estabelecido  dando assim ao desenvolvedor mais tempo para concentrar-se em decisões sobre o produto. Essa agilidade em codificar rapidamente resulta em iterações mais rápidas contribuindo para uma maior agilidade dentro do ciclo de Contruir-Medir-Aprender.
+\par Outro fator inerente a cultura Rails é o grande enfoque em testes automatizados. Para o desenvolvimento da plataforma USP evento foram utilizadas as  gems Rspec e Capybara que permitem não só  a realização de testes unitários como também testes de integração de modo muito rápido e direto garantindo assim a confiabilidade  do seu projeto evitando que um \emph{bug} imprevisto prejudique seu aprendizado sobre o MVP. 
+\par Soma-se a isso a quantidade enorme de ferramentas que auxiliam na integração contínua do código como por exemplo o Travis CI utilizado  durante o desevolvimento da plataforma. 
+\par O Travis CI era responsável para que cada commit feito ao repositório principal do projeto fosse executada toda a bateria de testes automatizados enviando um e-mail contendo um relatório sobre o seu resultado, inclusive em caso de falha, garantindo dessa forma que todos tivessem sempre conhecimento das alterações sobre o código além de evitar  problemas de conflitos de versões ou mesmo que uma atualização de projeto fosse colocada no ambiente de produção contendo alguma falha.
+\par O fator comunidade é outra vantagem do  RoR. Destacando-se pelo seu tamanho, interesse e acessibilidade em tirar duvidas sempre contribuindo para promover o arcabouço  a comunidade que orbita ao redor do Rails foi capaz de criar ferramentas prontas para uso com uma ótima documentação, tutoriais, cursos e guias garantindo assim que qualquer desenvolvedor interessado sempre tenha em mãos materiais e ferramentas de qualidade para iniciar o desenvolvimento do seu projeto.
+\par Acrescenta-se também à favor do arcabouço Rails sua escalabilidade, rails é utilizado por empresas de grande porte  tais como Groupon, Twitter, Basecamp, mostrando que o arcabouço é um arcabçou robusto capaz de lidar com grandes sistemas  sem ter uma queda de desempenho.\footnote{Fonte: MLSDev Why startups use Ruby on Rails? \url{http://mlsdev.com/en/blog/61-why-startups-use-ruby-on-rails}}
+\par Para finalizar Rails é também um arcabouço seguro garantindo mesmo em sua configuração padrão ou com o auxilio de alguns plugins proteção contra SQL-Injections e XSS( \emph{Cross Site Scripting}). Além disso os programadores devem seguir o \emph{Secure Life Cycle Development}, figura\ref{fig:security_dev_lifecycle}, proposto pela Microsoft, um modelo de desenvolvimento de software cujo principal objetivo é ajudar o a construir software mais seguros e confiáveis e reduzir custos \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Microsoft_Security_Development_Lifecycle}}.
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/security_dev_lifecycle}
+\caption{\label{fig:security_dev_lifecycle} Fases do Secure Life Cycle Development.}
+\end{figure}
+\section{Kanban}
+
+\section{Desenvolvimento}
+\subsection{Construção do MVP}
+< em desenvolvimento>
+	 \par Aplicando a metodologia Lean Startup o primeiro MVP do USP Eventos tinha como objetivo testar as seguintes hipóteses:
+	 \begin{itemize}
+	 \item Medir o interesse do público em salvar um evento.
+	 \item Refinar a UI/UX do usuário.
+	 \end{itemize}
+	\par A \emph{Landing Page} do site possuia acesso para a página de cadastro e login além de um formulário para envio de sugestões.
+	<screenshot>
+	\par O cadastro de usuário pedia apenas nome, e-mail e senha inicialmente porém ainda na primeira interação foi implementada a opção de login com facebook.
+	<screenshot>
+	\par A página de eventos só poderia ser acessada por um usuário logado tornando essa página e qualquer página de evento específica inacessível para um visitante sem login.
+	\par Além disso a página príncipal de eventos apenas mostrava-os  sem oferecer qualquer opção inicial de filtro.
+<screenshot>
+\par Todas as páginas foram pensadas também para o acesso via mobile possuindo versões responsivas.
+<screenshot>
+	\par Visando evitar que os usuários se deparassem com uma página de eventos vazia foi feita uma rake task para consumir o xml gerado pelo feed RSS que o site www.eventos.usp.br, site oficial da Universidade de São Paulo para divulgação de eventos. Dessa forma poderíamos adicionar de forma mais ágil alguns eventos dentro da plataforma.
+\begin{lstlisting}[frame=single]
+task :import_from_feed => :environment do
+    ['inovacao-agencia-usp-inovacao', 'anfiteatro-das-colmeias', ...].each do | key, value | 
+      url = 'http://www.eventos.usp.br/?campi-unidades='+key.to_s+'&feed=rss'
+      admin = User.find_by email: 'caiodaquinta@gmail.com'
+      next_events = Event.next_events
+      open(url) do |rss|
+        feed = RSS::Parser.parse(rss)
+        feed.items.each do |item|
+          if (item.pubDate >= Date.today.at_beginning_of_month) && (next_events.where(name: item.title).empty?)
+            puts "Title: #{item.title}"
+            Event.create name: item.title, planner: admin, description: item.description, location: value, begin_date: item.pubDate
+          end
+        end
+      end
+    end
+  end
+\end{lstlisting}
+
+\par O thumbnail de eventos mostrava os detalhes mais importantes do mesmo incluindo também um botão de "Participar" para os usuários que estivessem logados e também botões para compartilhamento nas principais redes sociais.
+\par Houve também a preocupação de espalhar formulários de Sugestões em diversos pontos do site com o intuito de facilitar a coleta de informações do usuário.
+<screenshot>
+
+\subsection{Divulgação}
+< em desenvolvimento>
+
+	\par A primeira versão do sistema ficou disponível dia 5 de maio e sua divulgação foi feita pelo facebook por grupos e comunidades associadas a institutos da USP tais como FFLCH, FAU, IME, ECA, assim como foram enviadas mensagens para as respectivas empresas Júnior e Atléticas.
+	\par Também divulgamos a primeira versão na lista de alunos e representantes discentes do próprio Instituto de Matemática e Estatística.
+	\par No início de agosto foram espalhados cartazes pelos pontos de ônibus do campus e murais próximos aos bandejões.
+
+\subsection{Métricas}
+< em desenvolvimento>
+
+\par Para medir o fluxo de usuários dentro do site utilizamos o Google Analytics em conjunto com o Google Tag Manager.
+\par Uma métrica de aprendizado foi a quantidade de usuários que clicavam no botão "Participar" dentro do thumbnail de um evento e também em sua página principal.
+\par Foi incluída também uma tag para medir as visualizações de páginas dentro da plataforma.
+\par O evento "join-events" era responsável por contabilizar a quantidade de cliques no botão "Participar" que correspondia ao css: "btn btn-info ion-person-add" como é possível ver na figura \ref{fig:tags}.
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/tags}
+\caption{\label{fig:tags} Visualização das Tags pelo Google Tag Manager.}
+\end{figure}
+	
+\subsection{Aprendizado}
+< em desenvolvimento>
+\par Reparamos que o maior número de acesso deu-se sempre em seguida aos posts realizados pelo facebook mostrando a importância da divulgação pela plataforma.
+\par Através do google analytics obtivemos os seguintes dados no período de maio até o final de julho.
+<inserir imagem>
+\par Dentre os feedbacks recebidos através do formulário do site, e-mails e de forma direta compilamos algumas críticas e sugestões:
+\begin{itemize}
+\item Página de eventos e visualização dos mesmos deveriam ser abertas para usuários mesmo sem login
+\item Ausência de um filtro de usuários tornou a página de eventos confusa para navegação.
+\item Botão lateral de adicionar evento estava muito grande e atrapalhando a navegação.
+\item Falta de cores na pagina principal tornou cansativa a navegação.
+\item Clicar no nome do do evento no thumbnail para acessar a página do mesmo.
+\item Ausência de opção de "esqueci minha senha".
+\end{itemize}
