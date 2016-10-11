@@ -101,13 +101,41 @@ Pontos Fortes: Possui bastante opções de filtros além de permitir que um usuário
 \par O Travis CI era responsável para que cada commit feito ao repositório principal do projeto fosse executada toda a bateria de testes automatizados enviando um e-mail contendo um relatório sobre o seu resultado, inclusive em caso de falha, garantindo dessa forma que todos tivessem sempre conhecimento das alterações sobre o código além de evitar  problemas de conflitos de versões ou mesmo que uma atualização de projeto fosse colocada no ambiente de produção contendo alguma falha.
 \par O fator comunidade é outra vantagem do  RoR. Destacando-se pelo seu tamanho, interesse e acessibilidade em tirar duvidas sempre contribuindo para promover o arcabouço  a comunidade que orbita ao redor do Rails foi capaz de criar ferramentas prontas para uso com uma ótima documentação, tutoriais, cursos e guias garantindo assim que qualquer desenvolvedor interessado sempre tenha em mãos materiais e ferramentas de qualidade para iniciar o desenvolvimento do seu projeto.
 \par Acrescenta-se também à favor do arcabouço Rails sua escalabilidade, rails é utilizado por empresas de grande porte  tais como Groupon, Twitter, Basecamp, mostrando que o arcabouço é um arcabçou robusto capaz de lidar com grandes sistemas  sem ter uma queda de desempenho.\footnote{Fonte: MLSDev Why startups use Ruby on Rails? \url{http://mlsdev.com/en/blog/61-why-startups-use-ruby-on-rails}}
-\par Para finalizar Rails é também um arcabouço seguro garantindo mesmo em sua configuração padrão ou com o auxilio de alguns plugins proteção contra SQL-Injections e XSS( \emph{Cross Site Scripting}). Além disso os programadores devem seguir o \emph{Secure Life Cycle Development}, figura\ref{fig:security_dev_lifecycle}, proposto pela Microsoft, um modelo de desenvolvimento de software cujo principal objetivo é ajudar o a construir software mais seguros e confiáveis e reduzir custos \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Microsoft_Security_Development_Lifecycle}}.
+\par Para finalizar Rails é também um arcabouço seguro garantindo mesmo em sua configuração padrão ou com o auxilio de alguns plugins proteção contra SQL-Injections e XSS( \emph{Cross Site Scripting}). Além disso os programadores devem seguir o \emph{Secure Life Cycle Development}, figura  \ref{fig:security_dev_lifecycle}, proposto pela Microsoft, um modelo de desenvolvimento de software cujo principal objetivo é ajudar o a construir software mais seguros e confiáveis e reduzir custos \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Microsoft_Security_Development_Lifecycle}}.
 \begin{figure}[htb]
 \includegraphics[width=15cm]{figuras/security_dev_lifecycle}
 \caption{\label{fig:security_dev_lifecycle} Fases do Secure Life Cycle Development.}
 \end{figure}
 \section{Kanban}
-
+\par Kanban é uma palavra japonesa e significa cartão visual para prover informação de regulamentação do fluxo de estoque e materiais. Possui três regras principais (KNIBERG, H., 2009): visualizar o fluxo de trabalho; limitar o trabalho em cada estágio do fluxo, e medir o tempo de avanço (tempo médio para se completar cada item) (inserir referência).
+\par No contexto de Métodos Ágeis e \emph{Lean Startup} foi utilizado uma abordagem utilizando o Kanban para definir as hipóteses de produtos,  o escopo de desenvolvimento e as tarefas para serem executadas durante as etapas de desenvolvimento.
+\par Tradicionalmente o kanban para desenvolvimento de Software possui 3 estágios:
+\begin{itemize}
+	\item TO DO: referente a requisitos que ainda estão aguardando para serem
+desenvolvidos.
+	\item DOING: referente a requisitos que estão sendo desenvolvidos.
+	\item DONE. referente a requisitos que já finalizaram e foram devidamente
+revisados e testados. (inserir referência).
+\end{itemize}
+\par Cada item adicionado na fila de TO DO é chamada de tarefa. Uma hipótese à ser testada pode ser transformada em uma série de tarefas pequenas à serem completadas durante o período de desenvolvimento.
+\par Caso seja necessário é possível quebrar uma tarefa grande em uma série de tarefas menores. Tomando como exemplo a tarefa de Implementar um filtro de eventos para a página principal. Ela foi quebrada em 3 tarefas menores para serem completadas: Implementar Categorias de Eventos, Permitir adicionar categorias de eventos durante a criação de um novo evento e Implementar filtro de Eventos na página principal de eventos.
+\par O tempo que uma tarefa demora desde sua entrada no quadro até a saída é denominado \emph{Lead Time}. Em um ambiente de Startup o intuito é sempre obter o menor Lead Time possível para tal é importante estar ciente da taxa de entrega que sua equipe de desenvolvimento é capaz de cumprir e sempre definir as tarefas de modo simples. 
+\par Para utililzação no projeto USP Eventos foi incluída uma coluna a mais denominada BACKLOG, comumente usada na metodologia Scrum \footnote{Fonte: Desenvolvimento Ágil \url{fonte http://www.desenvolvimentoagil.com.br/scrum/sprint_backlog}},  na qual foram colocadas idéias que poderiam ou não serem transformadas em tarefas de desenvolvimento ou hipóteses para serem executadas em uma iteração do ciclo de Construir-Medir-Aprender.
+\par Em cada iteração do ciclo especificamos quais hipóteses seriam testadas e a partir delas criamos tarefas para serem implementadas.
+\par Caso um bug fosse detectado uma tarefa era cridada na fila de TO DO para resolvê-la.
+\par A ferramenta Trello, figura \ref{fig:kanban}, foi utilizada para  simular um quadro Kanban digital, com ela foi possível guiar todo o desenvolvimento do sistema.
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/kanban}
+\caption{\label{fig:kanban} Sistema Trello contendo as 4 colunas utilizadas no USP Eventos.}
+\end{figure}
+	Com o intuito de tornar melhor a visualização no Trello foram criados alguns Rótulos de cores distintas para cada tarefa:
+	\begin{itemize}
+	\item BUG (vermelho): Defeito não previsto durante o desenvolvimento.
+	\item FEATURE (verde): Nova funcionalidade para ser imeplementada.
+	\item REFACTOR(lilás):  Melhoria de código sem refletir uma mudança externa.
+	\item MELHORIAS(laranja): Investigar ou implementar o uso de ferramentas externas ao sistema, tal qual a integração com o Google Analytics por exemplo.
+	\item QUICK WIN(amarelo): Melhoria feita rapidamente e não prevista durante a definição de tarefas.
+	\end{itemize}	
 \section{Desenvolvimento}
 \subsection{Construção do MVP}
 < em desenvolvimento>
