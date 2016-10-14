@@ -90,7 +90,7 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dando
 \caption{\label{fig:mobile_internet} Crescimento do Uso de internet móvel no Brasil.}
 \end{figure}
 \par Dessa forma apesar do acesso em um smartphone não ser tão intuitivo quanto em uma aplicação nativa ainda sim teria uma interface funcional garantindo que a navegação em uma plataforma móvel fosse feita sem  dificuldades.
-\subsection{Porquê Ruby on Rails ? }
+\subsection{Porque escolher Ruby on Rails }
 \par O uso do Ruby on Rails entre startups tem crescido  nos últimos anos isso devido a alguns fatores intrisicamente ligados a própria estrutura do arcabouço rails e também à necessidade que startups e o próprio modelo de \emph{Lean Startup} exigem para iterações e alterações de códigos rápidas.
 \par Uma das principais filosofias do Rails, o CoC \- Convenção sobre Configuração, permite que o desenvolvedor possa, a partir de um conjunto pré-definido de configurações padrões, agilizar o desenvolimento do código ao tirar de sua responsabilidade fatores de configuração em detrimento de um padrão já estabelecido  dando assim ao desenvolvedor mais tempo para concentrar-se em decisões sobre o produto. Essa agilidade em codificar rapidamente resulta em iterações mais rápidas contribuindo para uma maior agilidade dentro do ciclo de Contruir-Medir-Aprender.
 \par Outro fator inerente a cultura Rails é o grande enfoque em testes automatizados. Para o desenvolvimento da plataforma USP evento foram utilizadas as  gems Rspec e Capybara que permitem não só  a realização de testes unitários como também testes de integração de modo muito rápido e direto garantindo assim a confiabilidade  do seu projeto evitando que um \emph{bug} imprevisto prejudique seu aprendizado sobre o MVP. 
@@ -192,22 +192,70 @@ revisados e testados. (inserir referência).
 \item Clicar no nome do do evento no thumbnail para acessar a página do mesmo.
 \item Ausência de opção de "esqueci minha senha".
 \item Clicar no botão "Participar" não tinha uma utilidade prática. O evento era salvo porém isso gerava nenhum reflexo no sistema não existindo uma funcionalidade que justificasse sua existência e não havendo razão para que os usuários clicassem no botão.
+\par Alguns comentários selecionados:
+
+\par Por Veronica: "Seria muito legal poder filtrar os eventos por tags referentes ao local / tipo / assuntos que serão abordados!"
+
+\par Por Lucas: "Olá! Eu gostaria de ver os eventos por categoria/área de conhecimento (Artes, História, Economia, Engenharia, etc)."
+
+\par Por Carolina: "Por que devemos nos cadastrar simplesmente para acessar o site? E se a pessoa "simplesmente quer se informar sobre o que está acontecendo"? A minha sugestão é que somente quem quer enviar eventos para o site deveria se ter que se cadastrar. Obrigada e boa sorte no TCC."
+
+\par Por Karina: ". [Login] Aos usuários que não possuem conta, mas tentam logar, seria ideal que o sistema mostra-se quando o usuário colocou dados incorretos e quando o usuário não possui conta. 
+\\
+. [Página de eventos] Seria melhor que a célula do evento permitisse o click para adentrar detalhes sobre o mesmo
+\\
+. [Página de eventos] Inserir algumas ferramentas de filtro: datas (inicio/final ou datas pontuais); tags (algumas tags pré-cadastradas); campus;
+\\
+. [Página de eventos] Espaço para uma imagem nas celulas de divulgação do evento daria mais cor e chamaria mais a atenção dos usuários
+\\
+. Página de eventos] Seria legal colocar um aviso de inscrições limitadas para eventos que têm tal restrição"
+
 \end{itemize}
 \section{Segunda Iteração}
 \subsection{Construção}
 \par Levando em consideração o aprendizado da primeira iteração foi feita uma mudança no fluxo do site para permitir o acesso para a página de eventos sem a necessidade de realizar um cadastro antes ou exigir um \emph{login} do usuário.
-\par Foi criado um filtro para a página de eventos baseado na utilização de tags dessa forma ao criar um novo evento o usuário agora pode escolher 3 dentre 12 tags pré-definidas que servirão como filtro nas página principal.
-<screenshot cadastro de evento>
-\par Na página de eventos os filtros estão em um menu lateral que é acionado por um botão na parte superior. Também é possível selecionar cada tag individualmente ao clicar sobre a rspectiva nos thumbnails de eventos.
-\par Visando tornar a navegação dentro da página de eventos mais fluída e menos cansativa fizemos algumas modificações visuais.
-<screenshot eventos v2>
+\par Foi criado um filtro para a página de eventos baseado na utilização de tags dessa forma ao criar um novo evento (figura \ref{fig:events_new_v2} )o usuário agora pode escolher 3 dentre 12 tags pré-definidas que servirão como filtro nas página principal.
+        \begin{figure}[htb]
+		\includegraphics[width=15cm]{figuras/event_newv2}
+		\caption{\label{fig:event_newv2} Página de Cadastro de Novos eventos com filtros}
+		\end{figure} 
+		
+\par Visando tornar a navegação dentro da página de eventos mais fluída e menos cansativa fora realizadas algumas modificações visuais na exibiçãodos eventos (figura  \ref{fig:events_pagev2})
+\begin{itemize}
+\item Remodelagem do thumbnail de Eventos
+\item Diminuição do botão de adicionar novos eventos para não atrapalhar a navegação
+\item Adição de um menu lateral com opções de Filtros para os eventos
+\item Nova listagem personalizada de Eventos segundo os interesses do usuário
+\end{itemize}
+        \begin{figure}[htb]
+		\includegraphics[width=15cm]{figuras/events_pagev2}
+		\caption{\label{fig:events_pagev2} Página de Eventos com as alterações para a segunda interação}
+		\end{figure}
 
-Um comparativo entre a exibição antiga e atual de eventos
-<screenshot eventos comparativo v1 e v2>
+\par Os filtros (figura \ref{fig:events_pagev2_filters}) estão em um menu lateral que é acionado por um botão na parte superior esquerda. Também é possível selecionar cada \emph{tag} individualmente ao clicar sobre a respectiva nos thumbnails de eventos.
+        \begin{figure}[htb]
+		\includegraphics[width=15cm]{figuras/events_pagev2_filters}
+		\caption{\label{fig:events_pagev2_filters} Filtros na página de Eventos}
+		\end{figure}
+As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail de eventos:
+\begin{itemize}
+\item Removido botão de +Info, agora para acessar mais informações basta clicar sobre o nome do evento
+\item Adicionado Cabeçalho para separar e dar maior ênfase para o título e uma cor de fundo para aumentar o contraste com o plano de fundo a fim de facilitar a leitura
+\item Adição de tags com as classificações dos eventos facilitando a escolha do mesmo.
+\item Mudança do nome do botão de "Participar" para "Salvar"
+\end{itemize}
+        \begin{figure}[htb]
+		\includegraphics[width=15cm]{figuras/thumbs_comparison_v1_v2}
+		\caption{\label{fig:thumbs_comparison_v1_v2} Esquerda: versão antiga. Direita: Versão atualizada}
+		\end{figure} 
 
-\par Aproveitando a criação das tags para eventos foi criado um mecanismo de preferências para o usuário, agora na página de cadastro ou edição de usuário é possível selecionar as tags com as quais o usuário tenha maior afinidade com o intuito de exibir uma listagem personalizada de eventos segundo esses critérios.
+\par Em conjunto com a criação das tags para eventos foi criado um mecanismo de preferências para o usuário, agora na página de cadastro ou edição de usuário é possível selecionar as tags com as quais o usuário tenha maior afinidade com o intuito de exibir uma listagem personalizada de eventos segundo esses critérios.
 \footnote{Fonte: Desenvolvimento Ágil \url{ http://www.desenvolvimentoagil.com.br/scrum/sprint_backlog}}
-\par Aproveitando o sucesso do lançamento do aplicativo Pokemon GO \footnote{Fonte: Pokemon GO \url{ https://en.wikipedia.org/wiki/Pokemon_Go }} que gerou uma enorme quantidade de acessos e movimentação pelo Campus foi criado um sistema de Alertas  no Campus visando atingir o público que estava utilizando o aplicativo para divulgar a localização de Pokemons pelo campus.
+\par Aproveitando o sucesso do lançamento do aplicativo Pokemon GO \footnote{Fonte: Pokemon GO \url{ https://en.wikipedia.org/wiki/Pokemon_Go }} que gerou uma enorme quantidade de acessos e movimentação pelo Campus foi criado uma página  de Alertas \ref{fig:alert_page} no Campus visando atingir o público que estava utilizando o aplicativo para divulgar a localização de Pokemons.
+        \begin{figure}[htb]
+		\includegraphics[width=15cm]{figuras/alert_page}
+		\caption{\label{fig:alert_page} Página de Alertas}
+		\end{figure} 
 
 \subsection{Divulgação}
 \par Além da divulgação pelo facebook foram espalhados cartazes em pontos estratégicos pela USP tais como Pontos de Ônibus com grande movimentação, murais próximos aos Bandejões e também no interior de alguns institutos.
@@ -228,8 +276,7 @@ Um comparativo entre a exibição antiga e atual de eventos
 
 \par Apesar do pico de acessos com o lançamento da página de Alertas passado o período de pico a funcionalidade foi abandonada pelos usuários, gerando poucos acessos mostrando que talvez não fosse interessante investir em seu desenvolvimento.
 
-\par Mesmo com a criação e filtros e melhorias visuais a página principal ainda carecia de apelo para navegação. Alguns comentários mostraram que ainda seria necessário torná-la de alguma forma mais atraente para quem visitasse.
+\par Mesmo com a criação e filtros e melhorias visuais a página principal ainda carecia de apelo para navegação. 
+\par Alguns comentários recebidos mostrou que ainda seria necessário torná-la mais atrativa visualmente e amigável para o usuário. 
 
-\
-
-
+\par Novamente recebemos comentários sobre adicionar a opção de adicionar uma foto ao evento, segue: "Sinto falta de anexo para cartazes. poder enviar uma foto ou cartaz escaneado do evento." - Ferdinand Machado
