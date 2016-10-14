@@ -62,16 +62,21 @@ class MyArray
 	\par Em um sentido mais amplo Rails é mais que uma biblioteca de Software ou API: é um projeto central de uma vasta comunidade que produz plugins para facilitar e construir projetos complexos de web site. Foi graças a essa comunidade que compartilham ferramentas e contribuem para o projeto Rails criando bibliotecas open source ( chamadas de Ruby Gems ou apenas Gems \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/RubyGems}}) que o o uso de rails tem crescido de forma significante nos últimos anos ganhando fama entre startups devido a sua  facilidade e desevolvimento que permite criar sistemas complexos e testar idéias rapidamente.
 
 \section{Heroku}
-\par Heroku é uma Paas implementada utilizando \emph{cloud computing} criada em 2007 utilizada como um modelo de Deployment para Aplicações Web.
+\par Heroku é uma Paas implementada utilizando \emph{cloud computing} criada em 2007 utilizada como um modelo de \emph{Deployment} para Aplicações Web.
 \par A rede do Heroku roda os aplicativos em containers virtuais que executam um ambiente de execução confiável. Esses containers são chamados de Dynos e podem rodar códigos escritos em Nodejs, Ruby, PHP, Go, Scala, Python, Java, Clojure. 
-\par O deploy de uma aplicação no Heroku é bastante simples o que contribuiu para sua popularização principalmente entre startups que necessitam de agilidade para subir novas atualizações. 
+\par O \emph{deploy} de uma aplicação no Heroku é bastante simples o que contribuiu para sua popularização principalmente entre startups que necessitam de agilidade para subir novas atualizações. 
 \par A aplicação é enviada para o Heroku por meio de uma conexão direta via GitHub, Dropbox ou alguma API.
-\par Enviado o código-fonte ele então é convertido em uma aplicação de forma que as depêndencias variam para cada linguagem. No caso do USP Eventos que foi feito utilizando Ruby as depêndencias ficam armazenadas no próprio Gemfile da aplicação.
-\par Feito o upload da aplicação um container com uma virtualização de Unix é disponibilizado, o Dyno da aplicação. Tal container é pre-carregado com algumas configurações p?evias da aplicação: um nome gerado automaticamente, variáveis de ambiente e \emph{add-ons} se existirem.
+\par Enviado o código-fonte ele então é convertido em uma aplicação interpretando as depêndencias de outras bibliotecas seguindo o padrão de cada linguagem. No caso do USP Eventos que foi feito utilizando Ruby as depêndencias ficam armazenadas no próprio Gemfile da aplicação.
+\par Feito o upload da aplicação um container com uma virtualização de Unix é disponibilizado, o Dyno da aplicação. Tal container é pre-carregado com algumas configurações prévias da aplicação: um nome gerado automaticamente, variáveis de ambiente e \emph{add-ons} se existirem.
 \par O Heroku então inicializa o Dyno com a aplicação, carrega-a e então realiza o \emph{deploy} da mesma.
-\par Através do DNS Server oferecido pelo próprio Heroku a aplicação fica acessível através de um domínio na forma <nome da aplicação>.herokuapp.com sendo possível redirecionar seu domínio particular para refletir o DNS disponibilizado.
+\par Através do DNS Server oferecido pelo próprio Heroku a aplicação fica acessível por meio de um domínio na forma <nome da aplicação>.herokuapp.com sendo possível redirecionar seu domínio particular para refletir o DNS disponibilizado. \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Heroku}}
 \section{Travis CI}
-TODO
+\par Travis CI é um serviço de integração contínua usado para testar projetos hospedados no Github.
+\par Toda vez que um commit para o repositório selecionado no Gitbhub o Travis irá executar as diretrizes especificadas no arquivo travis.yml que contém os comandos necessários para rodar os testes automatizados da aplicação, como é o caso do USP Eventos (figura \ref{fig:travis}).
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/travis}
+\caption{\label{fig:travis} O repositório USP Eventos no Travis CI.}
+\end{figure}
 
 \section{Trello}
 TODO
