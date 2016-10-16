@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: monografia_template.aux
+A level-1 auxiliary file: ape-exemplo.aux
+The style file: plainnat-ime.bst
+Database file #1: bibliografia.bib
+Too many commas in name 1 of "Nicolo Paternoster, Carmine Giardino, Michael Unterkalmsteiner, Tony Gorschek, Pekka Abrahamsson" for entry nicolo:14
+while executing---line 1352 of file plainnat-ime.bst
+Too many commas in name 1 of "Nicolo Paternoster, Carmine Giardino, Michael Unterkalmsteiner, Tony Gorschek, Pekka Abrahamsson" for entry nicolo:14
+while executing---line 1352 of file plainnat-ime.bst
+Too many commas in name 1 of "Nicolo Paternoster, Carmine Giardino, Michael Unterkalmsteiner, Tony Gorschek, Pekka Abrahamsson" for entry nicolo:14
+while executing---line 1352 of file plainnat-ime.bst
+Too many commas in name 1 of "Nicolo Paternoster, Carmine Giardino, Michael Unterkalmsteiner, Tony Gorschek, Pekka Abrahamsson" for entry nicolo:14
+while executing---line 1352 of file plainnat-ime.bst
+Too many commas in name 1 of "Nicolo Paternoster, Carmine Giardino, Michael Unterkalmsteiner, Tony Gorschek, Pekka Abrahamsson" for entry nicolo:14
+while executing---line 1434 of file plainnat-ime.bst
+Too many commas in name 1 of "Nicolo Paternoster, Carmine Giardino, Michael Unterkalmsteiner, Tony Gorschek, Pekka Abrahamsson" for entry nicolo:14
+while executing---line 1434 of file plainnat-ime.bst
+Too many commas in name 1 of "Nicolo Paternoster, Carmine Giardino, Michael Unterkalmsteiner, Tony Gorschek, Pekka Abrahamsson" for entry nicolo:14
+while executing---line 1434 of file plainnat-ime.bst
+Too many commas in name 1 of "Nicolo Paternoster, Carmine Giardino, Michael Unterkalmsteiner, Tony Gorschek, Pekka Abrahamsson" for entry nicolo:14
+while executing---line 1434 of file plainnat-ime.bst
+You've used 3 entries,
+            2750 wiz_defined-function locations,
+            618 strings with 5427 characters,
+and the built_in function-call counts, 863 in all, are:
+= -- 73
+> -- 30
+< -- 3
++ -- 12
+- -- 9
+* -- 37
+:= -- 151
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 9
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 49
+empty$ -- 81
+format.name$ -- 12
+if$ -- 173
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 12
+pop$ -- 29
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 30
+stack$ -- 0
+substring$ -- 6
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 0
+while$ -- 9
+width$ -- 0
+write$ -- 50
+(There were 8 error messages)
