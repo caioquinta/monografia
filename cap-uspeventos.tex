@@ -95,7 +95,7 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dando
 \par Uma das principais filosofias do Rails, o CoC \- Convenção sobre Configuração, permite que o desenvolvedor possa, a partir de um conjunto pré-definido de configurações padrões, agilizar o desenvolimento do código ao tirar de sua responsabilidade fatores de configuração em detrimento de um padrão já estabelecido  dando assim ao desenvolvedor mais tempo para concentrar-se em decisões sobre o produto. Essa agilidade em codificar rapidamente resulta em iterações mais rápidas contribuindo para uma maior agilidade dentro do ciclo de Contruir-Medir-Aprender.
 \par Outro fator inerente a cultura Rails é o grande enfoque em testes automatizados. Para o desenvolvimento da plataforma USP evento foram utilizadas as  gems Rspec e Capybara que permitem não só  a realização de testes unitários como também testes de integração de modo muito rápido e direto garantindo assim a confiabilidade  do seu projeto evitando que um \emph{bug} imprevisto prejudique seu aprendizado sobre o MVP. 
 \par Soma-se a isso a quantidade enorme de ferramentas que auxiliam na integração contínua do código como por exemplo o Travis CI utilizado  durante o desevolvimento da plataforma. 
-\par O Travis CI era responsável para que cada commit feito ao repositório principal do projeto fosse executada toda a bateria de testes automatizados enviando um e-mail contendo um relatório sobre o seu resultado, inclusive em caso de falha, garantindo dessa forma que todos tivessem sempre conhecimento das alterações sobre o código além de evitar  problemas de conflitos de versões ou mesmo que uma atualização de projeto fosse colocada no ambiente de produção contendo alguma falha.
+\par O Travis CI era responsável para que a cada commit realizado para o repositório principal do projeto fosse executada toda a bateria de testes automatizados enviando um e-mail contendo um relatório sobre o seu resultado, inclusive em caso de falha, garantindo dessa forma que todos tivessem sempre conhecimento das alterações sobre o código além de evitar  problemas de conflitos de versões ou mesmo que uma atualização de projeto fosse colocada no ambiente de produção contendo alguma falha.
 \par O fator comunidade é outra vantagem do  RoR. Destacando-se pelo seu tamanho, interesse e acessibilidade em tirar duvidas sempre contribuindo para promover o arcabouço  a comunidade que orbita ao redor do Rails foi capaz de criar ferramentas prontas para uso com uma ótima documentação, tutoriais, cursos e guias garantindo assim que qualquer desenvolvedor interessado sempre tenha em mãos materiais e ferramentas de qualidade para iniciar o desenvolvimento do seu projeto.
 \par Acrescenta-se também à favor do arcabouço Rails sua escalabilidade, rails é utilizado por empresas de grande porte  tais como Groupon, Twitter, Basecamp, mostrando que o arcabouço é um arcabçou robusto capaz de lidar com grandes sistemas  sem ter uma queda de desempenho.\footnote{Fonte: MLSDev Why startups use Ruby on Rails? \url{http://mlsdev.com/en/blog/61-why-startups-use-ruby-on-rails}}
 \par Para finalizar Rails é também um arcabouço seguro garantindo mesmo em sua configuração padrão ou com o auxilio de alguns plugins proteção contra SQL-Injections e XSS( \emph{Cross Site Scripting}). Além disso os programadores devem seguir o \emph{Secure Life Cycle Development}, figura  \ref{fig:security_dev_lifecycle}, proposto pela Microsoft, um modelo de desenvolvimento de software cujo principal objetivo é ajudar o a construir software mais seguros e confiáveis e reduzir custos \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Microsoft_Security_Development_Lifecycle}}.
@@ -162,7 +162,7 @@ revisados e testados. (inserir referência).
 		\includegraphics[width=5cm]{figuras/events_pagev1_responsive}
 		\caption{\label{fig:events_pagev1_responsive} Página de Eventos versão responsiva}
 		\end{figure}        
-\par Visando evitar que os usuários se deparassem com uma página de eventos vazia foi feita uma rake task para consumir o xml gerado pelo feed RSS que o site www.eventos.usp.br. Dessa forma seria possível adicionar de forma mais ágil alguns eventos dentro da plataforma.
+\par Visando evitar que os usuários se deparassem com uma página de eventos vazia foi feita uma \emph{Rake Task} \footnote{Rake é um programa implementado em \emph{Ruby} que permite ao usuário implementar \emph{tasks} que são executadas ao serem chamadas} para consumir o xml gerado pelo feed RSS que o site www.eventos.usp.br. Dessa forma seria possível adicionar de forma mais ágil alguns eventos dentro da plataforma.
 \par Cada thumbnail de eventos presente na página principal de listagem de eventos incluía o nome do evento, localização, data de início e fim além de um botão de "Participar" para que os usuários que estivessem logados e também botões para compartilhamento nas principais redes sociais.
 \par Houve também a preocupação de espalhar formulários de Sugestões em diversos pontos do site com o intuito de facilitar a coleta de informações do usuário.
 \subsection{Divulgação}
@@ -176,14 +176,36 @@ revisados e testados. (inserir referência).
 \includegraphics[width=15cm]{figuras/tags}
 \caption{\label{fig:tags} Visualização das Tags pelo Google Tag Manager.}
 \end{figure}
-\par Em pararelo foi possível obter também através do google analytics informações sobre o número de visualizações de páginas.
-<inserir imagem>
+\par Em pararelo foi possível obter também através do google analytics as seguintes  informações (figura \ref{fig:analytics_1interacao_dados}):
+\begin{itemize}
+\item Visualizações de Páginas: número total de páginas visualizadas no período.
+\item Páginas / Sessão: Número de páginas acessadas por sessão em média
+\item Duração Média da Sessão: auto-explicativo.
+\item Usuários: Toma-se como usuário o número de acessos únicos realizados.
+\item Porcentagem de Saída
+\end{itemize}
 
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/analytics_1interacao_dados}
+\caption{\label{fig:analytics_1interacao_dados} Dados obtidos pelo G.A de 01/05 até 31/07}
+\end{figure}
+
+\par É possível observar uma grande taxa de rejeição inicial ao site no período associado principalmente na página inicial com cerca de 761 sessões e 423 desistências (figura \ref{fig:analytics_1ainteracao_fluxo}).
+\par Durante o períogo observado foram registrados apenas 184 cliques em 56 sessões únicas no botão "Participar".
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/analytics_1ainteracao_fluxo}
+\caption{\label{fig:analytics_1ainteracao_fluxo} Fluxo de Comportamento de 01/05 até 31/07.}
+\end{figure}
+
+\par Através do gráfico de a divisão de uso por tipo de Sistema Operacional (figura \ref{fig:analytics_1interacao_so})foi possível observar que a grande maioria dos usuários acessa o site por meio \emph{notebooks} ou computadores pessoais.
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/analytics_1interacao_so}
+\caption{\label{fig:analytics_1interacao_so} Porcentagem de uso por S.O de 01/05 até 31/07.}
+\end{figure}
 \subsection{Aprendizado}
 \par  O maior número de acesso de usuários deu-se sempre em seguida aos posts realizados pelo facebook, alcançando picos de acesso mostrando a importância da divulgação pela plataforma.
-\par Foi observado que os usuários acessavam o site porém não realizavam cadastro deixando o site logo em seguida. Alguns feedbacks feitos diretamente relataram que não tiveram confiança para realizá-lo e também não viam vantagem em fazê-lo.
-
-\par Dentre os feedbacks recebidos através do formulário do site, e-mails e de forma direta compilamos algumas críticas e sugestões:
+\par Foi observado que os usuários acessavam o site porém não realizavam cadastro deixando-o logo em seguida resultando em um número elevado de desistências na página inicial. 
+\par Dentre os retornos recebidos através do formulário do site, e-mails e de forma direta foram compiladas algumas críticas e sugestões:
 \begin{itemize}
 \item Página de eventos e visualização dos mesmos deveriam ser abertas para usuários mesmo sem login.
 \item Ausência de um filtro de usuários tornou a página de eventos confusa para navegação.
@@ -214,13 +236,18 @@ revisados e testados. (inserir referência).
 \section{Segunda Iteração}
 \subsection{Construção}
 \par Levando em consideração o aprendizado da primeira iteração foi feita uma mudança no fluxo do site para permitir o acesso para a página de eventos sem a necessidade de realizar um cadastro antes ou exigir um \emph{login} do usuário.
-\par Foi criado um filtro para a página de eventos baseado na utilização de tags dessa forma ao criar um novo evento (figura \ref{fig:events_new_v2} )o usuário agora pode escolher 3 dentre 12 tags pré-definidas que servirão como filtro nas página principal.
+\par As hipóteses a serem testadas foram:
+\begin{itemize}
+\item Verificar se as alterações visuais foram bem aceitas
+\item Testar a hipótese da necessidade de Filtro para Eventos
+\end{itemize}
+\par Foi criado um filtro para a página de eventos baseado na utilização de tags dessa forma ao criar um novo evento (figura \ref{fig:event_newv2} )o usuário agora pode escolher 3 dentre 12 tags pré-definidas que servirão como filtro nas página principal.
         \begin{figure}[htb]
 		\includegraphics[width=15cm]{figuras/event_newv2}
 		\caption{\label{fig:event_newv2} Página de Cadastro de Novos eventos com filtros}
 		\end{figure} 
-		
-\par Visando tornar a navegação dentro da página de eventos mais fluída e menos cansativa fora realizadas algumas modificações visuais na exibiçãodos eventos (figura  \ref{fig:events_pagev2})
+
+\par Visando tornar a navegação dentro da página de eventos mais fluída e menos cansativa fora realizadas algumas modificações visuais na exibição dos eventos (figura  \ref{fig:events_pagev2})
 \begin{itemize}
 \item Remodelagem do thumbnail de Eventos
 \item Diminuição do botão de adicionar novos eventos para não atrapalhar a navegação
@@ -232,7 +259,7 @@ revisados e testados. (inserir referência).
 		\caption{\label{fig:events_pagev2} Página de Eventos com as alterações para a segunda interação}
 		\end{figure}
 
-\par Os filtros (figura \ref{fig:events_pagev2_filters}) estão em um menu lateral que é acionado por um botão na parte superior esquerda. Também é possível selecionar cada \emph{tag} individualmente ao clicar sobre a respectiva nos thumbnails de eventos.
+\par Os filtros (figura \ref{fig:events_pagev2_filters}) estão em um menu lateral que é acionado por um botão na parte superior esquerda. Também é possível selecionar cada \emph{tag} individualmente ao clicar sobre a respectiva nos \emph{thumbnails} de eventos.
         \begin{figure}[htb]
 		\includegraphics[width=15cm]{figuras/events_pagev2_filters}
 		\caption{\label{fig:events_pagev2_filters} Filtros na página de Eventos}
@@ -250,13 +277,15 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail d
 		\end{figure} 
 
 \par Em conjunto com a criação das tags para eventos foi criado um mecanismo de preferências para o usuário, agora na página de cadastro ou edição de usuário é possível selecionar as tags com as quais o usuário tenha maior afinidade com o intuito de exibir uma listagem personalizada de eventos segundo esses critérios.
-\footnote{Fonte: Desenvolvimento Ágil \url{ http://www.desenvolvimentoagil.com.br/scrum/sprint_backlog}}
 \par Aproveitando o sucesso do lançamento do aplicativo Pokemon GO \footnote{Fonte: Pokemon GO \url{ https://en.wikipedia.org/wiki/Pokemon_Go }} que gerou uma enorme quantidade de acessos e movimentação pelo Campus foi criado uma página  de Alertas \ref{fig:alert_page} no Campus visando atingir o público que estava utilizando o aplicativo para divulgar a localização de Pokemons.
         \begin{figure}[htb]
 		\includegraphics[width=15cm]{figuras/alert_page}
 		\caption{\label{fig:alert_page} Página de Alertas}
 		\end{figure} 
+\par A implementação de um testes para a página de Alertas tão rapidamente só foi possível devido a grande flexibilidade que o modelo de Construir-Medir-Aprender oferece pois somente assim foi possível rapidamente integrar uma nova funcionalidade não prevista  dentro do escopo do projeto e medir sua eficácia.
+\par Além disso com o auxílio de testes automatizados, ferramentas para integração contínua e a agilidade do desenvolvimento em Rails foi possível desenvolver e colocar as alterações no ambiente de produção sem comprometer a integridade do sistema como um todo.
 
+\par Por fim foi adicionada uma página "Sobre" com informações sobre os responsáveis pelo site assim como seus objetivos.
 \subsection{Divulgação}
 \par Além da divulgação pelo facebook foram espalhados cartazes em pontos estratégicos pela USP tais como Pontos de Ônibus com grande movimentação, murais próximos aos Bandejões e também no interior de alguns institutos.
 
@@ -264,19 +293,36 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail d
 
 \subsection{Métricas}
 
-\par Foi mantido o rastreamento no botão "Participar' porém seu nome foi alterado para "Salvar" para refletir melhor sua utilidade de salvar um evento como interessante para o  exibi-lo na seção de "Meus Eventos" da listagem de eventos do usuário.
+\par Foi mantido o rastreamento pelo google Analytics do botão "Participar' porém seu nome foi alterado para "Salvar" com o intuito refletir melhor sua utilidade: Salvar um evento como interessante para exibi-lo na seção de "Meus Eventos" da listagem de eventos do usuário.
+
 \par A nossa métrica chave continuou sendo avaliar o interesse dos usuários em determinado Evento por meio do clique no botão "Salvar".
 
-\par Com o lançamento da seção de Alertas foi feita uma divulgação via Facebook incentivando os usuários a utilizarem a plafaforma com o intuito de divulgar a localização de Pokemons, tal iniciativa rendeu um grande pico de acesso ao site. Foi colocado também uma tag para rastrear o número de clicks no botão "Alertas" com a intenção de medir o interesse na funcionalidade. 
-<grafico google analytics>
+\par Pelos resultados obtidos através do Googgle Analytics ((figura \ref{fig:analytics_2ainteracao_dados}) foi observado uma diminuição no número de sessões entretando também houve uma diminuição significativa na taxa de rejeição do site, caindo de 46,91\% para 33,16\%. 
+\par o tempo médio por sessão também aumentou pasasndo de 1:54 minutos para 3:37 minutos. Mostrando um aumento na retenção de usuários acessando a plataforma.
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/analytics_2ainteracao_dados}
+\caption{\label{fig:analytics_2ainteracao_dados} Dados obtidos pelo G.A de 01/08 até 30/09}
+\end{figure}
+
+\par Com o lançamento da seção de Alertas foi feita uma divulgação via Facebook incentivando os usuários a utilizarem a plafaforma com o intuito de divulgar a localização de Pokemons.
+\par Foi colocado também uma tag para rastrear o número de clicks no botão "Alertas" com a intenção de medir o interesse na funcionalidade, dessa forma foram observados 305 cliques no botão "Alertas" no período.
+
+\par Analisando o o gráfico de divisão por tipo de Sistema Operacional ((figura \ref{fig:analytics_2ainteracao_so}) percebemos que o acesso pelo sistema Android proporcionalmente mais que dobrou em relação ao período anterior, passando de 8,4\% para 19,36\%.
+
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/analytics_2ainteracao_so}
+\caption{\label{fig:analytics_1interacao_so} Porcentagem de uso por S.O de 01/08 até 30/09.}
+\end{figure}
 
 \subsection{Aprendizado}
 
 \par Com a abertura da página de eventos sem a obrigatoriedade de um cadastro mais usuários acessaram a página principal de Eventos porém quase não houveram novos cadastros dificultando assim que um usuário salvasse algum evento para sua lista ou tivesse algum incentivo para retornar ao site.
 
+\par Com a divulgação por cartazes foi possível constatar um aumento na utilização em dispositivos móveis principal forma de acesso em lugares públicos e incentivada devido ao QR Code presente nos cartazes.
+
 \par Apesar do pico de acessos com o lançamento da página de Alertas passado o período de pico a funcionalidade foi abandonada pelos usuários, gerando poucos acessos mostrando que talvez não fosse interessante investir em seu desenvolvimento.
 
 \par Mesmo com a criação e filtros e melhorias visuais a página principal ainda carecia de apelo para navegação. 
-\par Alguns comentários recebidos mostrou que ainda seria necessário torná-la mais atrativa visualmente e amigável para o usuário. 
+\par Alguns comentários recebidos de forma oral afirmaram que a página de eventos estava pouco atrativa visualmente sendo necessário que ela tivesse mais elementos que prendessem a atenção do usuário. 
 
-\par Novamente recebemos comentários sobre adicionar a opção de adicionar uma foto ao evento, segue: "Sinto falta de anexo para cartazes. poder enviar uma foto ou cartaz escaneado do evento." - Ferdinand Machado
+\par Novamente recebemos comentários pelo próprio formulário do site sobre adicionar a opção de incluir uma foto ao evento,  segue: "Sinto falta de anexo para cartazes. poder enviar uma foto ou cartaz escaneado do evento." - Ferdinand Machado
