@@ -3,24 +3,24 @@
 \label{cap:tecnologias}
 \section{Ruby on Rails}
 \subsection{Ruby}
-	\par A criaÁ„o da linguagem Ruby data de 1995 no Jap„o por Yukihiro "Matz" Matsumoto sob forte influÍncia de outras linguagens como Perl, SmallTalk, Eiffel, Ada e Lisp e tinha como objetivo equilibrar programaÁ„o funcional, imperativa e orientaÁ„o a objetos, segundo o prÛprio Matz: "Eu queria uma linguagem interpretada que fosse mais poderosa do que Perl e mais orientada as objetos do que Python2.". (inserir referencia)
+    \par A cria√ß√£o da linguagem Ruby data de 1995 no Jap√£o por Yukihiro "Matz" Matsumoto sob forte influ√™ncia de outras linguagens como Perl, SmallTalk, Eiffel, Ada e Lisp e tinha como objetivo equilibrar programa√ß√£o funcional, imperativa e orienta√ß√£o a objetos, segundo o pr√≥prio Matz: "Eu queria uma linguagem interpretada que fosse mais poderosa do que Perl e mais orientada √† objetos do que Python2.". (inserir referencia)
 \begin{itemize}
 \item{Flexibilidade:}
-	\par Ruby cresceu devido a sua grande flexibilidade sendo possÌvel alterar, remover ou acrescentar partes da linguagem ‡ vontade, imagine o seguinte exemplo: um usu·rio prefere utilizar a palavra plus ao invÈs do operador matem·tico(  +  ), ele poderia ent„o adicionar esse mÈtodo ‡ classe nativa do Ruby Numeric pois em ruby os operadores matem·ticos s„o considerados aÁ˙cares sint·ticos.
+    \par Ruby cresceu devido a sua grande flexibilidade sendo poss√≠vel alterar, remover ou acrescentar partes da linguagem √† vontade, imagine o seguinte exemplo: um usu√°rio prefere utilizar a palavra plus ao inv√©s do operador matem√°tico(  +  ), ele poderia ent√£o adicionar esse m√©todo √† classe nativa do Ruby Numeric pois em ruby os operadores matem√°ticos s√£o considerados a√ß√∫cares sint√°ticos.
 \\Exemplo:
 \begin{lstlisting}[frame=single]
 class Numeric
-  		def plus(x)
-    			self.+(x)
-  		end
-	end
+          def plus(x)
+                self.+(x)
+          end
+    end
 
-	y = 5.plus 6
-	# y agora È igual a 11
+    y = 5.plus 6
+    # y agora eh igual a 11
 \end{lstlisting}
 \item{Closures:}
-	\par Em ruby o closures s„o chamadas de blocos e s„o funÁıes que podem ser tratadas como uma vari·vel isso quer dizer que podem ser passadas como argumentos de mÈtodos, serem atribuidas a outras vari·veis, etc.
-	\par As \emph{closures} armazenam os valores das vari·vies que estavam no escopo quando a funÁ„o foi denifida e s„o capazes de acessar tais vari·vies mesmo que sejam executadas em um escopo diferente. \footnote{Fonte: Site Point \url{https://www.sitepoint.com/closures-ruby/}}
+    \par Em ruby o closures s√£o chamadas de blocos e s√£o fun√ß√µes que podem ser tratadas como uma vari√°vel isso quer dizer que podem ser passadas como argumentos de m√©todos, serem atribuidas a outras vari√°veis, etc.
+    \par As \emph{closures} armazenam os valores das vari√°veis que estavam no escopo quando a fun√ß√£o foi definida e s√£o capazes de acessar tais vari√°veis mesmo que sejam executadas em um escopo diferente. \footnote{Fonte: Site Point \url{https://www.sitepoint.com/closures-ruby/}}
 \\
 Exemplo:
 \begin{lstlisting}[frame=single]
@@ -29,53 +29,54 @@ search_engines =
     "http://www." + engine.downcase + ".com"
   end
 \end{lstlisting}
-\item{MÛdulos:}
-	\par Diferente de outras linguagens orientadas a objetos o Ruby suporta apenas heranÁa simples porÈm de forma proposital.  Em ruby existe o conceito de mÛdulos que s„o coleÁıes de mÈtodos que podem ser adicionadas ‡ uma classe por meio de um mixin.
-	As classes podem fazer o mixin de um mÈtodo e receber todos os mÈtodos dele diretamente.
+\item{M√≥dulos:}
+    \par Diferente de outras linguagens orientadas a objetos o Ruby suporta apenas heran√ßa simples por√©m de forma proposital.  Em ruby existe o conceito de m√≥dulos que s√£o cole√ß√µes de m√©todos que podem ser adicionadas √† uma classe por meio de um mixin.
+    As classes podem fazer o mixin de um m√©todo e receber todos os m√©todos dele diretamente.
 Exemplo:
 \begin{lstlisting}[frame=single]
 class MyArray
-  		include Enumerable
-	end
+          include Enumerable
+    end
 \end{lstlisting}
 
 \end{itemize}
 \subsection{Rails}
 
-\par David Heinemeier Hansson extraiu o Ruby on Rails do seu prÛprio trabalho realizado na empresa Basecamp e foi lanÁado de maneira open-source pela primeira vez em 2004, inicialmente ele estava desenvolvendo seu projeto utilizando PHP porÈm apesar de conseguir desenvolver de maneira bastante ·gil a repetiÁ„o de cÛdigo incomodava-o.
-\par Rails È um framework web escrito em Ruby implementado seguindo o padr„o MVC totalmente \emph{server-side} sendo considerado portanto um \emph{framework back-end}.
-\par Rails oferece uma estrutura para banco de dados, \emph{web service} e \emph{web pages} alÈm de encorajar padrıes de engenharia de software j· consagrados tais como: 
+\par David Heinemeier Hansson extraiu o Ruby on Rails do seu pr√≥prio trabalho realizado na empresa Basecamp e foi lan√ßado de maneira open-source pela primeira vez em 2004, inicialmente ele estava desenvolvendo seu projeto utilizando PHP por√©m apesar de conseguir desenvolver de maneira bastante √°gil a repeti√ß√£o de c√≥digo incomodava-o.
+\par Rails √© um framework web escrito em Ruby implementado seguindo o padr√£o MVC totalmente \emph{server-side} sendo considerado portanto um \emph{framework back-end}.
+\par Rails oferece uma estrutura para banco de dados, \emph{web service} e \emph{web pages} al√©m de encorajar padr√µes de engenharia de software j√° consagrados tais como:
 \begin{itemize}
-\item {\emph{Convention over Configuration} (CoC):} 
-	\par Apesar de algumas crÌticas por adicionar obscuridade pois n„o existe uma forma clara de verificar o comportamento esperado ruby adota alguns padrıes de configuraÁ„o visando padronizar o cÛdigo e tirar do desenvoveldor a decis„o de como usar o arcabouÁo sem que isso tire sua flexibilidade. Por exemplo se existir um objeto chamado User ent„o sua tabela por convenÁ„o se chamar· users e correspondente \emph{controller} ser· UsersController ( no plural) pois esse È padr„o definido para o framework e de outra forma o seu controller ou database n„o estaria associado ao modelo User, a menos que vocÍ mudasse as configuraÁıes para n„o utilizar as convenÁıes padr„o.
+\item {\emph{Convention over Configuration} (CoC):}
+    \par Apesar de algumas cr√≠ticas por adicionar obscuridade pois n√£o existe uma forma clara de verificar o comportamento esperado ruby adota alguns padr√µes de configura√ß√£o visando padronizar o c√≥digo e tirar do desenvolvedor a decis√£o de como usar o arcabou√ßo sem que isso tire sua flexibilidade. Por exemplo se existir um objeto chamado User ent√£o sua tabela por conven√ß√£o se chamar√° users e correspondente \emph{controller} ser√° UsersController ( no plural) pois esse √© padr√£o definido para o framework e de outra forma o seu controller ou database n√£o estaria associado ao modelo User, a menos que voc√™ mudasse as configura√ß√µes para n√£o utilizar as conven√ß√µes padr√£o.
 
-\item {\emph{Don't Repeat yourself} (DRY):} 
-	
-	\par Visando diminuir a repetiÁ„o de informaÁıes de qualquer tipo em rails frequentemente ao utilizar o comportamento padr„o da linguagem o desenvolvedor ter· a impress„o de que tal comportamento n„o tem sem explicaÁ„o j· que sua implementaÁ„o est· escondida dentro do cÛdigo do prÛprio Rails porÈm evitando que dessa forma o programador tenha que reescrever v·rias vezes um mesmo cÛdigo para determinado comportamento. \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Don\%27t_repeat_yourself}}
+\item {\emph{Don't Repeat yourself} (DRY):}
+
+    \par Visando diminuir a repeti√ß√£o de informa√ß√µes de qualquer tipo em rails frequentemente ao utilizar o comportamento padr√£o da linguagem o desenvolvedor ter√° a impress√£o de que tal comportamento n√£o tem sem explica√ß√£o j√° que sua implementa√ß√£o est√° escondida dentro do c√≥digo do pr√≥prio Rails por√©m evitando que dessa forma o programador tenha que reescrever v√°rias vezes um mesmo c√≥digo para determinado comportamento. \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Don\%27t_repeat_yourself}}
 
 \item { \emph{Active Record Pattern}:}
-	\par O padr„o Active Record sugere uma interface especÌfica para acessar objetos em um banco de dados relacional contendo funÁıes tais como INSERT, UPDATE, DELETE, etc.
-	\par Uma tabela ou \emph{view} ser· associada a uma classe ent„o uma inst‚ncia de objeto estar· associada a uma ˙nica entrada na respectiva tabela.
-	\par Em Rails a biblioteca ActiveRecord imeplementa o padr„o ORM e alÈm disso acrescenta heranÁa e associaÁıes resolvendo dois problemas substanciais do padr„o.
-	\par ActiveRecord È o "model" padr„o do compomente MVC porÈm È possÌvel troc·-lo por outra implementaÁ„o do framework Rails caso o desenvolvedor prefira.
+    \par O padr√£o Active Record sugere uma interface espec√≠fica para acessar objetos em um banco de dados relacional contendo fun√ß√µes tais como INSERT, UPDATE, DELETE, etc.
+    \par Uma tabela ou \emph{view} ser√° associada a uma classe ent√£o uma inst√¢ncia de objeto estar√° associada a uma √∫nica entrada na respectiva tabela.
+    \par Em Rails a biblioteca ActiveRecord implementa o padr√£o ORM e al√©m disso acrescenta heran√ßa e associa√ß√µes resolvendo dois problemas substanciais do padr√£o.
+    \par ActiveRecord √© o "model" padr√£o do componente MVC por√©m √© poss√≠vel troc√°-lo por outra implementa√ß√£o do framework Rails caso o desenvolvedor prefira.
 \end{itemize}
-	\par Em um sentido mais amplo Rails È mais que uma biblioteca de Software ou API: È um projeto central de uma vasta comunidade que produz plugins para facilitar e construir projetos complexos de web site. Foi graÁas a essa comunidade que compartilham ferramentas e contribuem para o projeto Rails criando bibliotecas open source ( chamadas de Ruby Gems ou apenas Gems \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/RubyGems}}) que o o uso de rails tem crescido de forma significante nos ˙ltimos anos ganhando fama entre startups devido a sua  facilidade e desevolvimento que permite criar sistemas complexos e testar idÈias rapidamente.
+    \par Em um sentido mais amplo Rails √© mais que uma biblioteca de Software ou API: √© um projeto central de uma vasta comunidade que produz plugins para facilitar e construir projetos complexos de web site. Foi gra√ßas a essa comunidade que compartilham ferramentas e contribuem para o projeto Rails criando bibliotecas open source ( chamadas de Ruby Gems ou apenas Gems \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/RubyGems}}) que o o uso de rails tem crescido de forma significante nos √∫ltimos anos ganhando fama entre startups devido a sua  facilidade e desevolvimento que permite criar sistemas complexos e testar id√©ias rapidamente.
 
 \section{Heroku}
-\par Heroku È uma Paas implementada utilizando \emph{cloud computing} criada em 2007 utilizada como um modelo de \emph{Deployment} para AplicaÁıes Web.
-\par A rede do Heroku roda os aplicativos em containers virtuais que executam um ambiente de execuÁ„o confi·vel. Esses containers s„o chamados de Dynos e podem rodar cÛdigos escritos em Nodejs, Ruby, PHP, Go, Scala, Python, Java, Clojure. 
-\par O \emph{deploy} de uma aplicaÁ„o no Heroku È bastante simples o que contribuiu para sua popularizaÁ„o principalmente entre startups que necessitam de agilidade para subir novas atualizaÁıes. 
-\par A aplicaÁ„o È enviada para o Heroku por meio de uma conex„o direta via GitHub, Dropbox ou alguma API.
-\par Enviado o cÛdigo-fonte ele ent„o È convertido em uma aplicaÁ„o interpretando as depÍndencias de outras bibliotecas seguindo o padr„o de cada linguagem. No caso do USP Eventos que foi feito utilizando Ruby as depÍndencias ficam armazenadas no prÛprio Gemfile da aplicaÁ„o.
-\par Feito o upload da aplicaÁ„o um container com uma virtualizaÁ„o de Unix È disponibilizado, o Dyno da aplicaÁ„o. Tal container È pre-carregado com algumas configuraÁıes prÈvias da aplicaÁ„o: um nome gerado automaticamente, vari·veis de ambiente e \emph{add-ons} se existirem.
-\par O Heroku ent„o inicializa o Dyno com a aplicaÁ„o, carrega-a e ent„o realiza o \emph{deploy} da mesma.
-\par AtravÈs do DNS Server oferecido pelo prÛprio Heroku a aplicaÁ„o fica acessÌvel por meio de um domÌnio na forma <nome da aplicaÁ„o>.herokuapp.com sendo possÌvel redirecionar seu domÌnio particular para refletir o DNS disponibilizado. \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Heroku}}
+\par Heroku √© uma Paas implementada utilizando \emph{cloud computing} criada em 2007 utilizada como um modelo de \emph{Deployment} para Aplica√ß√µes Web.
+\par A rede do Heroku roda os aplicativos em containers virtuais que executam um ambiente de execu√ß√£o confi√°vel. Esses containers s√£o chamados de Dynos e podem rodar c√≥digos escritos em Nodejs, Ruby, PHP, Go, Scala, Python, Java, Clojure.
+\par O \emph{deploy} de uma aplica√ß√£o no Heroku √© bastante simples o que contribuiu para sua populariza√ß√£o principalmente entre startups que necessitam de agilidade para subir novas atualiza√ß√µes.
+\par A aplica√ß√£o √© enviada para o Heroku por meio de uma conex√£o direta via GitHub, Dropbox ou alguma API.
+\par Enviado o c√≥digo-fonte ele ent√£o √© convertido em uma aplica√ß√£o interpretando as depend√™ncias de outras bibliotecas seguindo o padr√£o de cada linguagem. No caso do USP Eventos que foi feito utilizando Ruby as depend√™ncias ficam armazenadas no pr√≥prio Gemfile da aplica√ß√£o.
+\par Feito o upload da aplica√ß√£o um container com uma virtualiza√ß√£o de Unix √© disponibilizado, o Dyno da aplica√ß√£o. Tal container √© pre-carregado com algumas configura√ß√µes pr√©vias da aplica√ß√£o: um nome gerado automaticamente, vari√°veis de ambiente e \emph{add-ons} se existirem.
+\par O Heroku ent√£o inicializa o Dyno com a aplica√ß√£o, carrega-a e ent√£o realiza o \emph{deploy} da mesma.
+\par Atrav√©s do DNS Server oferecido pelo pr√≥prio Heroku a aplica√ß√£o fica acess√≠vel por meio de um dom√≠nio na forma <nome da aplica√ß√£o>.herokuapp.com sendo poss√≠vel redirecionar seu dom√≠nio particular para refletir o DNS disponibilizado. \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Heroku}}
 \section{Travis CI}
-\par Travis CI È um serviÁo de integraÁ„o contÌnua usado para testar projetos hospedados no Github.
-\par Toda vez que um commit para o repositÛrio selecionado no Gitbhub o Travis ir· executar as diretrizes especificadas no arquivo travis.yml que contÈm os comandos necess·rios para rodar os testes automatizados da aplicaÁ„o, como È o caso do USP Eventos (figura \ref{fig:travis}).
+\par Travis CI √© um servi√ßo de integra√ß√£o cont√≠nua usado para testar projetos hospedados no Github.
+\par Toda vez que um commit para o reposit√≥rio selecionado no Gitbhub o Travis ir√° executar as diretrizes especificadas no arquivo travis.yml que cont√©m os comandos necess√°rios para rodar os testes automatizados da aplica√ß√£o, como √© o caso do USP Eventos (figura \ref{fig:travis}).
 \begin{figure}[htb]
+\centering
 \includegraphics[width=15cm]{figuras/travis}
-\caption{\label{fig:travis} O repositÛrio USP Eventos no Travis CI.}
+\caption{\label{fig:travis} O reposit√≥rio USP Eventos no Travis CI.}
 \end{figure}
 
 \section{Trello}
@@ -83,9 +84,8 @@ TODO
 
 \section{Google Analytics e Google Tag Manager}
 TODO
-\section{Painel de opiniıes Populares - POP}
-\par Com o intuito de definir o interesse do p˙blico alvo por meio de uma enquete colaborativa utilizamos o POP como sistema de votaÁ„o devido a sua propriedade interativa na qual os usu·rios poderiam adicionar itens ‡ enquete principal.
-\par Desenvolvido por estudantes do prÛprio IME dentro da disciplina de LaboratÛrio de ProgramaÁ„o Extrema ‡ pedido da INDX o POP È uma plataforma de pesquisa de opini„o p˙blica que possui o objetivo de realizar enquetes nas quais os prÛprios usu·rios possam interagir e criar novas opÁıes com o intuti de medir quais s„o as prioridades de projetos para a regi„o.
-\par Foi permitida a utilizaÁ„o da plataforma implementada em uma inst‚ncia separada com o nome de POP-TCC. para realizaÁ„o da enquete junto ‡ comunidade USP para definir qual seria o tema do projeto.
-\par Foi feita uma modificaÁ„o no sistema POP original para o POP-TCC na qual os usu·rios sÛ poderiam votar de maneira positiva nas enquete ao contr·rio do sistema original que permitia votos negativos e atÈ ocultamento dos itens da enquete que fossem muito negativados pelos usu·rios.
-
+\section{Painel de opini√µes Populares - POP}
+\par Com o intuito de definir o interesse do p√∫blico alvo por meio de uma enquete colaborativa utilizamos o POP como sistema de vota√ß√£o devido a sua propriedade interativa na qual os usu√°rios poderiam adicionar itens √† enquete principal.
+\par Desenvolvido por estudantes do pr√≥prio IME dentro da disciplina de Laborat√≥rio de Programa√ß√£o Extrema √† pedido da INDX o POP √© uma plataforma de pesquisa de opini√£o p√∫blica que possui o objetivo de realizar enquetes nas quais os pr√≥prios usu√°rios possam interagir e criar novas op√ß√µes com o intuti de medir quais s√£o as prioridades de projetos para a regi√£o.
+\par Foi permitida a utiliza√ß√£o da plataforma implementada em uma inst√¢ncia separada com o nome de POP-TCC. para realiza√ß√£o da enquete junto √† comunidade USP para definir qual seria o tema do projeto.
+\par Foi feita uma modifica√ß√£o no sistema POP original para o POP-TCC na qual os usu√°rios s√≥ poderiam votar de maneira positiva nas enquete ao contr√°rio do sistema original que permitia votos negativos e at√© ocultamento dos itens da enquete que fossem muito negativados pelos usu√°rios.
