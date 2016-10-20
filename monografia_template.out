@@ -10,28 +10,34 @@
 \BOOKMARK [1][]{section.2.3}{O ciclo de Build-Measure-Learn}{chapter.2}% 10
 \BOOKMARK [2][]{subsection.2.3.1}{O modelo Cascata}{section.2.3}% 11
 \BOOKMARK [2][]{subsection.2.3.2}{Build-Measure-Learn \(Construir-medir-aprender\)}{section.2.3}% 12
-\BOOKMARK [1][]{section.2.4}{Desenvolimento de Clientes}{chapter.2}% 13
+\BOOKMARK [1][]{section.2.4}{Desenvolvimento de Clientes}{chapter.2}% 13
 \BOOKMARK [0][]{chapter.3}{Tecnologias}{}% 14
 \BOOKMARK [1][]{section.3.1}{Ruby on Rails}{chapter.3}% 15
 \BOOKMARK [2][]{subsection.3.1.1}{Ruby}{section.3.1}% 16
 \BOOKMARK [2][]{subsection.3.1.2}{Rails}{section.3.1}% 17
 \BOOKMARK [1][]{section.3.2}{Heroku}{chapter.3}% 18
 \BOOKMARK [1][]{section.3.3}{Travis CI}{chapter.3}% 19
-\BOOKMARK [1][]{section.3.4}{Google Analytics e Google Tag Manager}{chapter.3}% 20
-\BOOKMARK [1][]{section.3.5}{Painel de opini\365es Populares - POP}{chapter.3}% 21
-\BOOKMARK [0][]{chapter.4}{Usp Eventos}{}% 22
-\BOOKMARK [1][]{section.4.1}{Defini\347\343o do Projeto}{chapter.4}% 23
-\BOOKMARK [2][]{subsection.4.1.1}{Motiva\347\343o}{section.4.1}% 24
-\BOOKMARK [2][]{subsection.4.1.2}{Enquete e defini\347\343o do projeto}{section.4.1}% 25
-\BOOKMARK [1][]{section.4.2}{Definindo as caracter\355sticas do Sistema}{chapter.4}% 26
-\BOOKMARK [2][]{subsection.4.2.1}{Pesquisa de Sistemas Semelhantes}{section.4.2}% 27
-\BOOKMARK [2][]{subsection.4.2.2}{Plataforma Web x M\363vel}{section.4.2}% 28
-\BOOKMARK [2][]{subsection.4.2.3}{Porqu\352 Ruby on Rails ? }{section.4.2}% 29
-\BOOKMARK [1][]{section.4.3}{Kanban}{chapter.4}% 30
-\BOOKMARK [1][]{section.4.4}{Desenvolvimento}{chapter.4}% 31
-\BOOKMARK [2][]{subsection.4.4.1}{Constru\347\343o do MVP}{section.4.4}% 32
-\BOOKMARK [2][]{subsection.4.4.2}{Divulga\347\343o}{section.4.4}% 33
-\BOOKMARK [2][]{subsection.4.4.3}{M\351tricas}{section.4.4}% 34
-\BOOKMARK [2][]{subsection.4.4.4}{Aprendizado}{section.4.4}% 35
-\BOOKMARK [0][]{chapter.5}{Conclus\365es}{}% 36
-\BOOKMARK [0][]{appendix.A}{T\355tulo do ap\352ndice}{}% 37
+\BOOKMARK [1][]{section.3.4}{Trello}{chapter.3}% 20
+\BOOKMARK [1][]{section.3.5}{Google Analytics e Google Tag Manager}{chapter.3}% 21
+\BOOKMARK [1][]{section.3.6}{Painel de opini\365es Populares - POP}{chapter.3}% 22
+\BOOKMARK [0][]{chapter.4}{Usp Eventos}{}% 23
+\BOOKMARK [1][]{section.4.1}{Defini\347\343o do Projeto}{chapter.4}% 24
+\BOOKMARK [2][]{subsection.4.1.1}{Motiva\347\343o}{section.4.1}% 25
+\BOOKMARK [2][]{subsection.4.1.2}{Enquete e defini\347\343o do projeto}{section.4.1}% 26
+\BOOKMARK [1][]{section.4.2}{Definindo as caracter\355sticas do Sistema}{chapter.4}% 27
+\BOOKMARK [2][]{subsection.4.2.1}{Pesquisa de Sistemas Semelhantes}{section.4.2}% 28
+\BOOKMARK [2][]{subsection.4.2.2}{Plataforma Web x M\363vel}{section.4.2}% 29
+\BOOKMARK [2][]{subsection.4.2.3}{Porque escolher Ruby on Rails }{section.4.2}% 30
+\BOOKMARK [1][]{section.4.3}{Kanban}{chapter.4}% 31
+\BOOKMARK [1][]{section.4.4}{Primeira Itera\347\343o}{chapter.4}% 32
+\BOOKMARK [2][]{subsection.4.4.1}{Constru\347\343o}{section.4.4}% 33
+\BOOKMARK [2][]{subsection.4.4.2}{Divulga\347\343o}{section.4.4}% 34
+\BOOKMARK [2][]{subsection.4.4.3}{M\351tricas}{section.4.4}% 35
+\BOOKMARK [2][]{subsection.4.4.4}{Aprendizado}{section.4.4}% 36
+\BOOKMARK [1][]{section.4.5}{Segunda Itera\347\343o}{chapter.4}% 37
+\BOOKMARK [2][]{subsection.4.5.1}{Constru\347\343o}{section.4.5}% 38
+\BOOKMARK [2][]{subsection.4.5.2}{Divulga\347\343o}{section.4.5}% 39
+\BOOKMARK [2][]{subsection.4.5.3}{M\351tricas}{section.4.5}% 40
+\BOOKMARK [2][]{subsection.4.5.4}{Aprendizado}{section.4.5}% 41
+\BOOKMARK [0][]{chapter.5}{Conclus\365es}{}% 42
+\BOOKMARK [0][]{appendix.A}{T\355tulo do ap\352ndice}{}% 43
