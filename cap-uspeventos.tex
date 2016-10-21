@@ -104,7 +104,7 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 \caption{\label{fig:security_dev_lifecycle} Fases do Secure Life Cycle Development.}
 \end{figure}
 \section{Kanban}
-\par Kanban é uma palavra japonesa e significa cartão visual para prover informação de regulamentação do fluxo de estoque e materiais. Possui três regras principais (KNIBERG, H., 2009): visualizar o fluxo de trabalho; limitar o trabalho em cada estágio do fluxo, e medir o tempo de avanço (tempo médio para se completar cada item) (inserir referência).
+\par Kanban é uma palavra japonesa e significa cartão visual para prover informação de regulamentação do fluxo de estoque e materiais. Possui três regras principais (KNIBERG, H., 2009): visualizar o fluxo de trabalho; limitar o trabalho em cada estágio do fluxo, e medir o tempo de avanço (tempo médio para se completar cada item). ( \cite{francisco:14})
 \par No contexto de Métodos Ágeis e \emph{Lean Startup} foi utilizado uma abordagem utilizando o Kanban para definir as hipóteses de produtos,  o escopo de desenvolvimento e as tarefas para serem executadas durante as etapas de desenvolvimento.
 \par Tradicionalmente o kanban para desenvolvimento de Software possui 3 estágios:
 \begin{itemize}
@@ -112,7 +112,7 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 desenvolvidos.
         \item DOING: referente a requisitos que estão sendo desenvolvidos.
         \item DONE. referente a requisitos que já finalizaram e foram devidamente
-revisados e testados. (inserir referência).
+revisados e testados.( \cite{francisco:14})
 \end{itemize}
 \par Cada item adicionado na fila de TO DO é chamada de tarefa. Uma hipótese à ser testada pode ser transformada em uma série de tarefas pequenas à serem completadas durante o período de desenvolvimento.
 \par Caso seja necessário é possível quebrar uma tarefa grande em uma série de tarefas menores. Tomando como exemplo a tarefa de Implementar um filtro de eventos para a página principal. Ela foi quebrada em 3 tarefas menores para serem completadas: Implementar Categorias de Eventos, Permitir adicionar categorias de eventos durante a criação de um novo evento e Implementar filtro de Eventos na página principal de eventos.
@@ -196,7 +196,6 @@ revisados e testados. (inserir referência).
 \includegraphics[width=15cm]{figuras/analytics_1ainteracao_fluxo}
 \caption{\label{fig:analytics_1ainteracao_fluxo} Fluxo de Comportamento de 01/05 até 31/07.}
 \end{figure}
-
 \par Através do gráfico de a divisão de uso por tipo de Sistema Operacional (figura \ref{fig:analytics_1interacao_so})foi possível observar que a grande maioria dos usuários acessa o site por meio \emph{notebooks} ou computadores pessoais.
 \begin{figure}[htb]
 \includegraphics[width=15cm]{figuras/analytics_1interacao_so}
@@ -297,15 +296,15 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 
 \par A nossa métrica chave continuou sendo avaliar o interesse dos usuários em determinado Evento por meio do clique no botão "Salvar".
 
-\par Pelos resultados obtidos através do Googgle Analytics ((figura \ref{fig:analytics_2ainteracao_dados}) foi observado uma diminuição no número de sessões entretando também houve uma diminuição significativa na taxa de rejeição do site, caindo de 46,91\% para 33,16\%. 
-\par o tempo médio por sessão também aumentou pasasndo de 1:54 minutos para 3:37 minutos. Mostrando um aumento na retenção de usuários acessando a plataforma.
+\par Pelos resultados obtidos através do Googgle Analytics ((figura \ref{fig:analytics_2ainteracao_dados}) foi observado uma diminuição no número de sessões, entretando também houve uma diminuição significativa na taxa de rejeição do site caindo de 46,91\% para 33,16\%. 
+\par O tempo médio por sessão também aumentou pasasndo de 1:54 minutos para 3:37 minutos. Mostrando um aumento na retenção de usuários acessando a plataforma.
 \begin{figure}[htb]
 \includegraphics[width=15cm]{figuras/analytics_2ainteracao_dados}
 \caption{\label{fig:analytics_2ainteracao_dados} Dados obtidos pelo G.A de 01/08 até 30/09}
 \end{figure}
 
 \par Com o lançamento da seção de Alertas foi feita uma divulgação via Facebook incentivando os usuários a utilizarem a plafaforma com o intuito de divulgar a localização de Pokemons.
-\par Foi colocado também uma tag para rastrear o número de clicks no botão "Alertas" com a intenção de medir o interesse na funcionalidade, dessa forma foram observados 305 cliques no botão "Alertas" no período.
+\par Foi colocado também uma \emph{tag} para rastrear o número de clicks no botão "Alertas" com a intenção de medir o interesse na funcionalidade, dessa forma foram observados 305 cliques no botão "Alertas" no período.
 
 \par Analisando o o gráfico de divisão por tipo de Sistema Operacional ((figura \ref{fig:analytics_2ainteracao_so}) percebemos que o acesso pelo sistema Android proporcionalmente mais que dobrou em relação ao período anterior, passando de 8,4\% para 19,36\%.
 
@@ -316,13 +315,58 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 
 \subsection{Aprendizado}
 
-\par Com a abertura da página de eventos sem a obrigatoriedade de um cadastro mais usuários acessaram a página principal de Eventos porém quase não houveram novos cadastros dificultando assim que um usuário salvasse algum evento para sua lista ou tivesse algum incentivo para retornar ao site.
+\par Com a abertura da página principal de Eventos sem a obrigatoriedade de um cadastro mais usuários a acessaram porém quase não houveram novos cadastros dificultando assim que um usuário salvasse algum evento para sua lista.
 
 \par Com a divulgação por cartazes foi possível constatar um aumento na utilização em dispositivos móveis principal forma de acesso em lugares públicos e incentivada devido ao QR Code presente nos cartazes.
 
-\par Apesar do pico de acessos com o lançamento da página de Alertas passado o período de pico a funcionalidade foi abandonada pelos usuários, gerando poucos acessos mostrando que talvez não fosse interessante investir em seu desenvolvimento.
+\par Apesar do pico de acessos com o lançamento da página de Alertas a funcionalidade foi abandonada pelos usuários, gerando poucos acessos mostrando que talvez não fosse interessante investir em seu desenvolvimento.
 
 \par Mesmo com a criação e filtros e melhorias visuais a página principal ainda carecia de apelo para navegação. 
 \par Alguns comentários recebidos de forma oral afirmaram que a página de eventos estava pouco atrativa visualmente sendo necessário que ela tivesse mais elementos que prendessem a atenção do usuário. 
 
-\par Novamente recebemos comentários pelo próprio formulário do site sobre adicionar a opção de incluir uma foto ao evento,  segue: "Sinto falta de anexo para cartazes. poder enviar uma foto ou cartaz escaneado do evento." - Ferdinand Machado
+\par Novamente recebemos comentários pelo próprio formulário do site sobre adicionar a opção de incluir uma foto ao evento, segue: "Sinto falta de anexo para cartazes. poder enviar uma foto ou cartaz escaneado do evento." - Ferdinand Machado
+
+\section{Terceira Iteração}
+\subsection{Construção}
+	\par As maiores críticas recebidas durante última iteração foram em relação  a experiência proporcionada pelo site que não estava atrativa o suficiente.
+	\par A partir desse \emph{feedback} foi decididido testar a seguinte a hipótese: 
+	\par - Melhorar  a UX do site para aumentar a aceitação dos usuários.
+	\par Em seu artigo  publicado na \emph{Agile Conference}  Beverly May (\cite{beverly:2012}), especialista em UX, discute alguns dos erros que cometeu o aplicar o método de \emph{Lean Startup}. Dentre eles um dos principais foi negligenciar a UX inicialmente.
+	\par Como recomendação  ele aconselha investir numa boa experiência de usuário sempre construindo protótipos e \emph{wireframes} \footnote{ Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface. , fonte \url{https://pt.wikipedia.org/wiki/Website_wireframe}} antes de implementar para testar as modificações visuais.
+	 \par Berverly também enaltece a importância de realizar testes constantes e sempre levar em consideração os \emph{feedbacks} dos usuários, positivos e negativos, um conceito também presente no ciclo de Construir-Medir-Aprender e base para o \emph{Customer Development}.
+	\par No caso do USP Eventos foi feito um \emph{wireframe} ((figura \ref{fig:wireframe}) da página principal de Eventos com as modificações realizadas na iteração atual.
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/wireframe}
+\caption{\label{fig:wireframe} Wireframe da versão modificada durante a Terceira Iteração}
+\end{figure}
+\par Para contornar a falta de conhecimento na área de \emph{User Experience} foram feitas pesquisas utilizando a bibliografia disponível e também entrevistas com profissionais da área.
+	\par Dito isso para  melhorar a exibição de informação dentro do site centralizamos as principais modificações de UX na página de Eventos seguindo alguns preceitos apresentados por Steve Krug  em seu livro "Don't make me think" (\cite{krug:00}) dentre eles:
+	\begin{itemize}
+	\item Eliminar distrações desnecessárias: Eliminar espaços em brancos e textos que possam distrair, poluir visualmente a página ou criar algum tipo de ruído na informação exibida.
+	\item Criar hierarquias visuais claras: Dar mais destaque para as informações importantes e aproximar visualmente elementos que possuam ligações lógicas entre eles como nome do evento e sua data.
+	\item Tirar vantagens de convenções: Utilizar layouts já consolidados  de sites semelhantes parar criar uma identificação na forma de navegar do usuário.
+\end{itemize}
+	\par Além disso para eliminar o excesso de texto presente na exibição de eventos e incluir mais informações visuais foi implementada uma opção de realizar \emph{upload} de uma imagem para o evento que seria exibida tanto na página principal de eventos como na página de informações gerais.	
+\par As modificações principais feitas foram (figura \ref{fig:events_page_3aiteracao}):
+\begin{itemize}
+\item Diminuir os espaços em branco dentro do thumbnail de Eventos deixando-o mais compacto.
+\item Modificação nas cores e tamanho para dar destaque ao título, criando uma hierarquia visual apartir dele com as suas informações contidas no interior do \emph{thumbnail}.
+\item Eliminação da exibição do local e data de término do evento para diminuir a poluição visual.
+\item Presença de uma imagem identificadora no evento ao centro do thumbnail e em sua página de exibição.
+\item O botão de “Salvar” deixou de estar localizado ao centro para ficar associado com os outros botões de compartilhamento na parte inferior do \emph{thumbnail}.
+\end{itemize}
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/events_page_3aiteracao}
+\caption{\label{fig:events_page_3aiteracao}  Página de Eventos após modificações}
+\end{figure}
+	\par Victor Krug também afirma em seu livro que os usuários costumam criar "mapas mentais" de navegação sendo importante manter as convenções com o intuito de se aproveitar dessa similaridade.
+	\par Tomando como um exemplo de convenção o Sympla \footnote{Site: www.sympla.com.br} desde o começo nosso fluxo de navegação estava bastante próximo a convenção: Uma página inicial contendo toda uma listagem de eventos sendo que cada evento direciona para sua própria página específica.
+	\par Para aproximar ainda mais o fluxo de navegação foi incluída também na página uma listagem com os "Próximos Eventos" assim como o Sympla faz com seus "Eventos em Destaque". 
+	Além disso foi colocado utilizando Javascript alguns efeitos visuais para chamar atenção do usuário:
+	\begin{itemize}
+	\item Ao passar o mouse sobre evento uma animação de salto do \emph{thumbnail} era rapidamente exibida.
+	\item Ao carregar ou atualizar uma listagem de eventos seu carregamento era feito por meio de uma animação iniciada lateralmente.
+	\end{itemize}
+	\par A maior dificuldade em realizar o \emph{upload} de imagens foi o seu local de armazenamento pois  o heroku não permite salvar arquivos em seu servidor, apenas armazenar em \emph{cache} durante a sessão, então foi feita a opção de criar uma conta de dropbox habilitada para receber imagens de aplicativos e integrá-la com a aplicação USP Eventos.
+
+\subsection{Métricas}
