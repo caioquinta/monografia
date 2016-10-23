@@ -359,10 +359,10 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \includegraphics[width=15cm]{figuras/events_page_3aiteracao}
 \caption{\label{fig:events_page_3aiteracao}  Página de Eventos após modificações}
 \end{figure}
-	\par Victor Krug também afirma em seu livro que os usuários costumam criar "mapas mentais" de navegação sendo importante manter as convenções com o intuito de se aproveitar dessa similaridade.
-	\par Tomando como um exemplo de convenção o Sympla \footnote{Site: www.sympla.com.br} desde o começo nosso fluxo de navegação estava bastante próximo a convenção: Uma página inicial contendo toda uma listagem de eventos sendo que cada evento direciona para sua própria página específica.
-	\par Para aproximar ainda mais o fluxo de navegação foi incluída também na página uma listagem com os "Próximos Eventos" assim como o Sympla faz com seus "Eventos em Destaque". 
-	Além disso foi colocado utilizando Javascript alguns efeitos visuais para chamar atenção do usuário:
+	\par Victor Krug também afirma em seu livro que os usuários costumam criar "mapas mentais" de navegação sendo importante manter as convenções com o intuito de aproveitar-e dessa similaridade.
+	\par Tomando como um exemplo de convenção o Sympla \footnote{Site: www.sympla.com.br} desde o começo nosso fluxo de navegação estava bastante próximo a convenção establecida: Uma página principal de Eventos contendo toda uma listagem de eventos sendo que cada evento direciona para sua própria página específica.
+	\par Para aproximar ainda mais o fluxo de navegação foi incluída também na página inicial uma listagem com os "Próximos Eventos" assim como o Sympla faz com seus "Eventos em Destaque". 
+	\par Além disso foram implementados alguns efeitos visuais para chamar atenção do usuário:
 	\begin{itemize}
 	\item Ao passar o mouse sobre evento uma animação de salto do \emph{thumbnail} era rapidamente exibida.
 	\item Ao carregar ou atualizar uma listagem de eventos seu carregamento era feito por meio de uma animação iniciada lateralmente.
@@ -370,3 +370,26 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 	\par A maior dificuldade em realizar o \emph{upload} de imagens foi o seu local de armazenamento pois  o heroku não permite salvar arquivos em seu servidor, apenas armazenar em \emph{cache} durante a sessão, então foi feita a opção de criar uma conta de dropbox habilitada para receber imagens de aplicativos e integrá-la com a aplicação USP Eventos.
 
 \subsection{Métricas}
+
+\par Nessa iteração foi adicionado um Mapa de Calor (figura \ref{fig:heatmap}) para medir os cliques de mouse na página principal de eventos.
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/heatmap}
+\caption{\label{fig:heatmap}  Página principal de Eventos com o Mapa de Calor ativado}.
+\end{figure}
+
+\par Foi interessante observar que o Filtro estava sendo bastante utilizado tanto que em dado momento atingiu 40\% dos cliques na página.
+eventos.
+\begin{figure}[htb]
+\includegraphics[width=10cm]{figuras/heatmap_filter}
+\caption{\label{fig:heatmap_filter}  Botão de Filtro com 40\% dos cliques da página}.
+\end{figure}
+
+\par Outro ponto interessante observado é que muitos usuários também clicavam nas imagens dos eventos para acessar suas páginas de informações individuais mostrando que adicionar uma imagem para captar atenção do usuário trouxe resultados.
+
+\par O enunciado de cada listagem foi clicado crepetidas vezes pelos usuário o que pode significar que ele esteja sendo confundido com um \emph{link} (figura \ref{fig:heatmap_missclick}).
+\begin{figure}[htb]
+\includegraphics[width=10cm]{figuras/heatmap_missclick}
+\caption{\label{fig:heatmap_missclick}  Nome da Listagem: possível confusão com um link}.
+\end{figure}
+\par O Mapa de Calor foi incluído no site utilizando o serviço fornecido pelo site Heatmap.
+
