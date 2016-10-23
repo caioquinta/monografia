@@ -87,10 +87,26 @@ class MyArray
 
 \section{Trello}
 \par Trello é um gerenciador de projetos online desenvolvido pela Fog Creek Software lançado em 2011.
-\par Possui uma interface amigável na qual é possível criar tarefas e colunas conforme as preferências do usuário sendo bastante utilizado em conjunto com uma abordagem kanbam para gerenciamento.
+\par Possui uma interface amigável na qual é possível criar tarefas e colunas conforme as preferências do usuário sendo bastante utilizado em conjunto com uma abordagem \emph{kanbam} para gerenciamento.
+
+\section{Github}
+\par Github é um repositório git baseado na web lançado em 2008.
+\par Ele oferece um serviço de controle de versão que provê todas as funcionalidades do Git assim como outras funcionalidades próprias como gerenciamento de tarefas, wikis próprias e emph{bug tracking}.
+\par Atualmente diversos outros serviços oferecem a opção de integração com o Github por meio de uma API.
+\par No caso do USP Eventos a integração com o gitbhub foi feita dentro do Travis CI para efetuar o processo de integração contínua.
+\par Além disso o Heroku também era integrado com o Github sendo que quando um commit era feito para o repositório com o nome de "Produção" e o mesmo fosse aprovado em todos os testes pelo Travis CI o deploy da aplicação era feito automaticamente.
+\par Tal integração entre o Heroku (figura \ref{fig:heroku_automatic_deploy}) e o Travis CI só foi possível graças a utilização do Github.
+\begin{figure}[htb]
+\centering
+\includegraphics[width=15cm]{figuras/heroku_automatic_deploy}
+\caption{\label{fig:heroku_automatic_deploy} Tela de Administração do Heroku para integração com o Github e Deploy automático.}
+\end{figure}
+ 
 
 \section{Google Analytics e Google Tag Manager}
-TODO
+\par 
+
+
 \section{Painel de opiniões Populares - POP}
 \par Com o intuito de definir o interesse do público alvo por meio de uma enquete colaborativa utilizamos o POP como sistema de votação devido a sua propriedade interativa na qual os usuários poderiam adicionar itens à enquete principal.
 \par Desenvolvido por estudantes do próprio IME dentro da disciplina de Laboratório de Programação Extrema à pedido da INDX o POP é uma plataforma de pesquisa de opinião pública que possui o objetivo de realizar enquetes nas quais os próprios usuários possam interagir e criar novas opções com o intuti de medir quais são as prioridades de projetos para a região.
@@ -106,3 +122,8 @@ TODO
 \caption{\label{fig:heatmap_explanation} Um exemplo de uma página utilizando o HeatMap.}
 \end{figure}
 \par As cores inicialmente começam em um tom verde quando clicadas poucas vezes sendo gradativamente alteradas para cores mais "quentes" tais como laranja ou vermelho conforme cliques na mesma região são feitos.
+
+\section{Typeform}
+\par A empresa Typeform oferece um serviço de formulários online para execução de pesquisas, simples ou complexas.
+\par A ferramenta é ótima para entrevistas de satisfação e opinião do cliente, oferecendo uma interface gráfica bastante amigável além de templates configuráveis para o tipo de pesquisa que o usuário deseja realizar.
+\par Após a execução da pesquisa é possível exportar os resultados em planilhas ou integrar com o seu banco de dados caso desejar.
