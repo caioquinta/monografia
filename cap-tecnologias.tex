@@ -50,9 +50,10 @@ class MyArray
 \par Rails oferece uma estrutura para banco de dados, \emph{web service} e \emph{web pages} além de encorajar padrões de engenharia de software já consagrados tais como:(\cite{railswiki})
 \begin{itemize}
 \item {\emph{Convention over Configuration} (CoC):}
-    \par Apesar de algumas críticas por adicionar obscuridade pois não existe uma forma clara de verificar o comportamento esperado Ruby adota alguns padrões de configuração visando padronizar o código.
+    \par  Ruby adota algumas convencções de configuração visando padronizar o código.
     \par Ao adicionar convenções é retirada do desenvolvedor a decisão de como usar o arcabouço porém isso não diminui sua felxibilidade. 
     \par Por exemplo se existir um objeto chamado User então sua tabela por convenção se chamará users e correspondente \emph{controller} será UsersController ( no plural) pois esse é padrão definido pelo arcabouço mas é possível alterar essas convenções para adaptar-se às necessidades do desenvolvedor.
+       \par Existem algumas críticas ao CoC por adicionar obscuridade ao código pois o uso das convenções oculta o código que realiza a ação dificultando as vezes entender o que está acontecendo.
 
 \item {\emph{Don't Repeat yourself} (DRY):}
     \par É definido como "Todo pedaço de informação deve ter uma única, não ambígua, representação autorizada com o Sistema" \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Don\%27t_repeat_yourself}}.
@@ -107,7 +108,7 @@ class MyArray
 \par O google Analytics é uma plataforma de análise de dados oferecida pelo Google.
 \par Por meio dos relatórios gerados pela plataforma é possível obter uma série de informações quanto ao tipo de usuário que visualiza a página, o fluxo do site, origem do acesso entre outros.
 \par Através de \emph{tags} configuráveis é possível criar eventos que são personalizados e disparados de acordo com a navegação do usuário dentro do site.
-\par Tais tags podem ser implementadas diretamente através de um pequeno código em javascript para integração com o Google Analytics ou utilizando o Google Tag Manager.
+\par Tais \emph{tags} podem ser implementadas diretamente através de um pequeno código em javascript para integração com o Google Analytics ou utilizando o Google Tag Manager.
 \par O Google Tag Manager é uma plataforma intermediária que provê acesso e configuração de tags personalizadas para obtenção de dados pelo Google Analytics sem que seja necessário modificar diretamente o código fonte do sistema.
 \par A opção de utilizar o Google Tag Manager no projeto deu-se principalmente pela facilidade de criar-se novas tags e alterações além de garantir uma maior organização das informações.
 \par Dentro do projeto utilizamos as informações obtidas através do Analytics para validação de aprendizado entre as interações.
