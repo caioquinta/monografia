@@ -50,8 +50,8 @@ class MyArray
 \par Rails oferece uma estrutura para banco de dados, \emph{web service} e \emph{web pages} além de encorajar padrões de engenharia de software já consagrados tais como:(\cite{railswiki})
 \begin{itemize}
 \item {\emph{Convention over Configuration} (CoC):}
-    \par Apesar de algumas críticas por adicionar obscuridade pois não existe uma forma clara de verificar o comportamento esperado ruby adota alguns padrões de configuração visando padronizar o código.
-    \par Ao adicionad convenções é retirada do desenvolvedor a decisão de como usar o arcabouço sem que isso diminua sua flexibilidade. 
+    \par Apesar de algumas críticas por adicionar obscuridade pois não existe uma forma clara de verificar o comportamento esperado Ruby adota alguns padrões de configuração visando padronizar o código.
+    \par Ao adicionar convenções é retirada do desenvolvedor a decisão de como usar o arcabouço porém isso não diminui sua felxibilidade. 
     \par Por exemplo se existir um objeto chamado User então sua tabela por convenção se chamará users e correspondente \emph{controller} será UsersController ( no plural) pois esse é padrão definido pelo arcabouço mas é possível alterar essas convenções para adaptar-se às necessidades do desenvolvedor.
 
 \item {\emph{Don't Repeat yourself} (DRY):}
@@ -104,17 +104,23 @@ class MyArray
  
 
 \section{Google Analytics e Google Tag Manager}
-\par 
-
+\par O google Analytics é uma plataforma de análise de dados oferecida pelo Google.
+\par Por meio dos relatórios gerados pela plataforma é possível obter uma série de informações quanto ao tipo de usuário que visualiza a página, o fluxo do site, origem do acesso entre outros.
+\par Através de \emph{tags} configuráveis é possível criar eventos que são personalizados e disparados de acordo com a navegação do usuário dentro do site.
+\par Tais tags podem ser implementadas diretamente através de um pequeno código em javascript para integração com o Google Analytics ou utilizando o Google Tag Manager.
+\par O Google Tag Manager é uma plataforma intermediária que provê acesso e configuração de tags personalizadas para obtenção de dados pelo Google Analytics sem que seja necessário modificar diretamente o código fonte do sistema.
+\par A opção de utilizar o Google Tag Manager no projeto deu-se principalmente pela facilidade de criar-se novas tags e alterações além de garantir uma maior organização das informações.
+\par Dentro do projeto utilizamos as informações obtidas através do Analytics para validação de aprendizado entre as interações.
 
 \section{Painel de opiniões Populares - POP}
-\par Com o intuito de definir o interesse do público alvo por meio de uma enquete colaborativa utilizamos o POP como sistema de votação devido a sua propriedade interativa na qual os usuários poderiam adicionar itens à enquete principal.
-\par Desenvolvido por estudantes do próprio IME dentro da disciplina de Laboratório de Programação Extrema à pedido da INDX o POP é uma plataforma de pesquisa de opinião pública que possui o objetivo de realizar enquetes nas quais os próprios usuários possam interagir e criar novas opções com o intuti de medir quais são as prioridades de projetos para a região.
+\par Com o intuito de definir o interesse do público alvo por meio de uma enquete colaborativa utilizamos o POP como sistema de votação devido a possibilidade dos usuários poderem adicionar adicionar itens à enquete principal.
+\par Desenvolvido por estudantes do próprio IME dentro da disciplina de Laboratório de Programação Extrema à pedido da INDX o POP é uma plataforma de pesquisa de opinião pública que possui o objetivo realizar enquetes junto à comunidades para auxiliar na tomada de decisões e encaminhamento de opiniões para as autoridades responsáveis.
 \par Foi permitida a utilização da plataforma implementada em uma instância separada com o nome de POP-TCC. para realização da enquete junto à comunidade USP para definir qual seria o tema do projeto.
-\par Foi feita uma modificação no sistema POP original para o POP-TCC na qual os usuários só poderiam votar de maneira positiva nas enquete ao contrário do sistema original que permitia votos negativos e até ocultamento dos itens da enquete que fossem muito negativados pelos usuários.
+\par Uma pequena modificação no sistema POP original foi feita para o POP-TCC.
+\par No POP-TCC os usuários só poderiam votar de maneira positiva nas opções ao contrário do sistema original que permitia votos negativos e até ocultamento dos itens que fossem muito negativados pelos usuários.
 
 \section{HeatMap}
-\par O serviço fornecido pela plataforma Heatmap.me consiste em prover uma api que é capaz de capturar os cliques em uma determinada página e mostrá-los na forma de uma mapa de calor.
+\par O serviço fornecido pela plataforma Heatmap.me consiste em prover uma API que é capaz de capturar os cliques em uma determinada página e mostrá-los na forma de uma mapa de calor.
 \par Um mapa de calor é uma representação gráfica dos cliques em uma página na qual conforme uma determinada região for recebendo mais cliques sua cor é alterada porporcionalmente(figura \ref{fig:heatmap_explanation}).
 \begin{figure}[htb]
 \centering
