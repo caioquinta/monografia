@@ -102,8 +102,8 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 \par Soma-se a isso a quantidade enorme de ferramentas que auxiliam na integração contínua do código como por exemplo o Travis CI utilizado  durante o desevolvimento da plataforma. 
 \par O Travis CI era responsável para que a cada commit realizado para o repositório principal do projeto fosse executada toda a bateria de testes automatizados enviando um e-mail contendo um relatório sobre o seu resultado, inclusive em caso de falha, garantindo dessa forma que todos tivessem sempre conhecimento das alterações sobre o código além de evitar  problemas de conflitos de versões ou mesmo que uma atualização de projeto fosse colocada no ambiente de produção contendo alguma falha.
 \par O fator comunidade é outra vantagem do  RoR. Destacando-se pelo seu tamanho, interesse e acessibilidade em tirar duvidas sempre contribuindo para promover o arcabouço  a comunidade que orbita ao redor do Rails foi capaz de criar ferramentas prontas para uso com uma ótima documentação, tutoriais, cursos e guias garantindo assim que qualquer desenvolvedor interessado sempre tenha em mãos materiais e ferramentas de qualidade para iniciar o desenvolvimento do seu projeto.(\cite{lilia:16})
-\par Acrescenta-se também à favor do arcabouço Rails sua escalabilidade, rails é utilizado por empresas de grande porte  tais como Groupon, Twitter, Basecamp, mostrando que o arcabouço é um arcabçou robusto capaz de lidar com grandes sistemas  sem ter uma queda de desempenho.(\cite{lilia:16})
-\par Para finalizar Rails é também um arcabouço seguro garantindo mesmo em sua configuração padrão ou com o auxilio de alguns plugins proteção contra SQL-Injections e XSS( \emph{Cross Site Scripting}). Além disso os programadores devem seguir o \emph{Secure Life Cycle Development}, figura  \ref{fig:security_dev_lifecycle}, proposto pela Microsoft, um modelo de desenvolvimento de software cujo principal objetivo é ajudar o a construir software mais seguros e confiáveis e reduzir custos \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Microsoft_Security_Development_Lifecycle}}.
+\par Acrescenta-se também à favor do arcabouço Rails sua escalabilidade. Rails é utilizado por empresas de grande porte  tais como Groupon, Twitter, Basecamp, mostrando que o arcabouço é um arcabçou robusto capaz de lidar com grandes sistemas  sem ter uma queda de desempenho.(\cite{lilia:16})
+\par Para finalizar Rails é também um arcabouço seguro garantindo mesmo em sua configuração padrão,ou com o auxilio de alguns plugins, proteção contra SQL-Injections e XSS( \emph{Cross Site Scripting}). Além disso os programadores devem seguir o \emph{Secure Life Cycle Development}, figura  \ref{fig:security_dev_lifecycle}, proposto pela Microsoft, um modelo de desenvolvimento de software cujo principal objetivo é ajudar o a construir software mais seguros e confiáveis e reduzir custos \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Microsoft_Security_Development_Lifecycle}}.
 \begin{figure}[htb]
 \includegraphics[width=15cm]{figuras/security_dev_lifecycle}
 \caption{\label{fig:security_dev_lifecycle} Fases do Secure Life Cycle Development.}
@@ -181,13 +181,15 @@ revisados e testados.( \cite{francisco:14})
 \includegraphics[width=15cm]{figuras/tags}
 \caption{\label{fig:tags} Visualização das Tags pelo Google Tag Manager.}
 \end{figure}
-\par Em pararelo foi possível obter também através do google analytics as seguintes  informações (figura \ref{fig:analytics_1interacao_dados}):
+\par Em pararelo foi possível obter também através do Google Analytics as seguintes  informações (figura \ref{fig:analytics_1interacao_dados}):
 \begin{itemize}
-\item Visualizações de Páginas: número total de páginas visualizadas no período.
-\item Páginas / Sessão: Número de páginas acessadas por sessão em média
-\item Duração Média da Sessão: auto-explicativo.
-\item Usuários: Toma-se como usuário o número de acessos únicos realizados.
-\item Porcentagem de Saída
+\item Visualizações de Páginas: "Exibições de página" refere-se ao número total de páginas visualizadas. Exibições repetidas de uma única página são consideradas.
+\item Páginas / Sessão: Número total de sessões \footnote{Uma sessão é o período que um usuário fica ativamente engajado com seu website, aplicativo etc. Todos os dados de uso (exibições de tela, eventos, comércio eletrônico etc.) são associados a uma sessão.} no período.
+\item Duração Média da Sessão: Auto-explicativo.
+\item Usuários: Os usuários que realizaram pelo menos uma sessão no período selecionado. Inclui usuários novos e recorrentes.
+\item Taxa de Rejeição: A taxa de rejeição é a porcentagem de visitas a uma única página (ou seja, visitas nas quais a pessoa sai de seu site na mesma da página de entrada, sem interagir com a página).
+\item Porcentagem de Novas Sessões: Uma estimativa da porcentagem de primeiras visitas.
+
 \end{itemize}
 
 \begin{figure}[htb]
