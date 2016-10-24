@@ -7,7 +7,7 @@
     \par Inicialmente o objetivo era equilibrar programação funcional, imperativa e orientação a objetos. Segundo o próprio Matz: "Eu queria uma linguagem interpretada que fosse mais poderosa do que Perl e mais orientada à objetos do que Python2."(\cite{rubydocs}).
 \begin{itemize}
 \item{Flexibilidade:}
-    \par Ruby cresceu devido a sua grande flexibilidade. Sendo possível alterar, remover ou acrescentar partes da linguagem à vontade.
+    \par A Linguagem Ruby cresceu devido a sua grande flexibilidade. Sendo possível alterar, remover ou acrescentar partes da linguagem à vontade.
     \par Imagine o seguinte exemplo: um usuário prefere utilizar a palavra \par{plus} ao invés do operador matemático(  +  ), ele poderia então adicionar esse método à classe nativa do Ruby Numeric pois em ruby os operadores matemáticos são considerados açúcares sintáticos.
 \\Exemplo:
 \begin{lstlisting}[frame=single]
@@ -21,7 +21,7 @@ class Numeric
     # y agora eh igual a 11
 \end{lstlisting}
 \item{Closures:}
-    \par Em ruby closures são chamadas de blocos e são funções que podem ser tratadas como uma variável. Isso quer dizer que podem ser passadas como argumentos de métodos, serem atribuídas a outras variáveis, etc.
+    \par Nesta linguagem, \emph{closures} são chamadas de blocos e são funções que podem ser tratadas como uma variável. Isso quer dizer que podem ser passadas como argumentos de métodos, serem atribuídas a outras variáveis, etc.
     \par As \emph{closures} armazenam os valores das variáveis que estavam no escopo quando a função foi definida e são capazes de acessar tais variáveis mesmo que sejam executadas em um escopo diferente. \footnote{Fonte: Site Point \url{https://www.sitepoint.com/closures-ruby/}}
 \\
 Exemplo:
@@ -33,7 +33,7 @@ search_engines =
 \end{lstlisting}
 \item{Módulos:}
     \par Diferente de outras linguagens orientadas a objetos o Ruby suporta apenas herança simples porém de forma proposital.
-    \par Em ruby existe o conceito de módulos que são coleções de métodos que podem ser adicionadas à uma classe por meio de um mixin.
+    \par O conceito de módulos que são coleções de métodos que podem ser adicionadas à uma classe por meio de um \emph{mixin}.
     \par As classes podem fazer o mixin de um método e receber todos os métodos dele diretamente.
 Exemplo:
 \begin{lstlisting}[frame=single]
@@ -45,24 +45,20 @@ class MyArray
 \end{itemize}
 \subsection{Rails}
 
-\par David Heinemeier Hansson extraiu o Ruby on Rails do seu próprio trabalho realizado na empresa Basecamp e foi lançado como código-aberto pela primeira vez em 2004
-\par Rails é um framework web escrito em Ruby implementado seguindo o padrão MVC \footnote{Modelo-Visão Controlador: Na qual o Modelo contém os dados e lógica da aplicação, a Visão é camada de entrada e saída de dados e o Controlador faz a conexão entre ambas camadas, fonte: \url{https://pt.wikipedia.org/wiki/MVC} } totalmente \emph{server-side} sendo considerado portanto um arcabouço \emph{ back-end}.
-\par Rails oferece uma estrutura para banco de dados, \emph{web service} e \emph{web pages} além de encorajar padrões de engenharia de software já consagrados tais como:(\cite{railswiki})
+\par Ruby on Rails é um \emph{framework web} escrito em linguagem Ruby, implementado seguindo o padrão MVC\footnote{Modelo-Visão Controlador: Na qual o Modelo contém os dados e lógica da aplicação, a Visão é camada de entrada e saída de dados e o Controlador faz a conexão entre ambas camadas, fonte: \url{https://pt.wikipedia.org/wiki/MVC} } totalmente \emph{server-side}, sendo considerado portanto um arcabouço \emph{ back-end}.
+\par David Heinemeier Hansson, criador da tecnologia, extraiu o Ruby on Rails do seu próprio trabalho realizado na empresa Basecamp e foi lançado como código-aberto pela primeira vez em 2004.
+\par Este \emph{framework} oferece também uma estrutura para banco de dados \emph{web service} e \emph{web pages}, além de encorajar padrões de engenharia de software já consagrados tais como:(\cite{railswiki})
 \begin{itemize}
 \item {\emph{Convention over Configuration} (CoC):}
-    \par  Ruby adota algumas convenções de configuração visando padronizar o código.
-    \par Ao adicionar convenções é retirada do desenvolvedor a decisão de como usar o arcabouço porém isso não diminui sua flexibilidade.
-    \par Por exemplo se existir um objeto chamado User então sua tabela por convenção se chamará users e correspondente \emph{controller} será UsersController ( no plural) pois esse é padrão definido pelo arcabouço mas é possível alterar essas convenções para adaptar-se às necessidades do desenvolvedor.
-       \par Existem algumas críticas ao CoC por adicionar obscuridade ao código pois o uso das convenções oculta o código que realiza a ação, dificultando as vezes entender o que está acontecendo.
+    \par Convenções de configuração visando padronizar o código. Ao adicionar convenções é retirada do desenvolvedor a decisão de como usar o arcabouço porém isso não diminui sua flexibilidade. Por exemplo se existir um objeto chamado "User" então sua tabela por convenção se chamará "users" e correspondente \emph{controller} será UsersController ( no plural) pois esse é padrão definido pelo arcabouço mas é possível alterar essas convenções para adaptar-se às necessidades do desenvolvedor.
 
 \item {\emph{Don't Repeat yourself} (DRY):}
-    \par É definido como "Todo pedaço de informação deve ter uma única, não ambígua, representação autorizada com o Sistema" \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Don\%27t_repeat_yourself}}.
-    \par Isso significa que uma modificação em uma parte do sistema não deve modificar outra parte não relacionada assim como elementos que são logicamente relacionados quando modificados ocorrem de forma previsível e uniforme.
+    \par É definido como "Todo pedaço de informação deve ter uma única, não ambígua, representação autorizada com o Sistema" \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Don\%27t_repeat_yourself}}. Isso significa que uma modificação em uma parte do sistema não deve modificar outra parte não relacionada assim como elementos que são logicamente relacionados quando modificados ocorrem de forma previsível e uniforme.
 
 \item { \emph{Active Record Pattern}:}
     \par O padrão Active Record sugere uma interface específica para acessar objetos em um banco de dados relacional contendo funções tais como INSERT, UPDATE, DELETE, etc.
     \par Uma tabela ou \emph{view} será associada a uma classe e então uma instância de objeto estará associada a uma única entrada na respectiva tabela.
-    \par Em Rails a biblioteca ActiveRecord implementa o padrão ORM e além disso acrescenta herança e associações, resolvendo dois problemas substanciais do padrão.
+    \par Em Ruby on Rails a biblioteca ActiveRecord implementa o padrão ORM e além disso acrescenta herança e associações, resolvendo dois problemas substanciais do padrão.
     \par ActiveRecord é o "model" padrão do componente MVC porém é possível trocá-lo por outra implementação do arcabouço Rails caso o desenvolvedor prefira.
 \end{itemize}
     \par Em um sentido mais amplo Rails é mais que uma biblioteca de software ou API: é um projeto central de uma vasta comunidade que produz \emph{plugins} para facilitar e construir projetos complexos de web site.
