@@ -21,7 +21,7 @@ class Numeric
     # y agora eh igual a 11
 \end{lstlisting}
 \item{Closures:}
-    \par Em ruby closures são chamadas de blocos e são funções que podem ser tratadas como uma variável. Isso quer dizer que podem ser passadas como argumentos de métodos, serem atribuidas a outras variáveis, etc.
+    \par Em ruby closures são chamadas de blocos e são funções que podem ser tratadas como uma variável. Isso quer dizer que podem ser passadas como argumentos de métodos, serem atribuídas a outras variáveis, etc.
     \par As \emph{closures} armazenam os valores das variáveis que estavam no escopo quando a função foi definida e são capazes de acessar tais variáveis mesmo que sejam executadas em um escopo diferente. \footnote{Fonte: Site Point \url{https://www.sitepoint.com/closures-ruby/}}
 \\
 Exemplo:
@@ -32,7 +32,7 @@ search_engines =
   end
 \end{lstlisting}
 \item{Módulos:}
-    \par Diferente de outras linguagens orientadas a objetos o Ruby suporta apenas herança simples porém de forma proposital. 
+    \par Diferente de outras linguagens orientadas a objetos o Ruby suporta apenas herança simples porém de forma proposital.
     \par Em ruby existe o conceito de módulos que são coleções de métodos que podem ser adicionadas à uma classe por meio de um mixin.
     \par As classes podem fazer o mixin de um método e receber todos os métodos dele diretamente.
 Exemplo:
@@ -50,10 +50,10 @@ class MyArray
 \par Rails oferece uma estrutura para banco de dados, \emph{web service} e \emph{web pages} além de encorajar padrões de engenharia de software já consagrados tais como:(\cite{railswiki})
 \begin{itemize}
 \item {\emph{Convention over Configuration} (CoC):}
-    \par  Ruby adota algumas convencções de configuração visando padronizar o código.
-    \par Ao adicionar convenções é retirada do desenvolvedor a decisão de como usar o arcabouço porém isso não diminui sua felxibilidade. 
+    \par  Ruby adota algumas convenções de configuração visando padronizar o código.
+    \par Ao adicionar convenções é retirada do desenvolvedor a decisão de como usar o arcabouço porém isso não diminui sua flexibilidade.
     \par Por exemplo se existir um objeto chamado User então sua tabela por convenção se chamará users e correspondente \emph{controller} será UsersController ( no plural) pois esse é padrão definido pelo arcabouço mas é possível alterar essas convenções para adaptar-se às necessidades do desenvolvedor.
-       \par Existem algumas críticas ao CoC por adicionar obscuridade ao código pois o uso das convenções oculta o código que realiza a ação dificultando as vezes entender o que está acontecendo.
+       \par Existem algumas críticas ao CoC por adicionar obscuridade ao código pois o uso das convenções oculta o código que realiza a ação, dificultando as vezes entender o que está acontecendo.
 
 \item {\emph{Don't Repeat yourself} (DRY):}
     \par É definido como "Todo pedaço de informação deve ter uma única, não ambígua, representação autorizada com o Sistema" \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Don\%27t_repeat_yourself}}.
@@ -65,7 +65,7 @@ class MyArray
     \par Em Rails a biblioteca ActiveRecord implementa o padrão ORM e além disso acrescenta herança e associações, resolvendo dois problemas substanciais do padrão.
     \par ActiveRecord é o "model" padrão do componente MVC porém é possível trocá-lo por outra implementação do arcabouço Rails caso o desenvolvedor prefira.
 \end{itemize}
-    \par Em um sentido mais amplo Rails é mais que uma biblioteca de software ou API: é um projeto central de uma vasta comunidade que produz \emph{plugins} para facilitar e construir projetos complexos de web site. 
+    \par Em um sentido mais amplo Rails é mais que uma biblioteca de software ou API: é um projeto central de uma vasta comunidade que produz \emph{plugins} para facilitar e construir projetos complexos de web site.
     \par Foi graças a essa comunidade que compartilham ferramentas e contribuem para o projeto Rails criando bibliotecas em código aberto ( chamadas de Ruby Gems ou apenas Gems \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/RubyGems}}) que o o uso de rails tem crescido de forma significante nos últimos anos ganhando fama entre startups devido a sua  facilidade e desevolvimento que permite criar sistemas complexos e testar idéias rapidamente.
 
 \section{Heroku}
@@ -74,7 +74,7 @@ class MyArray
 \par O \emph{deploy} de uma aplicação no Heroku é bastante simples o que contribuiu para sua popularização principalmente entre startups que necessitam de agilidade para subir novas atualizações.
 \par A aplicação é enviada para o Heroku por meio de uma conexão direta via GitHub, Dropbox ou alguma API.
 \par Enviado o código-fonte ele então é convertido em uma aplicação interpretando as dependências de outras bibliotecas seguindo o padrão de cada linguagem. No caso do USP Eventos que foi feito utilizando Ruby as dependências ficam armazenadas no próprio Gemfile da aplicação.
-\par Feito o upload da aplicação um container com uma virtualização de Unix é disponibilizado, o Dyno da aplicação. Tal container é pre-carregado com algumas configurações prévias da aplicação: um nome gerado automaticamente, variáveis de ambiente e \emph{add-ons} se existirem.
+\par Feito o upload da aplicação um container com uma virtualização de Unix é disponibilizado, o Dyno da aplicação. Tal container é pré-carregado com algumas configurações prévias da aplicação: um nome gerado automaticamente, variáveis de ambiente e \emph{add-ons} se existirem.
 \par O Heroku então inicializa o Dyno com a aplicação, carrega-a e então realiza o \emph{deploy} da mesma.
 \par Através do DNS Server oferecido pelo próprio Heroku a aplicação fica acessível por meio de um domínio na forma <nome da aplicação>.herokuapp.com sendo possível redirecionar seu domínio particular para refletir o DNS disponibilizado.
 \section{Travis CI}
@@ -102,7 +102,7 @@ class MyArray
 \includegraphics[width=15cm]{figuras/heroku_automatic_deploy}
 \caption{\label{fig:heroku_automatic_deploy} Tela de Administração do Heroku para integração com o Github e Deploy automático.}
 \end{figure}
- 
+
 
 \section{Google Analytics e Google Tag Manager}
 \par O google Analytics é uma plataforma de análise de dados oferecida pelo Google.
@@ -122,7 +122,7 @@ class MyArray
 
 \section{HeatMap}
 \par O serviço fornecido pela plataforma Heatmap.me consiste em prover uma API que é capaz de capturar os cliques em uma determinada página e mostrá-los na forma de uma mapa de calor.
-\par Um mapa de calor é uma representação gráfica dos cliques em uma página na qual conforme uma determinada região for recebendo mais cliques sua cor é alterada porporcionalmente(figura \ref{fig:heatmap_explanation}).
+\par Um mapa de calor é uma representação gráfica dos cliques em uma página na qual conforme uma determinada região for recebendo mais cliques sua cor é alterada proporcionalmente(figura \ref{fig:heatmap_explanation}).
 \begin{figure}[htb]
 \centering
 \includegraphics[width=15cm]{figuras/heatmap_explanation}
