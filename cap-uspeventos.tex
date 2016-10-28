@@ -199,6 +199,7 @@ revisados e testados.
 \par É possível observar uma grande taxa de rejeição inicial ao site no período associado principalmente na página inicial com cerca de 761 sessões e 423 desistências (figura \ref{fig:analytics_1ainteracao_fluxo}).
 \par Durante o período observado foram registrados apenas 184 cliques em 56 sessões únicas no botão "Participar".
 \begin{figure}[htb]
+\centering
 \includegraphics[width=15cm]{figuras/analytics_1ainteracao_fluxo}
 \caption{\label{fig:analytics_1ainteracao_fluxo} Fluxo de Comportamento de 01/05 até 31/07.}
 \end{figure}
@@ -248,6 +249,7 @@ revisados e testados.
 \end{itemize}
 \par Foi criado um filtro para a página de eventos baseado na utilização de tags dessa forma ao criar um novo evento (figura \ref{fig:event_newv2} )o usuário agora pode escolher 3 dentre 12 tags pré-definidas que servirão como filtro nas página principal.
         \begin{figure}[htb]
+        \centering
 		\includegraphics[width=15cm]{figuras/event_newv2}
 		\caption{\label{fig:event_newv2} Página de Cadastro de Novos eventos com filtros}
 		\end{figure}
@@ -260,6 +262,7 @@ revisados e testados.
 \item Nova listagem personalizada de Eventos segundo os interesses do usuário
 \end{itemize}
         \begin{figure}[htb]
+        \centering
 		\includegraphics[width=15cm]{figuras/events_pagev2}
 		\caption{\label{fig:events_pagev2} Página de Eventos com as alterações para a segunda iteração}
 		\end{figure}
@@ -277,16 +280,18 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \item Mudança do nome do botão de "Participar" para "Salvar"
 \end{itemize}
         \begin{figure}[htb]
+        \centering
 		\includegraphics[width=15cm]{figuras/thumbs_comparison_v1_v2}
 		\caption{\label{fig:thumbs_comparison_v1_v2} Esquerda: versão antiga. Direita: Versão atualizada}
 		\end{figure}
 
 \par Em conjunto com a criação das tags para eventos foi criado um mecanismo de preferências para o usuário, agora na página de cadastro ou edição de usuário é possível selecionar as tags com as quais o usuário tenha maior afinidade com o intuito de exibir uma listagem personalizada de eventos segundo esses critérios.
 \par Aproveitando o sucesso do lançamento do aplicativo Pokemon GO \footnote{Fonte: Pokemon GO \url{ https://en.wikipedia.org/wiki/Pokemon_Go }} que gerou uma enorme quantidade de acessos e movimentação pelo Campus foi criado uma página de Alertas \ref{fig:alert_page} no Campus visando atingir o público que estava utilizando o aplicativo para divulgar a localização de Pokemons.
-        \begin{figure}[htb]
-		\includegraphics[width=15cm]{figuras/alert_page}
-		\caption{\label{fig:alert_page} Página de Alertas}
-		\end{figure}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=15cm]{figuras/alert_page}
+\caption{\label{fig:alert_page} Página de Alertas}
+\end{figure}
 \par A implementação de um testes para a página de Alertas tão rapidamente só foi possível devido a grande flexibilidade que o modelo de Construir-Medir-Aprender oferece pois somente assim foi possível rapidamente integrar uma nova funcionalidade não prevista dentro do escopo do projeto e medir sua eficácia.
 \par Além disso com o auxílio de testes automatizados, ferramentas para integração contínua e a agilidade do desenvolvimento em Rails foi possível desenvolver e colocar as alterações no ambiente de produção sem comprometer a integridade do sistema como um todo.
 
@@ -305,6 +310,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \par Pelos resultados obtidos através do Googgle Analytics ((figura \ref{fig:analytics_2ainteracao_dados}) foi observado uma diminuição no número de sessões, entretanto também houve uma diminuição significativa na taxa de rejeição do site caindo de 46,91\% para 33,16\%.
 \par O tempo médio por sessão também aumentou passando de 1:54 minutos para 3:37 minutos. Mostrando um aumento na retenção de usuários acessando a plataforma.
 \begin{figure}[htb]
+\centering
 \includegraphics[width=15cm]{figuras/analytics_2ainteracao_dados}
 \caption{\label{fig:analytics_2ainteracao_dados} Dados obtidos pelo G.A de 01/08 até 30/09}
 \end{figure}
@@ -315,6 +321,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \par Analisando o gráfico de divisão por tipo de Sistema Operacional ((figura \ref{fig:analytics_2ainteracao_so}) percebemos que o acesso pelo sistema Android proporcionalmente mais que dobrou em relação ao período anterior, passando de 8,4\% para 19,36\%.
 
 \begin{figure}[htb]
+\centering
 \includegraphics[width=15cm]{figuras/analytics_2ainteracao_so}
 \caption{\label{fig:analytics_1interacao_so} Porcentagem de uso por S.O de 01/08 até 30/09.}
 \end{figure}
@@ -342,6 +349,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 	 \par Berverly também enaltece a importância de realizar testes constantes e sempre levar em consideração os \emph{feedbacks} dos usuários, positivos e negativos, um conceito também presente no ciclo de Construir-Medir-Aprender e base para o \emph{Customer Development}.
 	\par No caso do USP Eventos foi feito um \emph{wireframe} ((figura \ref{fig:wireframe}) da página principal de Eventos com as modificações realizadas na iteração atual.
 \begin{figure}[htb]
+\centering
 \includegraphics[width=15cm]{figuras/wireframe}
 \caption{\label{fig:wireframe} Wireframe da versão modificada durante a Terceira Iteração}
 \end{figure}
@@ -362,6 +370,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \item O botão de “Salvar” deixou de estar localizado ao centro para ficar associado com os outros botões de compartilhamento na parte inferior do \emph{thumbnail}.
 \end{itemize}
 \begin{figure}[htb]
+\centering
 \includegraphics[width=15cm]{figuras/events_page_3aiteracao}
 \caption{\label{fig:events_page_3aiteracao} Página de Eventos após modificações}
 \end{figure}
@@ -379,12 +388,14 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 
 \par Nessa iteração foi adicionado um Mapa de Calor (figura \ref{fig:heatmap}) para medir os cliques de mouse na página principal de eventos.
 \begin{figure}[htb]
+\centering
 \includegraphics[width=15cm]{figuras/heatmap}
 \caption{\label{fig:heatmap} Página principal de Eventos com o Mapa de Calor ativado}.
 \end{figure}
 
 \par Foi interessante observar que o Filtro estava sendo bastante utilizado tanto que em dado momento atingiu 40\% dos cliques na página.
 \begin{figure}[htb]
+\centering
 \includegraphics[width=10cm]{figuras/heatmap_filter}
 \caption{\label{fig:heatmap_filter} Botão de Filtro com 40\% dos cliques da página}.
 \end{figure}
@@ -393,6 +404,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 
 \par O enunciado de cada listagem foi clicado repetidas vezes pelos usuário o que pode significar que ele esteja sendo confundido com um \emph{link} (figura \ref{fig:heatmap_missclick}).
 \begin{figure}[htb]
+\centering
 \includegraphics[width=10cm]{figuras/heatmap_missclick}
 \caption{\label{fig:heatmap_missclick} Nome da Listagem: possível confusão com um link}.
 \end{figure}
@@ -400,6 +412,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 
 \par Analisando os dados (figura \ref{fig:analytics_3ainteracao_dados}) obtidos pelo Analytics no período de 27/09 até 28/10 é possível observar uma diminuição na taxa de rejeição no site para 21,64\% e um aumento considerável no número de páginas visitadas e duração média por sessão.
 \begin{figure}[htb]
+\centering
 \includegraphics[width=15cm]{figuras/analytics_3ainteracao_dados}
 \caption{\label{fig:analytics_3ainteracao_dados} Dados obtidos pelo G.A no período de 27/09 até 28/10 }.
 \end{figure}
@@ -410,21 +423,21 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \subsection{Aprendizado}
 \par Com o intuito de realizar uma coleta de dados mais direta com os candidatos foi criado um Formulário utilizando o TypeForm e conversas com pessoas que utilizavam a plataforma.
 \par Ao responder a pergunta "Qual ou quais foram os maiores pontos positivos na sua opinião?" a interface do site foi elogiada diversas vezes mostrando que as modificações foram de fato bem aceitas, algumas das respostas:
-\par "Interface bem fácil e intuitiva"
-\par "Organizar visualmente a informação dos eventos e a utilização de labels."
-\par "intuitivo em sua maioria, bonito, fácil de entender como funciona"
+\par "Interface bem fácil e intuitiva"\\
+\par "Organizar visualmente a informação dos eventos e a utilização de labels."\\
+\par "intuitivo em sua maioria, bonito, fácil de entender como funciona"\\
 \par " Mostrar eventos de diversos temas (não só festas, por exemplo). Mas também, a
-opção de selecionar os assuntos de sua preferência, ao fazer o cadastro.A interface é simples e clara, acho que atende aos objetivos e permite uma visualização rápida, podendo rolar até o mês desejável rapidamente."
-\par "Reunir todos os eventos do campus em um só lugar."
-\par "Gostei da preocupação em se fazer um site responsivo, já que, por ter inclusive uma seção Acontecendo Agora, é de se esperar que o acesso por meios móveis seja maior."
+opção de selecionar os assuntos de sua preferência, ao fazer o cadastro.A interface é simples e clara, acho que atende aos objetivos e permite uma visualização rápida, podendo rolar até o mês desejável rapidamente."\\
+\par "Reunir todos os eventos do campus em um só lugar."\\
+\par "Gostei da preocupação em se fazer um site responsivo, já que, por ter inclusive uma seção Acontecendo Agora, é de se esperar que o acesso por meios móveis seja maior."\\
 
 \par Também foi feita uma pergunta sobre os pontos negativos e foi observado que alguns usuários acreditavam que os filtros não estivessem funcionando.
 \par Conversando pessoalmente foi identificado uma confusão na forma como o filtro é aplicado.
 \par Como o filtro é aplicado somente nas listagens de "Eventos Acontecendo Agora" e "Próximos Eventos" esses usuários não percebiam a filtragem estava sendo realizada.
 \par Ainda sobre os filtros aparentemente não ficou claro para os usuários que ao preencher suas preferências durante o cadastro isso iria criar uma listagem personalizada com o nome de "Principais Escolhas".
 \par Alguns comentários sobre os filtros:
-\par "No meu computador o site demora a responder e alguns filtros não funcionaram "
-\par "Tentei usar o filtro e não funcionou mto bem."
+\par "No meu computador o site demora a responder e alguns filtros não funcionaram "\\
+\par "Tentei usar o filtro e não funcionou mto bem."\\
 
 \par A página de Alertas também pareceu deslocada. Muitos não entenderam sua função e comentaram que o seu \emph{layout} atual está ruim.
 \par Segue uma compilação das sugestões de funcionalidades recebidas:
@@ -442,20 +455,20 @@ opção de selecionar os assuntos de sua preferência, ao fazer o cadastro.A int
 \item Vídeos e fotos pós evento
 \end{itemize}
 
-\par Algumas respostas sobre Sugestões:
-\par "talvez criar mais uma separação "eventos nos próximos 7 dias" ou "eventos dessa semana", visualização de mapa?"
-\par "Senti falta de uma visualização dos eventos em um calendário."
-\par "podia linkar com os eventos do fb! e já salvar nos seus eventos do fb"
-\par "Talvez, um campo de busca para que fosse possível escolher um mês ou fim de semana específico...É rápido ir rolando a tela, mas para eventos a longo prazo, a barra de busca cumpriria melhor a função."
+\par Algumas respostas sobre sugestões para a plataforma:
+\par "talvez criar mais uma separação "eventos nos próximos 7 dias" ou "eventos dessa semana", visualização de mapa?"\\
+\par "Senti falta de uma visualização dos eventos em um calendário."\\
+\par "podia linkar com os eventos do fb! e já salvar nos seus eventos do fb"\\
+\par "Talvez, um campo de busca para que fosse possível escolher um mês ou fim de semana específico...É rápido ir rolando a tela, mas para eventos a longo prazo, a barra de busca cumpriria melhor a função."\\
 
-\par Ao todo 25 pessoas responderam ao questionário, sendo que todas acreditam que uma plataforma centralizando Eventos na USP é fato útil e dessas apenas 3 não gostaram do USP Eventos.
-\par Dentre as críticas das 3 pessoas que não gostaram as críticas foram:
+\par Ao todo 25 pessoas responderam ao questionário, sendo que todas acreditam que uma plataforma centralizando Eventos na USP é de fato útil e  apenas 3 não gostaram do USP Eventos.
+\par Dentre as críticas das 3 pessoas que não gostaram os seguintes pontos foram levantados:
 \begin{itemize}
-\item Acreditam que poucas pessoas hoje usariam um site e talvez uma iniciativa dentro do Facebook fosse mais útil.
+\item Acreditam que poucas pessoas hoje em dia usariam um site e talvez uma iniciativa dentro do Facebook fosse mais útil.
 \item Ficaram incomodadas com a paleta de cores.
 \item Gostariam de poder visualizar os eventos na página inicial.
 \end{itemize}
 
 \par A abordagem utilizando um questionário e conversas diretas trouxe uma quantidade muito maior de informação sobre a plataforma do que nas iterações anteriores mostrando que o Desenvolvimento do Cliente é realmente útil para direcionar o desenvolvimento do Sistema.
-\par Utilizar um Mapa de Calor foi um acréscimo importante na coleta de fados pois foi possível perceber detalhes na forma como o usuário utiliza a plataforma tornando-se mais uma opção para realizar a validação da hipótese inicial.
+\par Utilizar um Mapa de Calor foi um acréscimo importante na coleta de dados pois foi possível perceber detalhes na forma como o usuário utiliza a plataforma tornando-se mais uma opção para realizar a validação da hipótese inicial.
 \par A divulgação ainda parece ser não estar atingindo um grande número de pessoas resultando em um baixo volume de acessos.
