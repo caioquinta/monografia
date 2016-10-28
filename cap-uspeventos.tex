@@ -110,13 +110,13 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 \section{Kanban}
 \par Kanban é uma palavra japonesa e significa cartão visual para prover informação de regulamentação do fluxo de estoque e materiais. Possui três regras principais (KNIBERG, H., 2009): visualizar o fluxo de trabalho; limitar o trabalho em cada estágio do fluxo, e medir o tempo de avanço (tempo médio para se completar cada item). ( \cite{francisco:14})
 \par No contexto de Métodos Ágeis e \emph{Lean Startup} foi utilizado uma abordagem utilizando o Kanban para definir as hipóteses de produtos, o escopo de desenvolvimento e as tarefas para serem executadas durante as etapas de desenvolvimento.
-\par Tradicionalmente o kanban para desenvolvimento de Software possui 3 estágios:
+\par Tradicionalmente o kanban para desenvolvimento de Software possui 3 estágios ( \cite{francisco:14}):
 \begin{itemize}
         \item TO DO: referente a requisitos que ainda estão aguardando para serem
 desenvolvidos.
         \item DOING: referente a requisitos que estão sendo desenvolvidos.
         \item DONE. referente a requisitos que já finalizaram e foram devidamente
-revisados e testados.( \cite{francisco:14})
+revisados e testados.
 \end{itemize}
 \par Cada item adicionado na fila de TO DO é chamada de tarefa. Uma hipótese à ser testada pode ser transformada em uma série de tarefas pequenas à serem completadas durante o período de desenvolvimento.
 \par Caso seja necessário é possível quebrar uma tarefa grande em uma série de tarefas menores. Tomando como exemplo a tarefa de Implementar um filtro de eventos para a página principal. Ela foi quebrada em 3 tarefas menores para serem completadas: Implementar categorias de eventos, permitir adicionar categorias de eventos durante a criação de um novo evento e implementar filtro de eventos na página principal de eventos.
@@ -384,7 +384,6 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \end{figure}
 
 \par Foi interessante observar que o Filtro estava sendo bastante utilizado tanto que em dado momento atingiu 40\% dos cliques na página.
-eventos.
 \begin{figure}[htb]
 \includegraphics[width=10cm]{figuras/heatmap_filter}
 \caption{\label{fig:heatmap_filter} Botão de Filtro com 40\% dos cliques da página}.
@@ -399,6 +398,15 @@ eventos.
 \end{figure}
 \par O Mapa de Calor foi incluído no site utilizando o serviço fornecido pelo site Heatmap.
 
+\par Analisando os dados (figura \ref{fig:analytics_3ainteracao_dados}) obtidos pelo Analytics no período de 27/09 até 28/10 é possível observar uma diminuição na taxa de rejeição no site para 21,64\% e um aumento considerável no número de páginas visitadas e duração média por sessão.
+\begin{figure}[htb]
+\includegraphics[width=15cm]{figuras/analytics_3ainteracao_dados}
+\caption{\label{fig:analytics_3ainteracao_dados} Dados obtidos pelo G.A no período de 27/09 até 28/10 }.
+\end{figure}
+
+\par Ainda sim não houve grande crescimento no número de acesso e sessões totais.
+
+\par Nesse período também ocorreram 92 cliques no botão de Salvar um Evento além de 424 cliques para utilizar a página de alertas.
 \subsection{Aprendizado}
 \par Com o intuito de realizar uma coleta de dados mais direta com os candidatos foi criado um Formulário utilizando o TypeForm e conversas com pessoas que utilizavam a plataforma.
 \par Ao responder a pergunta "Qual ou quais foram os maiores pontos positivos na sua opinião?" a interface do site foi elogiada diversas vezes mostrando que as modificações foram de fato bem aceitas, algumas das respostas:
@@ -407,16 +415,19 @@ eventos.
 \par "intuitivo em sua maioria, bonito, fácil de entender como funciona"
 \par " Mostrar eventos de diversos temas (não só festas, por exemplo). Mas também, a
 opção de selecionar os assuntos de sua preferência, ao fazer o cadastro.A interface é simples e clara, acho que atende aos objetivos e permite uma visualização rápida, podendo rolar até o mês desejável rapidamente."
+\par "Reunir todos os eventos do campus em um só lugar."
+\par "Gostei da preocupação em se fazer um site responsivo, já que, por ter inclusive uma seção Acontecendo Agora, é de se esperar que o acesso por meios móveis seja maior."
 
-\par Também foi feita uma pergunta sobre os pontos negativos e algumas das respostas mostraram que alguns usuários acreditavam que os filtros não estivessem funcionando.
-\par Conversando pessoalmente foi identificado que como o filtro é aplicado somente nas listagens de "Eventos Acontecendo Agora" e "Próximos Eventos" muitos usuários não percebiam a filtragem nas outras listagens.
-\par Ainda sobre os filtros aparentemente não ficou claro para os usuários que ao preencher suas preferências sobre o cadastro isso iria criar uma listagem personalizada com o nome de "Principais Escolhas".
+\par Também foi feita uma pergunta sobre os pontos negativos e foi observado que alguns usuários acreditavam que os filtros não estivessem funcionando.
+\par Conversando pessoalmente foi identificado uma confusão na forma como o filtro é aplicado.
+\par Como o filtro é aplicado somente nas listagens de "Eventos Acontecendo Agora" e "Próximos Eventos" esses usuários não percebiam a filtragem estava sendo realizada.
+\par Ainda sobre os filtros aparentemente não ficou claro para os usuários que ao preencher suas preferências durante o cadastro isso iria criar uma listagem personalizada com o nome de "Principais Escolhas".
 \par Alguns comentários sobre os filtros:
 \par "No meu computador o site demora a responder e alguns filtros não funcionaram "
 \par "Tentei usar o filtro e não funcionou mto bem."
 
-\par A página de Alertas também pareceu deslocada. Muitos não entenderam sua função e comentaram que o seu layout atual está ruim.
-\par Dentre as sugestões de funcionalidades recebidas, destacam-se:
+\par A página de Alertas também pareceu deslocada. Muitos não entenderam sua função e comentaram que o seu \emph{layout} atual está ruim.
+\par Segue uma compilação das sugestões de funcionalidades recebidas:
 \begin{itemize}
 \item Filtros por data (dias da semana, próximos dias, etc).
 \item Integrar com o Google Agenda
@@ -425,10 +436,26 @@ opção de selecionar os assuntos de sua preferência, ao fazer o cadastro.A int
 \item Campo de busca por extenso
 \item Mapa com a localização dos Eventos
 \item Sistema para disparar alertas ou lembretes para determinado evento.
+\item Opção de cadastros oficiais, como uma certificação de que aquele perfil pertece a um Centro Acadêmico oficialmente por exemplo.
+\item Feed de Notícias
+\item Sistema de Avaliação para Eventos mais esperados
+\item Vídeos e fotos pós evento
 \end{itemize}
 
-\par Algumas respostas sobre sugestões:
+\par Algumas respostas sobre Sugestões:
 \par "talvez criar mais uma separação "eventos nos próximos 7 dias" ou "eventos dessa semana", visualização de mapa?"
 \par "Senti falta de uma visualização dos eventos em um calendário."
 \par "podia linkar com os eventos do fb! e já salvar nos seus eventos do fb"
 \par "Talvez, um campo de busca para que fosse possível escolher um mês ou fim de semana específico...É rápido ir rolando a tela, mas para eventos a longo prazo, a barra de busca cumpriria melhor a função."
+
+\par Ao todo 25 pessoas responderam ao questionário, sendo que todas acreditam que uma plataforma centralizando Eventos na USP é fato útil e dessas apenas 3 não gostaram do USP Eventos.
+\par Dentre as críticas das 3 pessoas que não gostaram as críticas foram:
+\begin{itemize}
+\item Acreditam que poucas pessoas hoje usariam um site e talvez uma iniciativa dentro do Facebook fosse mais útil.
+\item Ficaram incomodadas com a paleta de cores.
+\item Gostariam de poder visualizar os eventos na página inicial.
+\end{itemize}
+
+\par A abordagem utilizando um questionário e conversas diretas trouxe uma quantidade muito maior de informação sobre a plataforma do que nas iterações anteriores mostrando que o Desenvolvimento do Cliente é realmente útil para direcionar o desenvolvimento do Sistema.
+\par Utilizar um Mapa de Calor foi um acréscimo importante na coleta de fados pois foi possível perceber detalhes na forma como o usuário utiliza a plataforma tornando-se mais uma opção para realizar a validação da hipótese inicial.
+\par A divulgação ainda parece ser não estar atingindo um grande número de pessoas resultando em um baixo volume de acessos.
