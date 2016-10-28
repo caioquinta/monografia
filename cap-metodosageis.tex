@@ -1,9 +1,11 @@
 \chapter{Métodos Ágeis}
 \label{cap:metodosageis}
 \section{Origem}
-\par  Na década de 90 com a decadência dos métodos clássicos de desenvolvimento em software, como o modelo cascata, o qual propõe um rígido padrão de etapas sequenciais com maior ênfase no planejamento, considerado lento e burocrático com pouco espaço para alterações ou readaptações, novos modelos surgiram com o objetivo de maior interatividade entre o cliente e produção, flexibilizar as etapas de planejamento e validação do sistema. Dos mais conhecidos e citados até hoje, temos: o desenvolvimento rápido de aplicações de 1994, processo unificado e sistemas dinâmicos de método de desenvolvimento (DSDM) de 1995, Scrum de 1996, \emph{Crystal Clear} e programação extrema (XP) ambos de 1997. Embora originados antes da publicação do Manifesto Ágil em 2001, são hoje colectivamente referidos como métodos ágeis pois influenciaram diretamente na conceituação do mesmo.
-\par Em fevereiro de 2001, 17 desenvolvedores de software se reuniram no resort Snowbird em Utah, EUA, para discutir métodos leves de desenvolvimento. Publicaram o Manifesto para Desenvolvimento Ágil de Software, documento que reúne os princípios e práticas desta metodologia. Mais tarde, algumas pessoas formaram a Agile Alliance, uma organização sem fins lucrativos que promove o desenvolvimento ágil.
-
+\par  Na década de 90 com a decadência dos métodos clássicos de desenvolvimento em software, como o modelo Cascata, o qual propõe um rígido padrão de etapas sequenciais com maior ênfase no planejamento, considerado lento e burocrático com pouco espaço para alterações ou readaptações, novos modelos surgiram com o objetivo de maior interatividade entre o cliente e produção, flexibilizar as etapas de planejamento e validação do sistema. 
+\par Dos mais conhecidos e citados até hoje, temos: o desenvolvimento rápido de aplicações de 1994, processo unificado e Sistemas Dinâmicos de Método de Desenvolvimento (DSDM) de 1995, Scrum de 1996, \emph{Crystal Clear} e Programação Extrema (XP) ambos de 1997. 
+\par Embora originados antes da publicação do Manifesto Ágil em 2001, são hoje colectivamente referidos como métodos ágeis pois influenciaram diretamente na conceituação do mesmo.
+\par Em fevereiro de 2001, 17 desenvolvedores de software se reuniram no resort Snowbird em Utah, EUA, para discutir métodos leves de desenvolvimento. Publicaram o Manifesto para Desenvolvimento Ágil de Software, documento que reúne os princípios e práticas desta metodologia. 
+\par Mais tarde, algumas pessoas formaram a \emph{Agile Alliance}, uma organização sem fins lucrativos que promove o Desenvolvimento Ágil.
 \section{Definição}
 \par O Manifesto Ágil é baseado em doze princípios\footnote{ Retirado de: \url{http://agilemanifesto.org/principles.html}}:
 \begin{enumerate}
@@ -19,9 +21,15 @@
   \item Melhores arquiteturas, requisitos e projetos emergem de equipes auto-organizadas;
   \item Regularmente, a equipe se reuni e reflete sobre como tornar-se mais eficaz, então se ajusta para o que foi acordado.
 \end{enumerate}
-\par Comparado a engenharia de software tradicional, desenvolvimento ágil de software tem como alvo principalmente sistemas complexos com características dinâmicas, ou seja, não determinístico e não-linear, onde as estimativas precisas, planos estáveis, e as previsões são muitas difíceis de se obter em estágios iniciais como na própria elaboração do projeto em si do produto, necessitando de um desenvolvimento e planejamento evolutivo.
-\par Existem muitos modelos específicos de métodos ágeis, a maioria busca promover o trabalho em equipe, colaboração e adaptabilidade no processo em todo o ciclo de vida de desenvolvimento. Utiliza-se uma maior quantidade de ciclos em curtos períodos de tempo à fim de minimizar e parcelar o planejamento e estimativas. Cada iteração envolve uma equipe multifuncional de trabalho para cada função necessária: planejamento, análise, projeto, codagem, testes unitários e testes de aceitação. No final da iteração é demonstrado para as partes interessadas (cliente) o que foi desenvolvido no processo. Isto minimiza o risco global de erros e permite que o produto se adapte às mudanças rapidamente. Uma iteração pode não adicionar a funcionalidade suficiente para justificar um lançamento no mercado, mas o objetivo é ter uma versão disponível (com erros mínimos) no final de cada iteração, porém várias iterações pode ser necessária para liberar uma versão de produto ou novos recursos.
-\par Independente do método ágil seguido, cada equipe deve incluir um representante do cliente, por exemplo o "proprietário do produto" no caso do Scrum. Esta pessoa faz um compromisso pessoal de estar disponível para os desenvolvedores em responder questões durante cada iteração. Isto otimiza o retorno de investimento e garante o alinhamento com as necessidades do cliente.
+\par Comparado a engenharia de software tradicional o Desenvolvimento Ágil de software tem como alvo principalmente sistemas complexos com características dinâmicas, ou seja, não determinístico e não-linear, onde as estimativas precisas, planos estáveis, e as previsões são muitas difíceis de se obter em estágios iniciais como na própria elaboração do projeto em si do produto, necessitando de um desenvolvimento e planejamento evolutivo.
+\par Existem muitos modelos específicos de métodos ágeis, a maioria busca promover o trabalho em equipe, colaboração e adaptabilidade no processo em todo o ciclo de vida de desenvolvimento. 
+\par Utiliza-se uma maior quantidade de ciclos em curtos períodos de tempo à fim de minimizar e parcelar o planejamento e estimativas.
+\par Cada iteração envolve uma equipe multifuncional de trabalho para cada função necessária: planejamento, análise, projeto, codagem, testes unitários e testes de aceitação.
+\par No final da iteração é demonstrado para as partes interessadas (cliente) o que foi desenvolvido no processo.
+\par Isto minimiza o risco global de erros e permite que o produto se adapte às mudanças rapidamente. 
+\par Independente do método ágil seguido cada equipe deve incluir um representante do cliente, por exemplo o "proprietário do produto" no caso do Scrum. 
+\par Esta pessoa faz um compromisso pessoal de estar disponível para os desenvolvedores em responder questões durante cada iteração. 
+\par Isto otimiza o retorno de investimento e garante o alinhamento com as necessidades do cliente.
 \par Outra característica comum deste tipo de metodologia é o \emph{stand-up} diário. Em uma breve sessão, os membros da equipe comunicam uns aos outros o que eles fizeram no dia anterior sobre as tarefas relacionadas o ciclo vigente, o que eles pretendem fazer, e quaisquer obstáculos ou impedimentos para continuar ou finalizar a tarefa do dia para a interação em questão.
 \par Diferentes ferramentas e técnicas específicas, tais como a integração contínua, testes de unidade automatizado, programação em pares, o desenvolvimento orientado a testes, padrões de projeto, \emph{Domain-Driven Design}, refatoração de código e outras técnicas são frequentemente utilizadas para melhorar a qualidade e aumentar a agilidade de produção.
 
@@ -64,3 +72,24 @@
 \includegraphics[width=8cm]{figuras/kanban_exemplo}
 \caption{\label{fig:kanban_exemplo}Exemplo de um quadro de \emph{Kanban}.}
 \end{figure}
+
+\section{Um contraponto: O modelo Cascata}
+    \par O modelo Cascata, algumas vezes chamado de ciclo de vida clássico, sugere uma abordagem sequencial e sistemática para o desenvolvimento de software, começando com o levantamento de necessidades por parte do cliente, avançando eplas fases de planejamento, modelagem, construção, emprego e culminando no suporte contínuo do software concluído (figura \ref{fig:waterfall}). (\cite{pressman:11})
+    \par Segundo  (\cite{pressman:11}), o modelo em cascata foi o primeiro paradigma de desenvolvimento criado pela Engenharia de Software, que teve sua essência retirada de outras áreas da Engenharia.
+\begin{figure}[htb]
+\centering
+\includegraphics[width=10cm]{figuras/waterfall}
+\caption{\label{fig:waterfall}O Modelo Cascata.}
+\end{figure}
+	\par As fases do Modelo são:
+\begin{itemize}
+\item \emph{ Requerimentos:} Realizar a análise de requisitos do projeto.
+\item \emph{ Design de Projeto:}  Focando na estrutura de dados, arquitetura do software, detalhes procedurais e caracterização das interfaces é formulado um documento de forma a apresentar os requerimentos de uma forma que possa ser interpretado pelos programadores.
+\item \emph{ Implementação:} Etapa da codificação do projeto propriamente dita.
+\item \emph{  Verificação: } Etapa para teste do produtos visando eliminar qualquer \emph{bug} que possa ter passado despercebido e refinar a lógica interna do software caso necessário.
+\item \emph{ Manutenção: } Etapa para instalação do sistema no cliente, configuração de servidores, etc.
+\end{itemize}
+
+\par Uma das grandes das críticas dessa abordagem é que dificilmente um desenvolvimento de software segue todas as etapas da forma como o modelo propõe  e nem sempre o cliente sabe definir bem os requisitos antes de ver o software funcionando, resultando em tempo e desenvolvimento desperdiçado em funcionalidades que não resolvem o problema.(\cite{pressman:11}) 
+\par Mudanças tardias no escopo do projeto encarecem o custo total e poderiam ter sido evitadas e contornadas de maneira mais satisfatória em um modelo com um processo de desenvolvimento iterativo \footnote{ Fonte: Wikipedia - Waterfall Model \url {https://en.wikipedia.org/wiki/Waterfall_model}}. 
+\par O Desenvolvimento Ágil tem pouco em comum com o Modelo em Cascata. Na visão de alguns este modelo é desacreditado, apesar de ser um modelo de uso comum. O modelo em cascata é uma das metodologias com maior ênfase no planejamento, seguindo seus passos através da captura dos requisitos, análise, projeto, codificação e testes em uma seqüência pré-planejada e restrita. \footnote {Fonte: Wikipedia - Desenvolvimento Ágil de Software: \url{https://pt.wikipedia.org/wiki/Desenvolvimento_\%C3\%A1gil_de_software#Compara.C3.A7.C3.A3o_com_o_modelo_em_cascata}}
