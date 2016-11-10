@@ -3,7 +3,7 @@
 \label{cap:tecnologias}
 \section{Ruby on Rails}
 \subsection{Ruby}
-    \par A criação da linguagem Ruby data de 1995 no Japão por Yukihiro "Matz" Matsumoto sob forte influência de outras linguagens como Perl, SmallTalk, Eiffel, Ada e Lisp.
+    \par A criação da linguagem Ruby data de 1995 no Japão por Yukihiro ``Matz'' Matsumoto sob forte influência de outras linguagens como Perl, SmallTalk, Eiffel, Ada e Lisp.
     \par Inicialmente o objetivo era equilibrar programação funcional, imperativa e orientação a objetos (\cite{rubydocs}).
 \begin{itemize}
 \item{Flexibilidade:}
@@ -52,18 +52,18 @@ class MyArray
 \begin{itemize}
 \item {\emph{Convention over Configuration} (CoC):}
     \par Convenções de configuração visando padronizar o código. Ao adicionar convenções é retirada do desenvolvedor a decisão de como usar o arcabouço porém isso não diminui sua flexibilidade.
-    \par Um exemplo pratico seria ao criar-se um objeto chamado "User" então sua tabela por convenção se chamará "users" e o correspondente \emph{controller} será UsersController ( no plural) pois esse é padrão definido pelo arcabouço.
+    \par Um exemplo pratico seria ao criar-se um objeto chamado ``User'' então sua tabela por convenção se chamará ``users'' e o correspondente \emph{controller} será UsersController ( no plural) pois esse é padrão definido pelo arcabouço.
     \par Vale ressaltar que é possível alterar essas convenções para adaptar-se às necessidades do desenvolvedor.
 
 \item {\emph{Don't Repeat yourself} (DRY):}
-    \par É definido como "Todo pedaço de informação deve ter uma única, não ambígua, representação autorizada com o Sistema" \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Don\%27t_repeat_yourself}}.
+    \par É definido como ``Todo pedaço de informação deve ter uma única, não ambígua, representação autorizada com o Sistema'' \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Don\%27t_repeat_yourself}}.
     \par Isso significa que uma modificação em uma parte do sistema não deve modificar outra parte não relacionada assim como elementos que são logicamente relacionados quando modificados ocorrem de forma previsível e uniforme.
 
 \item { \emph{Active Record Pattern}:}
     \par O padrão Active Record sugere uma interface específica para acessar objetos em um banco de dados relacional contendo funções tais como INSERT, UPDATE, DELETE, etc.
     \par Uma tabela ou \emph{view} será associada a uma classe e então uma instância de objeto estará associada a uma única entrada na respectiva tabela.
     \par Em Ruby on Rails a biblioteca ActiveRecord implementa o padrão ORM e além disso acrescenta herança e associações, resolvendo dois problemas substanciais do padrão.
-    \par ActiveRecord é o "model" padrão do componente MVC porém é possível trocá-lo por outra implementação do arcabouço Rails caso o desenvolvedor prefira.
+    \par ActiveRecord é o ``model'' padrão do componente MVC porém é possível trocá-lo por outra implementação do arcabouço Rails caso o desenvolvedor prefira.
 \end{itemize}
     \par Em um sentido mais amplo Rails é mais que uma biblioteca de software ou API: é um projeto central de uma vasta comunidade que produz \emph{plugins} para facilitar e construir projetos complexos de web site.
     \par Foi graças a essa comunidade que compartilham ferramentas e contribuem para o projeto Rails criando bibliotecas em código aberto ( chamadas de Ruby Gems ou apenas Gems \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/RubyGems}}) que o o uso de rails tem crescido de forma significante nos últimos anos ganhando fama entre startups devido a sua  facilidade e desevolvimento que permite criar sistemas complexos e testar idéias rapidamente.
@@ -95,7 +95,7 @@ class MyArray
 \par Ele oferece um serviço de controle de versão que provê todas as funcionalidades do Git assim como outras funcionalidades próprias como gerenciamento de tarefas, wikis próprias e \emph{bug tracking}.
 \par Atualmente diversos outros serviços oferecem a opção de integração com o Github por meio de uma API.
 \par No caso do USP Eventos a integração com o Github foi feita dentro do Travis CI para efetuar o processo de Integração Contínua.
-\par Além disso o Heroku também era integrado com o Github sendo que quando um \emph{commit} era feito para a \emph{branch} "Produção" e o mesmo fosse aprovado em todos os testes pelo Travis CI o \emph{deploy} da aplicação era realizado automaticamente.
+\par Além disso o Heroku também era integrado com o Github sendo que quando um \emph{commit} era feito para a \emph{branch} ``Produção'' e o mesmo fosse aprovado em todos os testes pelo Travis CI o \emph{deploy} da aplicação era realizado automaticamente.
 \par Tal integração entre o Heroku (figura \ref{fig:heroku_automatic_deploy}) e o Travis CI só foi possível graças a utilização do Github.
 \begin{figure}[htb]
 \centering
@@ -125,7 +125,7 @@ class MyArray
 \includegraphics[width=15cm]{figuras/heatmap_explanation}
 \caption{\label{fig:heatmap_explanation} Um exemplo de uma página utilizando o HeatMap.}
 \end{figure}
-\par As cores inicialmente começam em um tom verde quando clicadas poucas vezes sendo gradativamente alteradas para cores mais "quentes" tais como laranja ou vermelho conforme cliques na mesma região são feitos.
+\par As cores inicialmente começam em um tom verde quando clicadas poucas vezes sendo gradativamente alteradas para cores mais ``quentes'' tais como laranja ou vermelho conforme cliques na mesma região são feitos.
 
 \section{Typeform}
 \par A empresa Typeform oferece um serviço de formulários online para execução de pesquisas simples ou complexas.

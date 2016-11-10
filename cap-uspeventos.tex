@@ -12,7 +12,7 @@
                 \item {USP avisa eventos e incidentes:} Um sistema para reportar desde eventos acontecendo no campus (palestras, festas, etc) até outros incidentes (buracos, perigos, etc).
                 \item {USP doações e trocas: } Um sistema voltado para os membros da comunidade que desejam fazer doações ( sejam móveis, roupas usadas, etc) para outros e aqueles dispostos a receber. organizando filas de interesse,disponibilidade e urgência.
                 \end{itemize}
-        \par Com o intuito de entender melhor nosso público alvo além de estarmos abertos à outras sugestões precisávamos de um sistema que suportasse não só uma votação fechada como também permitisse que os próprios usuários fossem capazes de adicionar outras propostas de forma dinâmica àquelas já existentes. 
+        \par Com o intuito de entender melhor nosso público alvo além de estarmos abertos à outras sugestões precisávamos de um sistema que suportasse não só uma votação fechada como também permitisse que os próprios usuários fossem capazes de adicionar outras propostas de forma dinâmica àquelas já existentes.
         \par O sistema POP (Painel de Opinião Pública) foi escolhido para efetuar a enquete pois permitia uma criação dinâmica de opções pelos usuários. Foi então criada uma instância independente do sistema adaptada chamada POP-TCC (figura \ref{fig:pop-tcc}) utilizando o Heroku que poderia ser acessada pelo endereço pop-tcc.herokuapp.com.
         \par Em 11/01 foi enviado o primeiro e-mail com a enquete do POP-TCC aberta para a lista de e-mails dos alunos do IME com as duas opções iniciais de projeto supracitadas. A divulgação da enquete concentrou-se principalmente via facebook nas seguintes comunidades:
 \begin{figure}[htb]
@@ -84,7 +84,7 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 \item Os aplicativos nativos estão sujeitos às normas e aprovações de suas lojas virtuais, Play Store para o Android e Apple Store para o IOS, fazendo com que o tempo de publicação de uma atualização aumente devido a necessidade de aprovação da loja em questão.
 \item Não seria possível utilizar a plataforma em Desktops restringindo o público alvo.
 \end{itemize}
-\par A escolha de uma aplicação web deu-se principalmente pela facilidade de atualização de uma aplicação web por não necessitar da aprovação de um loja online ganhando em agilidade para realizar novos experimentos. 
+\par A escolha de uma aplicação web deu-se principalmente pela facilidade de atualização de uma aplicação web por não necessitar da aprovação de um loja online ganhando em agilidade para realizar novos experimentos.
 \par Apesar da escolha de um sistema web ao analisar o crescimento do acesso móvel no Brasil~\ref{fig:mobile_internet}, que vem aumentando a passos largos no país, houve a preocupação de desenvolver-se uma aplicação web híbrida com uma interface totalmente responsiva \footnote{ Uma interface responsiva de um site ou página é uma versão do layout adaptada para uso em telas menores comumente refere-se a visualização em smartphones} desde o princípio.
 \begin{figure}[htb]
 \includegraphics[height=10cm]{figuras/mobile_internet}
@@ -101,7 +101,7 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 \par O Travis CI era responsável para que a cada commit realizado fosse executada toda a bateria de testes automatizados enviando um e-mail contendo um relatório sobre o seu resultado, inclusive em caso de falha, garantindo dessa forma que todos tivessem sempre conhecimento das alterações sobre o código além de evitar problemas de conflitos de versões ou mesmo que uma atualização de projeto fosse colocada no ambiente de produção contendo alguma falha.
 \par O fator comunidade é outra vantagem do RoR. Destacando-se pelo seu tamanho, interesse e acessibilidade em tirar dúvidas sempre contribuindo para promover o arcabouço a comunidade que orbita ao redor do Rails foi capaz de criar ferramentas prontas para uso com uma ótima documentação, tutoriais, cursos e guias garantindo assim que qualquer desenvolvedor interessado sempre tenha em mãos materiais e ferramentas de qualidade para iniciar o desenvolvimento do seu projeto.(\cite{lilia:16})
 \par Acrescenta-se também à favor do arcabouço Rails sua escalabilidade. Rails é utilizado por empresas de grande porte tais como Groupon, Twitter, Basecamp, mostrando-se um arcabouço robusto capaz de lidar com grandes sistemas sem ter uma queda de desempenho.(\cite{lilia:16})
-\par Para finalizar Rails é também um arcabouço seguro garantindo, mesmo em sua configuração padrão ou com o auxílio de alguns plugins, proteção contra SQL-Injections e XSS( \emph{Cross Site Scripting}). 
+\par Para finalizar Rails é também um arcabouço seguro garantindo, mesmo em sua configuração padrão ou com o auxílio de alguns plugins, proteção contra SQL-Injections e XSS( \emph{Cross Site Scripting}).
 \par Além disso os programadores que contribuem para o arcabouço devem seguir o \emph{Secure Life Cycle Development}, figura \ref{fig:security_dev_lifecycle}, proposto pela Microsoft, um modelo de desenvolvimento de software cujo principal objetivo é ajudar o a construir software mais seguros e confiáveis e reduzir custos \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Microsoft_Security_Development_Lifecycle}}.
 \begin{figure}[htb]
 \includegraphics[width=15cm]{figuras/security_dev_lifecycle}
@@ -167,7 +167,7 @@ revisados e testados.
 		\caption{\label{fig:events_pagev1_responsive} Página de Eventos versão responsiva}
 		\end{figure}
 \par Visando evitar que os usuários se depararem com uma página de eventos vazia foi feita uma \emph{Rake Task} \footnote{Rake é um programa implementado em \emph{Ruby} que permite ao usuário implementar \emph{tasks} que são executadas ao serem chamadas} para consumir o xml gerado pelo feed RSS que o site www.eventos.usp.br. Dessa forma seria possível adicionar de forma mais ágil alguns eventos dentro da plataforma.
-\par Cada thumbnail de eventos presente na página principal de listagem de eventos incluía o nome do evento, localização, data de início e fim além de um botão de "Participar" para que os usuários que estivessem logados e também botões para compartilhamento nas principais redes sociais.
+\par Cada thumbnail de eventos presente na página principal de listagem de eventos incluía o nome do evento, localização, data de início e fim além de um botão de ``Participar'' para que os usuários que estivessem logados e também botões para compartilhamento nas principais redes sociais.
 \par Houve também a preocupação de espalhar formulários de Sugestões em diversos pontos do site com o intuito de facilitar a coleta de informações do usuário.
 \subsection{Divulgação}
 \par A primeira versão do sistema ficou disponível a partir do dia 5 de maio e sua divulgação foi feita pelo facebook por grupos e comunidades associadas a institutos da USP tais como FFLCH, FAU, IME, ECA, assim como foram enviadas mensagens para as respectivas empresas Júnior e Atléticas.
@@ -175,14 +175,14 @@ revisados e testados.
 \subsection{Métricas}
 \par Para medir o fluxo de usuários dentro do site utilizamos o Google Analytics em conjunto com o Google Tag Manager.
 \par Como métrica chave escolhemos medir a quantidade de usuários que se interessavam por um evento.
-\par Foi criada então uma tag (figura \ref{fig:tags}) para rastrear os cliques no botão "Participar" presente dentro do thumbnail de um evento na página principal e também na página de detalhes do evento. Dessa forma seria possível mapear o interesse do usuário em um determinado evento.
+\par Foi criada então uma tag (figura \ref{fig:tags}) para rastrear os cliques no botão ``Participar'' presente dentro do thumbnail de um evento na página principal e também na página de detalhes do evento. Dessa forma seria possível mapear o interesse do usuário em um determinado evento.
 \begin{figure}[htb]
 \includegraphics[width=15cm]{figuras/tags}
 \caption{\label{fig:tags} Visualização das Tags pelo Google Tag Manager.}
 \end{figure}
 \par Em pararelo foi possível obter também através do Google Analytics as seguintes informações (figura \ref{fig:analytics_1interacao_dados}):
 \begin{itemize}
-\item Visualizações de Páginas: "Exibições de página" refere-se ao número total de páginas visualizadas. Exibições repetidas de uma única página são consideradas.
+\item Visualizações de Páginas: ``Exibições de página'' refere-se ao número total de páginas visualizadas. Exibições repetidas de uma única página são consideradas.
 \item Páginas / Sessão: Número total de sessões \footnote{Uma sessão é o período que um usuário fica ativamente engajado com seu website, aplicativo etc. Todos os dados de uso (exibições de tela, eventos, comércio eletrônico etc.) são associados a uma sessão.} no período.
 \item Duração Média da Sessão: Auto-explicativo.
 \item Usuários: Os usuários que realizaram pelo menos uma sessão no período selecionado. Inclui usuários novos e recorrentes.
@@ -197,7 +197,7 @@ revisados e testados.
 \end{figure}
 
 \par É possível observar uma grande taxa de rejeição inicial ao site no período associado principalmente na página inicial com cerca de 761 sessões e 423 desistências (figura \ref{fig:analytics_1ainteracao_fluxo}).
-\par Durante o período observado foram registrados apenas 184 cliques em 56 sessões únicas no botão "Participar".
+\par Durante o período observado foram registrados apenas 184 cliques em 56 sessões únicas no botão ``Participar''.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=15cm]{figuras/analytics_1ainteracao_fluxo}
@@ -218,17 +218,17 @@ revisados e testados.
 \item Botão lateral de adicionar evento estava muito grande e atrapalhando a navegação.
 \item Falta de cores na página principal tornou cansativa a navegação.
 \item Clicar no nome do do evento no thumbnail para acessar a página do mesmo.
-\item Ausência de opção de "esqueci minha senha".
-\item Clicar no botão "Participar" não tinha uma utilidade prática. O evento era salvo porém isso gerava nenhum reflexo no sistema não existindo uma funcionalidade que justificasse sua existência e não havendo razão para que os usuários clicassem no botão.
+\item Ausência de opção de ``esqueci minha senha''.
+\item Clicar no botão ``Participar'' não tinha uma utilidade prática. O evento era salvo porém isso gerava nenhum reflexo no sistema não existindo uma funcionalidade que justificasse sua existência e não havendo razão para que os usuários clicassem no botão.
 \par Alguns comentários selecionados:
 
-\par Por Veronica: "Seria muito legal poder filtrar os eventos por tags referentes ao local / tipo / assuntos que serão abordados!"
+\par Por Veronica: ``Seria muito legal poder filtrar os eventos por tags referentes ao local / tipo / assuntos que serão abordados!''
 
-\par Por Lucas: "Olá! Eu gostaria de ver os eventos por categoria/área de conhecimento (Artes, História, Economia, Engenharia, etc)."
+\par Por Lucas: ``Olá! Eu gostaria de ver os eventos por categoria/área de conhecimento (Artes, História, Economia, Engenharia, etc).''
 
-\par Por Carolina: "Por que devemos nos cadastrar simplesmente para acessar o site? E se a pessoa "simplesmente quer se informar sobre o que está acontecendo"? A minha sugestão é que somente quem quer enviar eventos para o site deveria se ter que se cadastrar. Obrigada e boa sorte no TCC."
+\par Por Carolina: ``Por que devemos nos cadastrar simplesmente para acessar o site? E se a pessoa ``simplesmente quer se informar sobre o que está acontecendo''? A minha sugestão é que somente quem quer enviar eventos para o site deveria se ter que se cadastrar. Obrigada e boa sorte no TCC.''
 
-\par Por Karina: ". [Login] Aos usuários que não possuem conta, mas tentam logar, seria ideal que o sistema mostra-se quando o usuário colocou dados incorretos e quando o usuário não possui conta.
+\par Por Karina: ``. [Login] Aos usuários que não possuem conta, mas tentam logar, seria ideal que o sistema mostra-se quando o usuário colocou dados incorretos e quando o usuário não possui conta.
 \\
 . [Página de eventos] Seria melhor que a célula do evento permitisse o click para adentrar detalhes sobre o mesmo
 \\
@@ -236,7 +236,7 @@ revisados e testados.
 \\
 . [Página de eventos] Espaço para uma imagem nas células de divulgação do evento daria mais cor e chamaria mais a atenção dos usuários
 \\
-. Página de eventos] Seria legal colocar um aviso de inscrições limitadas para eventos que têm tal restrição"
+. Página de eventos] Seria legal colocar um aviso de inscrições limitadas para eventos que têm tal restrição''
 
 \end{itemize}
 \section{Segunda Iteração}
@@ -277,7 +277,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \item Removido botão de +Info, agora para acessar mais informações basta clicar sobre o nome do evento
 \item Adicionado Cabeçalho para separar e dar maior ênfase para o título e uma cor de fundo para aumentar o contraste com o plano de fundo a fim de facilitar a leitura
 \item Adição de tags com as classificações dos eventos facilitando a escolha do mesmo.
-\item Mudança do nome do botão de "Participar" para "Salvar"
+\item Mudança do nome do botão de ``Participar'' para ``Salvar''
 \end{itemize}
         \begin{figure}[htb]
         \centering
@@ -295,7 +295,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \par A implementação de um testes para a página de Alertas tão rapidamente só foi possível devido a grande flexibilidade que o modelo de Construir-Medir-Aprender oferece pois somente assim foi possível rapidamente integrar uma nova funcionalidade não prevista dentro do escopo do projeto e medir sua eficácia.
 \par Além disso com o auxílio de testes automatizados, ferramentas para integração contínua e a agilidade do desenvolvimento em Rails foi possível desenvolver e colocar as alterações no ambiente de produção sem comprometer a integridade do sistema como um todo.
 
-\par Por fim foi adicionada uma página "Sobre" com informações sobre os responsáveis pelo site assim como seus objetivos.
+\par Por fim foi adicionada uma página ``Sobre'' com informações sobre os responsáveis pelo site assim como seus objetivos.
 \subsection{Divulgação}
 \par Além da divulgação pelo facebook foram espalhados cartazes em pontos estratégicos pela USP tais como Pontos de Ônibus com grande movimentação, murais próximos aos Bandejões e também no interior de alguns institutos.
 
@@ -303,9 +303,9 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 
 \subsection{Métricas}
 
-\par Foi mantido o rastreamento pelo google Analytics do botão "Participar' porém seu nome foi alterado para "Salvar" com o intuito refletir melhor sua utilidade: Salvar um evento como interessante para exibi-lo na seção de "Meus Eventos" da listagem de eventos do usuário.
+\par Foi mantido o rastreamento pelo google Analytics do botão ``Participar'' porém seu nome foi alterado para ``Salvar'' com o intuito refletir melhor sua utilidade: Salvar um evento como interessante para exibi-lo na seção de ``Meus Eventos'' da listagem de eventos do usuário.
 
-\par A nossa métrica chave continuou sendo avaliar o interesse dos usuários em determinado Evento por meio do clique no botão "Salvar".
+\par A nossa métrica chave continuou sendo avaliar o interesse dos usuários em determinado Evento por meio do clique no botão ``Salvar''.
 
 \par Pelos resultados obtidos através do Googgle Analytics ((figura \ref{fig:analytics_2ainteracao_dados}) foi observado uma diminuição no número de sessões, entretanto também houve uma diminuição significativa na taxa de rejeição do site caindo de 46,91\% para 33,16\%.
 \par O tempo médio por sessão também aumentou passando de 1:54 minutos para 3:37 minutos. Mostrando um aumento na retenção de usuários acessando a plataforma.
@@ -316,7 +316,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \end{figure}
 
 \par Com o lançamento da seção de Alertas foi feita uma divulgação via Facebook incentivando os usuários a utilizarem a plataforma com o intuito de divulgar a localização de Pokemons.
-\par Foi colocado também uma \emph{tag} para rastrear o número de clicks no botão "Alertas" com a intenção de medir o interesse na funcionalidade, dessa forma foram observados 305 cliques no botão "Alertas" no período.
+\par Foi colocado também uma \emph{tag} para rastrear o número de clicks no botão ``Alertas'' com a intenção de medir o interesse na funcionalidade, dessa forma foram observados 305 cliques no botão ``Alertas'' no período.
 
 \par Analisando o gráfico de divisão por tipo de Sistema Operacional ((figura \ref{fig:analytics_2ainteracao_so}) percebemos que o acesso pelo sistema Android proporcionalmente mais que dobrou em relação ao período anterior, passando de 8,4\% para 19,36\%.
 
@@ -337,7 +337,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \par Mesmo com a criação e filtros e melhorias visuais a página principal ainda carecia de apelo para navegação.
 \par Alguns comentários recebidos de forma oral afirmaram que a página de eventos estava pouco atrativa visualmente sendo necessário que ela tivesse mais elementos que prendessem a atenção do usuário.
 
-\par Novamente recebemos comentários pelo próprio formulário do site sobre adicionar a opção de incluir uma foto ao evento, segue: "Sinto falta de anexo para cartazes. poder enviar uma foto ou cartaz escaneado do evento." - Ferdinand Machado
+\par Novamente recebemos comentários pelo próprio formulário do site sobre adicionar a opção de incluir uma foto ao evento, segue: ``Sinto falta de anexo para cartazes. poder enviar uma foto ou cartaz escaneado do evento.'' - Ferdinand Machado
 
 \section{Terceira Iteração}
 \subsection{Construção}
@@ -354,7 +354,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \caption{\label{fig:wireframe} Wireframe da versão modificada durante a Terceira Iteração}
 \end{figure}
 \par Para contornar a falta de conhecimento na área de \emph{User Experience} foram feitas pesquisas utilizando a bibliografia disponível e também entrevistas com profissionais da área.
-	\par Dito isso para melhorar a exibição de informação dentro do site centralizamos as principais modificações de UX na página de Eventos seguindo alguns preceitos apresentados por Steve Krug em seu livro "Don't make me think" (\cite{krug:00}) dentre eles:
+	\par Dito isso para melhorar a exibição de informação dentro do site centralizamos as principais modificações de UX na página de Eventos seguindo alguns preceitos apresentados por Steve Krug em seu livro ``Don't make me think'' (\cite{krug:00}) dentre eles:
 	\begin{itemize}
 	\item Eliminar distrações desnecessárias: Eliminar espaços em brancos e textos que possam distrair, poluir visualmente a página ou criar algum tipo de ruído na informação exibida.
 	\item Criar hierarquias visuais claras: Dar mais destaque para as informações importantes e aproximar visualmente elementos que possuam ligações lógicas entre eles como nome do evento e sua data.
@@ -374,9 +374,9 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \includegraphics[width=15cm]{figuras/events_page_3aiteracao}
 \caption{\label{fig:events_page_3aiteracao} Página de Eventos após modificações}
 \end{figure}
-	\par Victor Krug também afirma em seu livro que os usuários costumam criar "mapas mentais" de navegação sendo importante manter as convenções com o intuito de aproveitar-e dessa similaridade.
+	\par Victor Krug também afirma em seu livro que os usuários costumam criar ``mapas mentais'' de navegação sendo importante manter as convenções com o intuito de aproveitar-e dessa similaridade.
 	\par Tomando como um exemplo de convenção o Sympla \footnote{Site: www.sympla.com.br} desde o começo nosso fluxo de navegação estava bastante próximo a convenção establecida: Uma página principal de Eventos contendo toda uma listagem de eventos sendo que cada evento direciona para sua própria página específica.
-	\par Para aproximar ainda mais o fluxo de navegação foi incluída também na página inicial uma listagem com os "Próximos Eventos" assim como o Sympla faz com seus "Eventos em Destaque".
+	\par Para aproximar ainda mais o fluxo de navegação foi incluída também na página inicial uma listagem com os ``Próximos Eventos'' assim como o Sympla faz com seus ``Eventos em Destaque''.
 	\par Além disso foram implementados alguns efeitos visuais para chamar atenção do usuário:
 	\begin{itemize}
 	\item Ao passar o mouse sobre evento uma animação de salto do \emph{thumbnail} era rapidamente exibida.
@@ -422,22 +422,22 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 \par Nesse período também ocorreram 92 cliques no botão de Salvar um Evento além de 424 cliques para utilizar a página de alertas.
 \subsection{Aprendizado}
 \par Com o intuito de realizar uma coleta de dados mais direta com os candidatos foi criado um Formulário utilizando o TypeForm e conversas com pessoas que utilizavam a plataforma.
-\par Ao responder a pergunta "Qual ou quais foram os maiores pontos positivos na sua opinião?" a interface do site foi elogiada diversas vezes mostrando que as modificações foram de fato bem aceitas, algumas das respostas:
-\par "Interface bem fácil e intuitiva"\\
-\par "Organizar visualmente a informação dos eventos e a utilização de labels."\\
-\par "intuitivo em sua maioria, bonito, fácil de entender como funciona"\\
-\par " Mostrar eventos de diversos temas (não só festas, por exemplo). Mas também, a
-opção de selecionar os assuntos de sua preferência, ao fazer o cadastro.A interface é simples e clara, acho que atende aos objetivos e permite uma visualização rápida, podendo rolar até o mês desejável rapidamente."\\
-\par "Reunir todos os eventos do campus em um só lugar."\\
-\par "Gostei da preocupação em se fazer um site responsivo, já que, por ter inclusive uma seção Acontecendo Agora, é de se esperar que o acesso por meios móveis seja maior."\\
+\par Ao responder a pergunta ``Qual ou quais foram os maiores pontos positivos na sua opinião?'' a interface do site foi elogiada diversas vezes mostrando que as modificações foram de fato bem aceitas, algumas das respostas:
+\par ``Interface bem fácil e intuitiva''\\
+\par ``Organizar visualmente a informação dos eventos e a utilização de labels.''\\
+\par ``intuitivo em sua maioria, bonito, fácil de entender como funciona''\\
+\par ``Mostrar eventos de diversos temas (não só festas, por exemplo). Mas também, a
+opção de selecionar os assuntos de sua preferência, ao fazer o cadastro.A interface é simples e clara, acho que atende aos objetivos e permite uma visualização rápida, podendo rolar até o mês desejável rapidamente.''\\
+\par ``Reunir todos os eventos do campus em um só lugar.''\\
+\par ``Gostei da preocupação em se fazer um site responsivo, já que, por ter inclusive uma seção Acontecendo Agora, é de se esperar que o acesso por meios móveis seja maior.''\\
 
 \par Também foi feita uma pergunta sobre os pontos negativos e foi observado que alguns usuários acreditavam que os filtros não estivessem funcionando.
 \par Conversando pessoalmente foi identificado uma confusão na forma como o filtro é aplicado.
-\par Como o filtro é aplicado somente nas listagens de "Eventos Acontecendo Agora" e "Próximos Eventos" esses usuários não percebiam a filtragem estava sendo realizada.
-\par Ainda sobre os filtros aparentemente não ficou claro para os usuários que ao preencher suas preferências durante o cadastro isso iria criar uma listagem personalizada com o nome de "Principais Escolhas".
+\par Como o filtro é aplicado somente nas listagens de ``Eventos Acontecendo Agora'' e ``Próximos Eventos'' esses usuários não percebiam a filtragem estava sendo realizada.
+\par Ainda sobre os filtros aparentemente não ficou claro para os usuários que ao preencher suas preferências durante o cadastro isso iria criar uma listagem personalizada com o nome de ``Principais Escolhas''.
 \par Alguns comentários sobre os filtros:
-\par "No meu computador o site demora a responder e alguns filtros não funcionaram "\\
-\par "Tentei usar o filtro e não funcionou mto bem."\\
+\par ``No meu computador o site demora a responder e alguns filtros não funcionaram.''\\
+\par ``Tentei usar o filtro e não funcionou mto bem.''\\
 
 \par A página de Alertas também pareceu deslocada. Muitos não entenderam sua função e comentaram que o seu \emph{layout} atual está ruim.
 \par Segue uma compilação das sugestões de funcionalidades recebidas:
@@ -456,10 +456,10 @@ opção de selecionar os assuntos de sua preferência, ao fazer o cadastro.A int
 \end{itemize}
 
 \par Algumas respostas sobre sugestões para a plataforma:
-\par "talvez criar mais uma separação "eventos nos próximos 7 dias" ou "eventos dessa semana", visualização de mapa?"\\
-\par "Senti falta de uma visualização dos eventos em um calendário."\\
-\par "podia linkar com os eventos do fb! e já salvar nos seus eventos do fb"\\
-\par "Talvez, um campo de busca para que fosse possível escolher um mês ou fim de semana específico...É rápido ir rolando a tela, mas para eventos a longo prazo, a barra de busca cumpriria melhor a função."\\
+\par ``talvez criar mais uma separação ``eventos nos próximos 7 dias'' ou ``eventos dessa semana'', visualização de mapa?''\\
+\par ``Senti falta de uma visualização dos eventos em um calendário.''\\
+\par ``podia linkar com os eventos do fb! e já salvar nos seus eventos do fb.''\\
+\par ``Talvez, um campo de busca para que fosse possível escolher um mês ou fim de semana específico...É rápido ir rolando a tela, mas para eventos a longo prazo, a barra de busca cumpriria melhor a função.''\\
 
 \par Ao todo 25 pessoas responderam ao questionário, sendo que todas acreditam que uma plataforma centralizando Eventos na USP é de fato útil e  apenas 3 não gostaram do USP Eventos.
 \par Dentre as críticas das 3 pessoas que não gostaram os seguintes pontos foram levantados:
