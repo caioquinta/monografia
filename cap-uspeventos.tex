@@ -3,8 +3,7 @@
 \label{cap:uspeventos}
 \section{Definição do Projeto}
 \subsection{Motivação}
-        \par A idéia de desenvolver um sistema utilizando Métodos Ágeis e conceitos de \emph{Lean Startup} surgiu em dezembro de 2015.
-	\par O objetivo era desenvolver um sistema web ou aplicativo voltado para a comunidade USP com a intenção de facilitar de alguma forma o dia-a-dia dos usuários.
+        \par A idéia de desenvolver um sistema utilizando Métodos Ágeis e conceitos de \emph{Lean Startup} surgiu em dezembro de 2015. O objetivo era desenvolver um sistema web ou aplicativo voltado para a comunidade USP com a intenção de facilitar de alguma forma o dia-a-dia dos usuários.
         \par Inicialmente existiam algumas propostas de projeto que foram então formalizadas em uma enquete realizada junto a comunidade USP.
 \subsection{Enquete e definição do projeto}
         \par  No início as seguintes hipóteses de interesse de projeto foram disponibilizadas para votação:
@@ -12,7 +11,7 @@
                 \item {USP avisa eventos e incidentes:} Um sistema para reportar desde eventos acontecendo no campus (palestras, festas, etc) até outros incidentes (buracos, perigos, etc).
                 \item {USP doações e trocas: } Um sistema voltado para os membros da comunidade que desejam fazer doações ( sejam móveis, roupas usadas, etc) para outros e aqueles dispostos a receber. organizando filas de interesse,disponibilidade e urgência.
                 \end{itemize}
-        \par Com o intuito de entender melhor nosso público alvo além de estarmos abertos à outras sugestões precisávamos de um sistema que suportasse não só uma votação fechada como também permitisse que os próprios usuários fossem capazes de adicionar outras propostas de forma dinâmica àquelas já existentes.
+        \par Com o intuito de entender melhor nosso público alvo, além de aberto a outras sugestões, foi necessario um sistema que suportasse não só uma votação fechada como também permitisse que os próprios usuários fossem capazes de adicionar outras propostas de forma dinâmica àquelas já existentes.
         \par O sistema POP (Painel de Opinião Pública) foi escolhido para efetuar a enquete pois permitia uma criação dinâmica de opções pelos usuários. Foi então criada uma instância independente do sistema adaptada chamada POP-TCC (figura \ref{fig:pop-tcc}) utilizando o Heroku que poderia ser acessada pelo endereço pop-tcc.herokuapp.com.
         \par Em 11/01 foi enviado o primeiro e-mail com a enquete do POP-TCC aberta para a lista de e-mails dos alunos do IME com as duas opções iniciais de projeto supracitadas. A divulgação da enquete concentrou-se principalmente via facebook nas seguintes comunidades:
 \begin{figure}[htb]
@@ -35,7 +34,7 @@ Baladas USP                                & 15000
 \par Ao longo de duas semanas outras opções de projeto surgiram. O resultado final \ref{fig:poll_chart} da enquete e a descrição das sugestões seguem abaixo:
 \begin{itemize}
 \item{ 1º Lugar (39 votos):} USP avisa eventos e incidentes: Um sistema para reportar desde eventos acontecendo no campus (palestras, festas, etc) até outros incidentes (buracos, perigos, etc).
-\item {2º Lugar (21 votos):} USP doações e trocas: Um sistema voltado para os membros da comunidade que desejam fazer doações ( sejam móveis, roupas usadas, etc) para outros e aqueles dispostos a receber. organizando filas de interesse,disponibilidade e urgência.
+\item {2º Lugar (21 votos):} USP doações e trocas: Um sistema voltado para os membros da comunidade que desejam fazer doações (sejam móveis, roupas usadas, etc) para outros e aqueles dispostos a receber; organizando filas de interesse, disponibilidade e urgência.
 \item {3º Lugar (20 votos):} USP caronas: os motorizados colocam horário, bairro, quantidade de lugares disponíveis, ponte de embarque e desembarque. os interessados enviam um alerta para os motorizados confirmarem até preencherem as vagas.
 \item {4º Lugar (18 votos):} Mapa de crimes na USP: um app onde roubos, furtos, assaltos, agressões, assédios, discriminações e outros crimes podem ser relatados, georreferenciados no campus.
 \item {5º Lugar (14 votos):} Volta pedalusp - volta e desenvolvimento da ideia que já teve adesão, mas morreu por falta de manutenção. implementação de novos pontos de troca de bikes mais próximos das faculdades e outros pontos estratégicos.
@@ -52,7 +51,7 @@ Baladas USP                                & 15000
 \subsection{Pesquisa de Sistemas Semelhantes}
 \par Definido o tema do projeto teve início uma pesquisa para levantar a existência de sistemas que tivessem uma proposta semelhante de divulgação de eventos e atividades.
 \par Ao realizar essa pesquisa expandimos o escopo para que os sistemas não necessariamente fossem voltados para fins acadêmicos apenas tendo como objetivo principal obter uma base de conhecimento de quais funcionalidades um sistema de divulgação possui ou mesmo encontrar uma solução em código aberto que pudesse ser utilizada como base.
- \par Também Foi enviado um e-mail em março para a lista de Representantes Discentes do próprio IME questionando sobre funcionalidades e sugestões.
+ \par Também foi enviado um e-mail em março para a lista de Representantes Discentes do próprio IME questionando sobre funcionalidades e sugestões.
 \par Das compilações sobre a pesquisa e resposta obtidas por e-mail destacam-se 3 sites com proposta e conteúdos semelhantes:
 \begin{itemize}
 \item{Eventos USP (http://www.eventos.usp.br/):}
@@ -60,10 +59,10 @@ Canal de divulgação oficial da USP para eventos ocorrendo em suas dependência
 Pontos Fortes: Sendo o canal de comunicação oficial da universidade ele mostra-se com uma ótima fonte de conteúdo sobre eventos oficiais.\\
 Pontos Fracos: É uma via de mão única na qual o usuário apenas se informa dos detalhes do evento mas não tem oportunidade de criar ou divulgar o seu próprio.
 \item {Catraca-Livre (https://catracalivre.com.br/brasil/):} Principal Portal de atividades culturais e divulgação de eventos costuma ser bastante eclético. \\
-Pontos Fortes: Apesar de não ter um conteúdo personalizável a página de Agenda possui uma grande variedade de opções de filtro.
+Pontos Fortes: Apesar de não ter um conteúdo personalizável a página de Agenda possui uma grande variedade de opções de filtro.\\
 Pontos Fracos: Como divulga eventos por toda a cidade sua navegação é bastante confusa levando o usuário a facilmente perder-se devido à grande quantidade de informações e poucas opções de personalização. Soma-se a isso o fato de que o site é uma forma de comunicação unilateral não permitindo que usuários divulguem e organizem seus próprios eventos.\\
-\item {SP Cultura (http://spcultura.prefeitura.sp.gov.br/):} Portal oficial da prefeitura de São Paulo para divulgação de atividades por toda a cidade.
-Pontos Fortes: Possui bastante opções de filtros além de permitir que um usuário interessado crie um evento e submeta-o para aprovação, bastante intuitivo e de fácil acesso. É baseado em uma solução de código aberto.
+\item {SP Cultura (http://spcultura.prefeitura.sp.gov.br/):} Portal oficial da prefeitura de São Paulo para divulgação de atividades por toda a cidade.\\
+Pontos Fortes: Possui bastante opções de filtros além de permitir que um usuário interessado crie um evento e submeta-o para aprovação, bastante intuitivo e de fácil acesso. É baseado em uma solução de código aberto.\\
 Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dando mais ênfase à localização do evento do que sobre sua descrição obrigando o usuário a selecionar primeiro um evento em uma localização para então obter informações do mesmo.
 \end{itemize}
 \subsection{Plataforma Web x Móvel}
@@ -82,7 +81,7 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 \item A maior vantagem de um aplicativo nativo é ter acesso aos recursos de \emph{hardware} do smartphone tais como câmera ou acelerômetro.
 \par Como nossa aplicação não faria uso de nenhum recurso específico tais vantagens não seriam aproveitadas.
 \item Os aplicativos nativos estão sujeitos às normas e aprovações de suas lojas virtuais, Play Store para o Android e Apple Store para o IOS, fazendo com que o tempo de publicação de uma atualização aumente devido a necessidade de aprovação da loja em questão.
-\item Não seria possível utilizar a plataforma em Desktops restringindo o público alvo.
+\item Não seria possível utilizar a plataforma em Desktops restringindo o público-alvo.
 \end{itemize}
 \par A escolha de uma aplicação web deu-se principalmente pela facilidade de atualização de uma aplicação web por não necessitar da aprovação de um loja online ganhando em agilidade para realizar novos experimentos.
 \par Apesar da escolha de um sistema web ao analisar o crescimento do acesso móvel no Brasil~\ref{fig:mobile_internet}, que vem aumentando a passos largos no país, houve a preocupação de desenvolver-se uma aplicação web híbrida com uma interface totalmente responsiva \footnote{ Uma interface responsiva de um site ou página é uma versão do layout adaptada para uso em telas menores comumente refere-se a visualização em smartphones} desde o princípio.
@@ -92,10 +91,9 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 \end{figure}
 \par Dessa forma apesar do acesso em um smartphone não ser tão intuitivo quanto em uma aplicação nativa ainda sim teria uma interface funcional garantindo que a navegação em uma plataforma móvel fosse feita sem dificuldades.
 \subsection{Porque escolher Ruby on Rails }
-\par O uso do Ruby on Rails entre startups tem crescido nos últimos anos isso devido a alguns fatores intrinsecamente ligados à própria estrutura do arcabouço Rails e também à necessidade que startups e o próprio modelo de \emph{Lean Startup} exigem para iterações e alterações de códigos rápidas(\cite{lilia:16}).
+\par O uso do \emph{Ruby on Rails} entre \emph{startups} tem crescido nos últimos anos isso devido a alguns fatores intrinsecamente ligados à própria estrutura do arcabouço Rails e também à necessidade que \emph{startups} e o próprio modelo de \emph{Lean Startup} exigem para iterações e alterações de códigos rápidas(\cite{lilia:16}).
 \par Uma das principais filosofias do Ruby on Rails, o CoC \- Convenção sobre Configuração, permite que o desenvolvedor possa, a partir de um conjunto pré-definido de configurações padrões, agilizar o desenvolvimento do código ao tirar de sua responsabilidade fatores de configuração em detrimento de um padrão já estabelecido(\cite{morrice:15}).
-\par Dessa forma desenvolvedor mais tempo para concentrar-se em decisões sobre o produto. Essa agilidade em codificar rapidamente resulta em interações mais rápidas contribuindo para uma maior agilidade dentro do ciclo de Construir-Medir-Aprender.
-\par Outro fator a favor do arcabouço Rails é o grande enfoque em testes automatizados(\cite{morrice:15}).
+\par Dessa forma desenvolvedor mais tempo para concentrar-se em decisões sobre o produto. Essa agilidade em codificar rapidamente resulta em interações mais rápidas contribuindo para uma maior agilidade dentro do ciclo de Construir-Medir-Aprender. Outro fator a favor do arcabouço Rails é o grande enfoque em testes automatizados(\cite{morrice:15}).
 \par Para o desenvolvimento da plataforma USP Eventos foram utilizadas as gems Rspec e Capybara que permitem não só a realização de testes unitários como também testes de integração de modo muito rápido e direto garantindo assim a confiabilidade do projeto.
 \par Soma-se a isso a quantidade enorme de ferramentas que auxiliam na integração contínua do código como por exemplo o Travis CI utilizado durante o desenvolvimento da plataforma.
 \par O Travis CI era responsável para que a cada commit realizado fosse executada toda a bateria de testes automatizados enviando um e-mail contendo um relatório sobre o seu resultado, inclusive em caso de falha, garantindo dessa forma que todos tivessem sempre conhecimento das alterações sobre o código além de evitar problemas de conflitos de versões ou mesmo que uma atualização de projeto fosse colocada no ambiente de produção contendo alguma falha.
@@ -120,9 +118,9 @@ revisados e testados.
 \end{itemize}
 \par Cada item adicionado na fila de TO DO é chamada de tarefa. Uma hipótese à ser testada pode ser transformada em uma série de tarefas pequenas à serem completadas durante o período de desenvolvimento.
 \par Caso seja necessário é possível quebrar uma tarefa grande em uma série de tarefas menores. Tomando como exemplo a tarefa de Implementar um filtro de eventos para a página principal. Ela foi quebrada em 3 tarefas menores para serem completadas: Implementar categorias de eventos, permitir adicionar categorias de eventos durante a criação de um novo evento e implementar filtro de eventos na página principal de eventos.
-\par O tempo que uma tarefa demora desde sua entrada no quadro até a saída é denominado \emph{Lead Time}. Em um ambiente de Startup o intuito é sempre obter o menor Lead Time possível para tal é importante estar ciente da taxa de entrega que sua equipe de desenvolvimento é capaz de cumprir e sempre definir as tarefas de modo simples.
-\par Para utililzação no projeto USP Eventos foi incluída uma coluna a mais denominada BACKLOG, comumente usada na metodologia Scrum \footnote{Fonte: Desenvolvimento Ágil \url{fonte http://www.desenvolvimentoagil.com.br/scrum/sprint_backlog}}, na qual foram colocadas idéias que poderiam ou não serem transformadas em tarefas de desenvolvimento ou hipóteses para serem executadas em uma iteração do ciclo de Construir-Medir-Aprender.
-\par Em cada iteração do ciclo especificamos quais hipóteses seriam testadas e a partir delas criamos tarefas para serem implementadas.
+\par O tempo que uma tarefa demora desde sua entrada no quadro até a saída é denominado \emph{Lead Time}. Em um ambiente de \emph{startup} o intuito é sempre obter o menor Lead Time possível para tal é importante estar ciente da taxa de entrega que sua equipe de desenvolvimento é capaz de cumprir e sempre definir as tarefas de modo simples.
+\par Para utililzação no projeto USP Eventos foi incluída uma coluna a mais denominada BACKLOG, comumente usada na metodologia Scrum \footnote{Fonte: Desenvolvimento Ágil \url{fonte http://www.desenvolvimentoagil.com.br/scrum/sprint_backlog}}, na qual foram colocadas ideias que poderiam ou não serem transformadas em tarefas de desenvolvimento ou hipóteses para serem executadas em uma iteração do ciclo de Construir-Medir-Aprender.
+\par Em cada iteração do ciclo foi especificado quais hipóteses seriam testadas e a partir delas criado tarefas para serem implementadas.
 \par Caso um bug fosse detectado uma tarefa era criada na fila de TO DO para resolvê-la.
 \par A ferramenta Trello, figura \ref{fig:kanban}, foi utilizada para simular um quadro Kanban digital, com ela foi possível guiar todo o desenvolvimento do sistema.
 \begin{figure}[htb]
@@ -155,8 +153,7 @@ revisados e testados.
 		\includegraphics[width=15cm]{figuras/sign_upv1}
 		\caption{\label{fig:sign_upv1} Tela de Cadastro na primeira iteração}
 		\end{figure}
-		\par A página de eventos (figura \ref{fig:events_pagev1}) só poderia ser acessada por um usuário logado tornando essa página e qualquer página de evento específica inacessível para um visitante sem login.
-        \par Além disso a página de eventos apenas mostrava-os sem oferecer qualquer opção inicial de filtro.
+		\par A página de eventos (figura \ref{fig:events_pagev1}) só poderia ser acessada por um usuário logado tornando essa página e qualquer página de evento específica inacessível para um visitante sem login. Além disso a página de eventos apenas mostrava-os sem oferecer qualquer opção inicial de filtro.
         \begin{figure}[htb]
 		\includegraphics[width=15cm]{figuras/events_pagev1}
 		\caption{\label{fig:events_pagev1} Página de Eventos}
@@ -171,19 +168,19 @@ revisados e testados.
 \par Houve também a preocupação de espalhar formulários de Sugestões em diversos pontos do site com o intuito de facilitar a coleta de informações do usuário.
 \subsection{Divulgação}
 \par A primeira versão do sistema ficou disponível a partir do dia 5 de maio e sua divulgação foi feita pelo facebook por grupos e comunidades associadas a institutos da USP tais como FFLCH, FAU, IME, ECA, assim como foram enviadas mensagens para as respectivas empresas Júnior e Atléticas.
-\par Também divulgamos a primeira versão na lista de alunos e representantes discentes do próprio Instituto de Matemática e Estatística.
+\par Também foi divulgado a primeira versão na lista de alunos e representantes discentes do próprio Instituto de Matemática e Estatística.
 \subsection{Métricas}
-\par Para medir o fluxo de usuários dentro do site utilizamos o Google Analytics em conjunto com o Google Tag Manager.
+\par Para medir o fluxo de usuários dentro do site foi utilizado Google Analytics em conjunto com o Google Tag Manager.
 \par Como métrica chave escolhemos medir a quantidade de usuários que se interessavam por um evento.
 \par Foi criada então uma tag (figura \ref{fig:tags}) para rastrear os cliques no botão ``Participar'' presente dentro do thumbnail de um evento na página principal e também na página de detalhes do evento. Dessa forma seria possível mapear o interesse do usuário em um determinado evento.
 \begin{figure}[htb]
 \includegraphics[width=15cm]{figuras/tags}
 \caption{\label{fig:tags} Visualização das Tags pelo Google Tag Manager.}
 \end{figure}
-\par Em pararelo foi possível obter também através do Google Analytics as seguintes informações (figura \ref{fig:analytics_1interacao_dados}):
+\par Em pararelo foi possível obter também por meio do Google Analytics as seguintes informações (figura \ref{fig:analytics_1interacao_dados}):
 \begin{itemize}
 \item Visualizações de Páginas: ``Exibições de página'' refere-se ao número total de páginas visualizadas. Exibições repetidas de uma única página são consideradas.
-\item Páginas / Sessão: Número total de sessões \footnote{Uma sessão é o período que um usuário fica ativamente engajado com seu website, aplicativo etc. Todos os dados de uso (exibições de tela, eventos, comércio eletrônico etc.) são associados a uma sessão.} no período.
+\item Páginas / Sessão: Número total de sessões \footnote{Uma sessão é o período que um usuário fica ativamente engajado com seu website, aplicativo, etc. Todos os dados de uso (exibições de tela, eventos, comércio eletrônico etc.) são associados a uma sessão.} no período.
 \item Duração Média da Sessão: Auto-explicativo.
 \item Usuários: Os usuários que realizaram pelo menos uma sessão no período selecionado. Inclui usuários novos e recorrentes.
 \item Taxa de Rejeição: A taxa de rejeição é a porcentagem de visitas a uma única página (ou seja, visitas nas quais a pessoa sai de seu site na mesma da página de entrada, sem interagir com a página).
@@ -203,7 +200,7 @@ revisados e testados.
 \includegraphics[width=15cm]{figuras/analytics_1ainteracao_fluxo}
 \caption{\label{fig:analytics_1ainteracao_fluxo} Fluxo de Comportamento de 01/05 até 31/07.}
 \end{figure}
-\par Através do gráfico de a divisão de uso por tipo de Sistema Operacional (figura \ref{fig:analytics_1interacao_so})foi possível observar que a grande maioria dos usuários acessa o site por meio \emph{notebooks} ou computadores pessoais.
+\par A partir do gráfico de uso por tipo de Sistema Operacional (figura \ref{fig:analytics_1interacao_so})foi possível observar que a grande maioria dos usuários acessa o site por meio \emph{notebooks} ou computadores pessoais.
 \begin{figure}[htb]
 \includegraphics[width=15cm]{figuras/analytics_1interacao_so}
 \caption{\label{fig:analytics_1interacao_so} Porcentagem de uso por S.O de 01/05 até 31/07.}
@@ -211,7 +208,7 @@ revisados e testados.
 \subsection{Aprendizado}
 \par O maior número de acesso de usuários deu-se sempre em seguida aos posts realizados pelo facebook, alcançando picos de acesso mostrando a importância da divulgação pela plataforma.
 \par Foi observado que os usuários acessavam o site porém não realizavam cadastro deixando-o logo em seguida resultando em um número elevado de desistências na página inicial.
-\par Dentre os retornos recebidos através do formulário do site, e-mails e de forma direta foram compiladas algumas críticas e sugestões:
+\par Dentre os retornos recebidos pelo formulário do site, e-mails e de forma direta foram compiladas algumas críticas e sugestões:
 \begin{itemize}
 \item Página de eventos e visualização dos mesmos deveriam ser abertas para usuários mesmo sem login.
 \item Ausência de um filtro de usuários tornou a página de eventos confusa para navegação.
@@ -286,7 +283,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 		\end{figure}
 
 \par Em conjunto com a criação das tags para eventos foi criado um mecanismo de preferências para o usuário, agora na página de cadastro ou edição de usuário é possível selecionar as tags com as quais o usuário tenha maior afinidade com o intuito de exibir uma listagem personalizada de eventos segundo esses critérios.
-\par Aproveitando o sucesso do lançamento do aplicativo Pokemon GO \footnote{Fonte: Pokemon GO \url{ https://en.wikipedia.org/wiki/Pokemon_Go }} que gerou uma enorme quantidade de acessos e movimentação pelo Campus foi criado uma página de Alertas \ref{fig:alert_page} no Campus visando atingir o público que estava utilizando o aplicativo para divulgar a localização de Pokemons.
+\par Aproveitando o sucesso do lançamento do aplicativo Pokémon GO \footnote{Fonte: Pokemon GO \url{ https://en.wikipedia.org/wiki/Pokemon_Go }} que gerou uma enorme quantidade de acessos e movimentação pelo Campus foi criado uma página de Alertas \ref{fig:alert_page} no Campus visando atingir o público que estava utilizando o aplicativo para divulgar a localização de Pokémons.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=15cm]{figuras/alert_page}
@@ -307,7 +304,7 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 
 \par A nossa métrica chave continuou sendo avaliar o interesse dos usuários em determinado Evento por meio do clique no botão ``Salvar''.
 
-\par Pelos resultados obtidos através do Googgle Analytics ((figura \ref{fig:analytics_2ainteracao_dados}) foi observado uma diminuição no número de sessões, entretanto também houve uma diminuição significativa na taxa de rejeição do site caindo de 46,91\% para 33,16\%.
+\par A partir dos resultados obtidos pelo Googgle Analytics ((figura \ref{fig:analytics_2ainteracao_dados}) foi observado uma diminuição no número de sessões, entretanto também houve uma diminuição significativa na taxa de rejeição do site caindo de 46,91\% para 33,16\%.
 \par O tempo médio por sessão também aumentou passando de 1:54 minutos para 3:37 minutos. Mostrando um aumento na retenção de usuários acessando a plataforma.
 \begin{figure}[htb]
 \centering
@@ -341,20 +338,16 @@ As mudanças realizadas (figura \ref{fig:thumbs_comparison_v1_v2}) no thumbnail 
 
 \section{Terceira Iteração}
 \subsection{Construção}
-	\par As maiores críticas recebidas durante a última iteração foram em relação a experiência proporcionada pelo site que não estava atrativa o suficiente.
-	\par A partir desse \emph{feedback} foi decidido testar a seguinte a hipótese:
+	\par As maiores críticas recebidas durante a última iteração foram em relação a experiência proporcionada pelo site que não estava atrativa o suficiente. A partir desse \emph{feedback} foi decidido testar a seguinte a hipótese:
 	\par - Melhorar a UX do site para aumentar a aceitação dos usuários.
-	\par Em seu artigo publicado na \emph{Agile Conference} Beverly May (\cite{beverly:2012}), especialista em UX, discute alguns dos erros que cometeu o aplicar o método de \emph{Lean Startup}. Dentre eles um dos principais foi negligenciar a UX inicialmente.
-	\par Como recomendação ele aconselha investir numa boa experiência de usuário sempre construindo protótipos e \emph{wireframes} \footnote{ Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface. , fonte \url{https://pt.wikipedia.org/wiki/Website_wireframe}} antes de implementar para testar as modificações visuais.
-	 \par Berverly também enaltece a importância de realizar testes constantes e sempre levar em consideração os \emph{feedbacks} dos usuários, positivos e negativos, um conceito também presente no ciclo de Construir-Medir-Aprender e base para o \emph{Customer Development}.
-	\par No caso do USP Eventos foi feito um \emph{wireframe} ((figura \ref{fig:wireframe}) da página principal de Eventos com as modificações realizadas na iteração atual.
+	\par Em seu artigo publicado na \emph{Agile Conference} Beverly May (\cite{beverly:2012}), especialista em UX, discute alguns dos erros que cometeu o aplicar o método de \emph{Lean Startup}. Dentre eles um dos principais foi negligenciar a UX inicialmente. Como recomendação ele aconselha investir numa boa experiência de usuário sempre construindo protótipos e \emph{wireframes} \footnote{ Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface. , fonte \url{https://pt.wikipedia.org/wiki/Website_wireframe}} antes de implementar para testar as modificações visuais.
+	 \par Berverly também enaltece a importância de realizar testes constantes e sempre levar em consideração os \emph{feedbacks} dos usuários, positivos e negativos, um conceito também presente no ciclo de Construir-Medir-Aprender e base para o \emph{Customer Development}. No caso do USP Eventos foi feito um \emph{wireframe} ((figura \ref{fig:wireframe}) da página principal de Eventos com as modificações realizadas na iteração atual.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=15cm]{figuras/wireframe}
 \caption{\label{fig:wireframe} Wireframe da versão modificada durante a Terceira Iteração}
 \end{figure}
-\par Para contornar a falta de conhecimento na área de \emph{User Experience} foram feitas pesquisas utilizando a bibliografia disponível e também entrevistas com profissionais da área.
-	\par Dito isso para melhorar a exibição de informação dentro do site centralizamos as principais modificações de UX na página de Eventos seguindo alguns preceitos apresentados por Steve Krug em seu livro ``Don't make me think'' (\cite{krug:00}) dentre eles:
+\par Para contornar a falta de conhecimento na área de \emph{User Experience} foram feitas pesquisas utilizando a bibliografia disponível e também entrevistas com profissionais da área. Isso melhorou a exibição de informação dentro do site, centralizando as principais modificações de UX na página de Eventos seguindo alguns preceitos apresentados por Steve Krug em seu livro ``Don't make me think'' (\cite{krug:00}), dentre eles:
 	\begin{itemize}
 	\item Eliminar distrações desnecessárias: Eliminar espaços em brancos e textos que possam distrair, poluir visualmente a página ou criar algum tipo de ruído na informação exibida.
 	\item Criar hierarquias visuais claras: Dar mais destaque para as informações importantes e aproximar visualmente elementos que possuam ligações lógicas entre eles como nome do evento e sua data.
