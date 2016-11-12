@@ -3,11 +3,11 @@
 \label{cap:tecnologias}
 \section{Ruby on Rails}
 \subsection{Ruby}
-    \par A criação da linguagem Ruby data de 1995 no Japão por Yukihiro ``Matz'' Matsumoto sob forte influência de outras linguagens como Perl, SmallTalk, Eiffel, Ada e Lisp.  Inicialmente o objetivo era equilibrar programação funcional, imperativa e orientação a objetos (\cite{rubydocs}).
+    \par A criação da linguagem Ruby data de 1995 no Japão por Yukihiro ``Matz'' Matsumoto sob forte influência de outras linguagens como Perl, SmallTalk, Eiffel, Ada e Lisp.  Inicialmente o objetivo era equilibrar programação funcional, imperativa e orientação a objetos \citep{rubydocs}.
 \begin{itemize}
 \item{Flexibilidade:}
     \par A Linguagem Ruby cresceu devido a sua grande flexibilidade. Sendo possível alterar, remover ou acrescentar partes da linguagem à vontade.
-    \par Como no seguinte exemplo: um usuário prefere utilizar a palavra \emph{plus} ao operador matemático `` + '', ele poderia então adicionar esse método à classe nativa do Ruby Numeric pois os operadores matemáticos são considerados açúcares sintáticos nesta linguagem.
+    \par Como no seguinte exemplo: um usuário prefere utilizar a palavra \emph{plus} ao invés do operador matemático `` + '', ele poderia então adicionar esse método à classe nativa do Ruby Numeric pois os operadores matemáticos são considerados açúcares sintáticos nesta linguagem.
 \\Exemplo:
 \begin{lstlisting}[frame=single]
 class Numeric
@@ -17,10 +17,11 @@ class Numeric
     end
 
     y = 5.plus 6
-    # y agora eh igual a 11
+    # y agora é igual a 11
 \end{lstlisting}
 \item{Closures:}
-    \par Nesta linguagem, \emph{closures} são chamadas de blocos e são funções que podem ser tratadas como uma variável. Isso quer dizer que podem ser passadas como argumentos de métodos, serem atribuídas a outras variáveis, entre outras. As \emph{closures} armazenam os valores das variáveis que estavam no escopo quando a função foi definida e são capazes de acessar tais variáveis mesmo que sejam executadas em um escopo diferente. \footnote{Fonte: Site Point \url{https://www.sitepoint.com/closures-ruby/}}
+\par Nesta linguagem, closures são chamadas de blocos e são funções que podem ser tratadas como uma variável. Isso quer dizer que podem ser passadas como argumentos de métodos, serem atribuídas a outras variáveis, etc.
+\par As closures armazenam os valores das variáveis que estavam no escopo quando a função foi definida e são capazes de acessar tais variáveis mesmo que sejam executadas em um escopo diferente\footnote{Fonte: Site Point \url{https://www.sitepoint.com/closures-ruby/}}.
 \\
 Exemplo:
 \begin{lstlisting}[frame=single]
@@ -30,8 +31,9 @@ search_engines =
   end
 \end{lstlisting}
 \item{Módulos:}
-    \par Diferente de outras linguagens orientadas a objetos o Ruby suporta apenas herança simples porém de forma proposital. O conceito de módulos que são coleções de métodos que podem ser adicionadas à uma classe por meio de um \emph{mixin}. As classes podem fazer o mixin de um método e receber todos os métodos dele diretamente.
-Exemplo:
+\par Módulos são formas de agrupar métodos, classes e constantes prevenindo conflitos de nomes e permitindo a fácil implementação de Mixins.
+\par Diferente de outras linguagens orientadas a objetos Ruby suporta apenas herança simples porém isso é contornado através dos Mixins que permitem à uma classe receber mais de um módulo diferente, herdando assim todos seus métodos e definições.
+\\Exemplo:
 \begin{lstlisting}[frame=single]
 class MyArray
           include Enumerable
@@ -41,12 +43,11 @@ class MyArray
 \end{itemize}
 \subsection{Rails}
 
-\par Ruby on Rails é um arcabouço escrito em linguagem Ruby, implementado seguindo o padrão MVC\footnote{Modelo-Visão-Controlador: Na qual o Modelo é a camada que contém os dados e lógica da aplicação, a Visão é a camada de entrada e saída de dados e o Controlador faz a conexão entre ambas camadas, fonte: \url{https://pt.wikipedia.org/wiki/MVC} } totalmente \emph{server-side}, sendo considerado portanto um arcabouço \emph{back-end}. David Heinemeier Hansson, criador da tecnologia, extraiu o Ruby on Rails do seu próprio trabalho realizado na empresa Basecamp e foi lançado como código-aberto pela primeira vez em 2004.
-\par Este arcabouço oferece também uma estrutura para banco de dados \emph{web service} e \emph{web pages}, além de encorajar padrões de engenharia de software já consagrados tais como:(\cite{railswiki})
+\par Ruby on Rails é um arcabouço escrito em linguagem Ruby, implementado seguindo o padrão MVC\footnote{Modelo-Visão-Controlador: Na qual o Modelo é a camada que contém os dados e lógica da aplicação, a Visão é a camada de entrada e saída de dados e o Controlador faz a conexão entre ambas camadas, fonte: \url{https://pt.wikipedia.org/wiki/MVC} } totalmente \emph{server-side}, sendo considerado portanto um arcabouço \emph{back-end}.
+\par Este arcabouço oferece também uma estrutura para banco de dados \emph{web service} e \emph{web pages}, além de encorajar padrões de engenharia de software já consagrados tais como\footnote{Fonte: Ruby on Rails \url{https://en.wikipedia.org/wiki/Ruby_on_Rails}}
 \begin{itemize}
 \item {\emph{Convention over Configuration} (CoC):}
-    \par Convenções de configuração visando padronizar o código. Ao adicionar convenções é retirada do desenvolvedor a decisão de como usar o arcabouço porém isso não diminui sua flexibilidade.
-    \par Um exemplo pratico seria ao criar-se um objeto chamado ``User'' então sua tabela por convenção se chamará ``users'' e o correspondente \emph{controller} será UsersController ( no plural) pois esse é padrão definido pelo arcabouço.
+    \par Convenções de configuração visando padronizar o código. Ao adicionar convenções é retirada do desenvolvedor a decisão de como usar o arcabouço porém isso não diminui sua flexibilidade. Por exemplo ao criar-se um objeto chamado ``User'' então sua tabela por convenção se chamará ``users'' e o correspondente \emph{controller} será UsersController ( no plural) pois esse é padrão definido pelo arcabouço.
     \par Vale ressaltar que é possível alterar essas convenções para adaptar-se às necessidades do desenvolvedor.
 
 \item {\emph{Don't Repeat yourself} (DRY):}
@@ -55,16 +56,17 @@ class MyArray
 
 \item { \emph{Active Record Pattern}:}
     \par O padrão Active Record sugere uma interface específica para acessar objetos em um banco de dados relacional contendo funções tais como INSERT, UPDATE, DELETE, etc. Uma tabela ou \emph{view} será associada a uma classe e então uma instância de objeto estará associada a uma única entrada na respectiva tabela.
-    \par Em Ruby on Rails a biblioteca ActiveRecord implementa o padrão ORM e além disso acrescenta herança e associações, resolvendo dois problemas substanciais do padrão. ActiveRecord é o \emph{model} padrão do componente MVC, porém é possível trocá-lo por outra implementação do arcabouço Rails caso o desenvolvedor prefira.
+    \par Em Ruby on Rails a biblioteca ActiveRecord implementa o padrão ORM além de acrescentar herança e associações, resolvendo dois problemas substanciais do padrão. ActiveRecord é o \emph{model} padrão do componente MVC, porém é possível trocá-lo por outra implementação do arcabouço Rails caso o desenvolvedor prefira.
 \end{itemize}
-    \par Em um sentido mais amplo Rails é mais que uma biblioteca de software ou API: é um projeto central de uma vasta comunidade que produz \emph{plugins} para facilitar e construir projetos complexos de web site.
-    \par Foi graças a essa comunidade que compartilham ferramentas e contribuem para o projeto Rails criando bibliotecas em código aberto (chamadas de Ruby Gems ou apenas Gems \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/RubyGems}}) que o o uso de rails tem crescido de forma significante nos últimos anos ganhando fama entre \emph{startups} devido a sua  facilidade e desevolvimento que permite criar sistemas complexos e testar ideias rapidamente.
+    \par Em um sentido mais amplo Rails é mais que uma biblioteca de software ou API: é um projeto central de uma vasta comunidade que produz \emph{plugins} para facilitar e construir projetos complexos.
+	\par As bibliotecas criadas pela comunidade para serem usadas em conjunto com o Rails são distribuídas em código aberto e chamadas de Ruby Gems ou apenas Gems\footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/RubyGems}}.
 
 \section{Heroku}
-\par Heroku é uma Paas implementada utilizando \emph{cloud computing} criada em 2007 utilizada como um modelo de \emph{Deployment} para Aplicações Web (\cite{herokuwiki}). A rede do Heroku executa os aplicativos em containers virtuais. Esses containers são chamados de Dynos e podem executar códigos escritos em Nodejs, Ruby, PHP, Go, Scala, Python, Java, Clojure. A aplicação é enviada para o Heroku por meio de uma conexão direta via GitHub, Dropbox ou alguma outra API.
-\par Enviado o código-fonte ele então é convertido em uma aplicação interpretando as dependências de outras bibliotecas seguindo o padrão de cada linguagem. No caso do USP Eventos que foi feito utilizando Ruby as dependências ficam armazenadas no próprio Gemfile da aplicação.
-\par Feito o \emph{upload} da aplicação um container com uma virtualização de Unix é disponibilizado, o Dyno da aplicação. Tal container é pré-carregado com algumas configurações prévias da aplicação: um nome gerado automaticamente, variáveis de ambiente e \emph{add-ons} se existirem. O Heroku então inicializa o Dyno com a aplicação, carrega-a e então realiza o \emph{deploy} da mesma.
-\par Com o servidor de domínio (DNS Server) oferecido pelo próprio Heroku a aplicação fica acessível por meio de um endereço web na forma <nome da aplicação>.herokuapp.com sendo possível redirecionar seu domínio particular para refletir o DNS disponibilizado.
+\par Heroku é uma PaaS implementada utilizando \emph{cloud computing} criada em 2007 utilizada como um modelo de \emph{Deployment} para Aplicações Web\footnote{Fonte: Heroku \url{https://en.wikipedia.org/wiki/Heroku}}. 
+\par  A aplicação é enviada para o Heroku por meio de uma conexão direta via GitHub, Dropbox ou alguma outra API e então rede do Heroku executa os aplicativos em containers virtuais.
+\par Enviado o código-fonte ele então é convertido em uma aplicação interpretando as dependências de outras bibliotecas seguindo o padrão de cada linguagem.  No caso do USP Eventos que foi feito utilizando Ruby as dependências ficam armazenadas no próprio Gemfile da aplicação.
+\par Feito o \emph{upload} da aplicação um container com uma virtualização de Unix é disponibilizado, chamado de Dyno da aplicação. Tal container é pré-carregado com algumas configurações da aplicação tais como um nome gerado automaticamente, variáveis de ambiente e \emph{add-ons} se existirem.
+\par O Heroku então inicializa o Dyno com a aplicação, carrega-a e então realiza o \emph{deploy} da mesma. Dessa forma através do DNS \emph{Server} oferecido pelo próprio Heroku a aplicação fica acessível por meio de um domínio na forma <nome da aplicação>.herokuapp.com sendo possível redirecionar seu domínio particular para refletir o DNS disponibilizado.
 \section{Travis CI}
 \par Travis CI é um serviço de integração contínua usado para testar projetos hospedados no Github. Toda vez que um commit é feito para o repositório selecionado no Gitbhub o Travis executa as diretrizes especificadas no arquivo travis.yml que contém os comandos necessários para rodar os testes automatizados da aplicação, como é o caso do USP Eventos (figura \ref{fig:travis}).
 \begin{figure}[htb]
@@ -74,19 +76,19 @@ class MyArray
 \end{figure}
 
 \section{Trello}
-\par Trello é um gerenciador de projetos online desenvolvido pela Fog Creek Software lançado em 2011. Possui uma interface amigável na qual é possível criar tarefas e colunas conforme as preferências do usuário sendo bastante utilizado em conjunto com uma abordagem \emph{kanbam} para gerenciamento.
+\par Trello (www.trello.com) é um gerenciador de projetos online desenvolvido pela Fog Creek Software lançado em 2011. Possui uma interface amigável na qual é possível criar tarefas e colunas conforme as preferências do usuário sendo bastante utilizado em conjunto com uma abordagem \emph{kanban} para gerenciamento.
 
 \section{Github}
-\par Github é um repositório git baseado na web lançado em 2008. Ele oferece um serviço de controle de versão que provê todas as funcionalidades do Git assim como outras funcionalidades próprias como gerenciamento de tarefas, \emph{wikis} próprias e \emph{bug tracking}.
-\par Atualmente diversos outros serviços oferecem a opção de integração com o Github por meio de uma API. No caso do USP Eventos a integração com o Github foi feita dentro do Travis CI para efetuar o processo de Integração Contínua.
-\par Além disso o Heroku também era integrado com o Github sendo que quando um \emph{commit} era feito para a \emph{branch} ``Produção'' e o mesmo fosse aprovado em todos os testes pelo Travis CI o \emph{deploy} da aplicação era realizado automaticamente. Tal integração entre o Heroku (figura \ref{fig:heroku_automatic_deploy}) e o Travis CI só foi possível graças a utilização do Github.
+\par Github é um serviço que disponibiliza repositórios git baseado na \emph{web} lançado em 2008. O serviço de controle de versão é implementado pelo git enquanto o Github implementa outras funcionalidades próprias como gerenciamento de tarefas, wikis próprias e \emph{bug tracking}.
+\par É possível integrar o seu repositório no Github com outros serviços. No caso do USP Eventos o repositório no Github foi integrado com o Travis CI e também com o próprio Heroku (figura \ref{fig:heroku_automatic_deploy}).
+\par Dessa forma caso um \emph{commit} para a \emph{branch} ``Produção'' fosse aprovado pelo Travis CI então o Heroku automaticamente colocava-o em produção.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=15cm]{figuras/heroku_automatic_deploy}
 \caption{\label{fig:heroku_automatic_deploy} Tela de Administração do Heroku para integração com o Github e \emph{deploy} automático.}
 \end{figure}
 \section{Google Analytics e Google Tag Manager}
-\par O google Analytics é uma plataforma de análise de dados oferecida pelo Google. Por meio dos relatórios gerados pela plataforma é possível obter uma série de informações quanto ao tipo de usuário que visualiza a página, o fluxo do site e a origem do acesso.
+\par O Google Analytics é uma plataforma de análise de dados oferecida pelo Google que permite por meio dos relatórios gerados pela plataforma obter uma série de informações quanto ao tipo de usuário que visualiza a página, o fluxo do site e a origem do acesso.
 \par Com o uso de \emph{tags} é possível criar eventos que são personalizados e disparados de acordo com a navegação do usuário dentro do site. Tais \emph{tags} podem ser implementadas diretamente com um pequeno código em javascript para integração com o Google Analytics ou utilizando o Google Tag Manager.
 \par O Google Tag Manager é uma plataforma intermediária que provê acesso e configuração de tags personalizadas para obtenção de dados pelo Google Analytics sem que seja necessário modificar diretamente o código-fonte do sistema. A opção de utilizar o Google Tag Manager no projeto deu-se principalmente pela facilidade de criar-se novas tags e alterações além de garantir uma maior organização das informações.
 \par Dentro do projeto foi utilizado as informações obtidas pelo Google Analytics para validação de aprendizado entre as iterações.
