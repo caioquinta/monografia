@@ -21,7 +21,7 @@ class Numeric
 \end{lstlisting}
 \item{Closures:}
 \par Nesta linguagem, closures são chamadas de blocos e são funções que podem ser tratadas como uma variável. Isso quer dizer que podem ser passadas como argumentos de métodos, serem atribuídas a outras variáveis, etc.
-\par As closures armazenam os valores das variáveis que estavam no escopo quando a função foi definida e são capazes de acessar tais variáveis mesmo que sejam executadas em um escopo diferente\footnote{Fonte: Site Point \url{https://www.sitepoint.com/closures-ruby/}}.
+\par As closures armazenam os valores das variáveis que estavam no escopo quando a função foi definida e são capazes de acessar tais variáveis mesmo que sejam executadas em um escopo diferente\footnote{Fonte: Site Point \url{https://www.sitepoint.com/closures-ruby/} Acesso em: 29 ago. 2016.}.
 \\
 Exemplo:
 \begin{lstlisting}[frame=single]
@@ -43,15 +43,15 @@ class MyArray
 \end{itemize}
 \subsection{Rails}
 
-\par Ruby on Rails é um arcabouço escrito em linguagem Ruby, implementado seguindo o padrão MVC\footnote{Modelo-Visão-Controlador: Na qual o Modelo é a camada que contém os dados e lógica da aplicação, a Visão é a camada de entrada e saída de dados e o Controlador faz a conexão entre ambas camadas, fonte: \url{https://pt.wikipedia.org/wiki/MVC} } totalmente \emph{server-side}, sendo considerado portanto um arcabouço \emph{back-end}.
-\par Este arcabouço oferece também uma estrutura para banco de dados \emph{web service} e \emph{web pages}, além de encorajar padrões de engenharia de software já consagrados tais como\footnote{Fonte: Ruby on Rails \url{https://en.wikipedia.org/wiki/Ruby_on_Rails}}
+\par Ruby on Rails é um arcabouço escrito em linguagem Ruby, implementado seguindo o padrão MVC\footnote{Modelo-Visão-Controlador: Na qual o Modelo é a camada que contém os dados e lógica da aplicação, a Visão é a camada de entrada e saída de dados e o Controlador faz a conexão entre ambas camadas, fonte: \url{https://pt.wikipedia.org/wiki/MVC} Acesso em: 29 ago. 2016.} totalmente \emph{server-side}, sendo considerado portanto um arcabouço \emph{back-end}.
+\par Este arcabouço oferece também uma estrutura para banco de dados \emph{web service} e \emph{web pages}, além de encorajar padrões de engenharia de software já consagrados tais como\footnote{Fonte: Ruby on Rails \url{https://en.wikipedia.org/wiki/Ruby_on_Rails} Acesso em: 29 ago. 2016.}
 \begin{itemize}
 \item {\emph{Convention over Configuration} (CoC):}
     \par Convenções de configuração visando padronizar o código. Ao adicionar convenções é retirada do desenvolvedor a decisão de como usar o arcabouço porém isso não diminui sua flexibilidade. Por exemplo ao criar-se um objeto chamado ``User'' então sua tabela por convenção se chamará ``users'' e o correspondente \emph{controller} será UsersController ( no plural) pois esse é padrão definido pelo arcabouço.
     \par Vale ressaltar que é possível alterar essas convenções para adaptar-se às necessidades do desenvolvedor.
 
 \item {\emph{Don't Repeat yourself} (DRY):}
-    \par É definido como ``Todo pedaço de informação deve ter uma única, não ambígua, representação autorizada com o Sistema'' \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Don\%27t_repeat_yourself}}.
+    \par É definido como ``Todo pedaço de informação deve ter uma única, não ambígua, representação autorizada com o Sistema'' \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Don\%27t_repeat_yourself} Acesso em: 29 ago. 2016.}.
     \par Isso significa que uma modificação em uma parte do sistema não deve modificar outra parte não relacionada assim como elementos que são logicamente relacionados quando modificados ocorrem de forma previsível e uniforme.
 
 \item { \emph{Active Record Pattern}:}
@@ -59,10 +59,10 @@ class MyArray
     \par Em Ruby on Rails a biblioteca ActiveRecord implementa o padrão ORM além de acrescentar herança e associações, resolvendo dois problemas substanciais do padrão. ActiveRecord é o \emph{model} padrão do componente MVC, porém é possível trocá-lo por outra implementação do arcabouço Rails caso o desenvolvedor prefira.
 \end{itemize}
     \par Em um sentido mais amplo Rails é mais que uma biblioteca de software ou API: é um projeto central de uma vasta comunidade que produz \emph{plugins} para facilitar e construir projetos complexos.
-	\par As bibliotecas criadas pela comunidade para serem usadas em conjunto com o Rails são distribuídas em código aberto e chamadas de Ruby Gems ou apenas Gems\footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/RubyGems}}.
+	\par As bibliotecas criadas pela comunidade para serem usadas em conjunto com o Rails são distribuídas em código aberto e chamadas de Ruby Gems ou apenas Gems\footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/RubyGems} Acesso em: 29 ago. 2016.}.
 
 \section{Heroku}
-\par Heroku é uma PaaS implementada utilizando \emph{cloud computing} criada em 2007 utilizada como um modelo de \emph{Deployment} para Aplicações Web\footnote{Fonte: Heroku \url{https://en.wikipedia.org/wiki/Heroku}}. 
+\par Heroku é uma PaaS implementada utilizando \emph{cloud computing} criada em 2007 utilizada como um modelo de \emph{Deployment} para Aplicações Web\footnote{Fonte: Heroku \url{https://en.wikipedia.org/wiki/Heroku} Acesso em: 29 ago. 2016.}.
 \par  A aplicação é enviada para o Heroku por meio de uma conexão direta via GitHub, Dropbox ou alguma outra API e então rede do Heroku executa os aplicativos em containers virtuais.
 \par Enviado o código-fonte ele então é convertido em uma aplicação interpretando as dependências de outras bibliotecas seguindo o padrão de cada linguagem.  No caso do USP Eventos que foi feito utilizando Ruby as dependências ficam armazenadas no próprio Gemfile da aplicação.
 \par Feito o \emph{upload} da aplicação um container com uma virtualização de Unix é disponibilizado, chamado de Dyno da aplicação. Tal container é pré-carregado com algumas configurações da aplicação tais como um nome gerado automaticamente, variáveis de ambiente e \emph{add-ons} se existirem.
