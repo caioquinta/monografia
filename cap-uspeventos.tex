@@ -34,7 +34,7 @@ Baladas USP                                & 15000
 \item{ 1º Lugar (39 votos):} USP avisa eventos e incidentes: Um sistema para reportar desde eventos acontecendo no campus (palestras, festas, etc) até outros incidentes (buracos, perigos, etc);
 \item {2º Lugar (21 votos):} USP doações e trocas: Um sistema voltado para os membros da comunidade que desejam fazer doações (sejam móveis, roupas usadas, etc) para outros e aqueles dispostos a receber; organizando filas de interesse, disponibilidade e urgência;
 \item {3º Lugar (20 votos):} USP caronas: Os motorizados colocam horário, bairro, quantidade de lugares disponíveis, ponte de embarque e desembarque. Os interessados enviam um alerta para os motorizados confirmarem até preencherem as vagas;
-\item {4º Lugar (18 votos):} Mapa de crimes na USP: um app onde roubos, furtos, assaltos, agressões, assédios, discriminações e outros crimes podem ser relatados, georreferenciados no campus;
+\item {4º Lugar (18 votos):} Mapa de crimes na USP: Um app onde roubos, furtos, assaltos, agressões, assédios, discriminações e outros crimes podem ser relatados, georreferenciados no campus;
 \item {5º Lugar (14 votos):} Volta pedalusp: Desenvolvimento da ideia que já teve adesão, mas morreu por falta de manutenção. Implementação de novos pontos de troca de bicicletas mais próximos das faculdades e outros pontos estratégicos;
 \item {6º Lugar (13 votos): } USP extensão: Uma plataforma de apoio mútuo para organização, contato, criação e divulgação de projetos de extensão dentro da universidade;
 \item {7º Lugar (12 votos):} USP gigabyte: Um ponto de encontro virtual pra reunir o pessoal e tomar uma rodada de suco com a galera;
@@ -98,7 +98,7 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 \par Para o desenvolvimento da plataforma USP Eventos foram utilizadas as gems Rspec e Capybara que permitem não só a realização de testes unitários como também testes de integração, de modo muito rápido e direto, garantindo assim a confiabilidade do projeto. Soma-se a isso a quantidade enorme de ferramentas que auxiliam na integração contínua do código, como por exemplo o Travis CI, utilizado durante o desenvolvimento da plataforma.
 \par O Travis CI era responsável para que a cada \emph{commit} realizado fosse executada toda a bateria de testes automatizados, enviando um e-mail contendo um relatório sobre o seu resultado, inclusive em caso de falha, garantindo dessa forma que todos tivessem sempre conhecimento das alterações sobre o código, além de evitar problemas de conflitos de versões ou mesmo que uma atualização de projeto fosse colocada no ambiente de produção contendo alguma falha.
 \par O fator comunidade é outra vantagem do RoR. Destacando-se pelo seu tamanho, interesse e acessibilidade em tirar dúvidas, sempre contribuindo para promover o arcabouço, a comunidade que orbita ao redor do Rails foi capaz de criar ferramentas prontas para uso com uma ótima documentação, tutoriais, cursos e guias, garantindo assim que qualquer desenvolvedor interessado sempre tenha em mãos materiais e ferramentas de qualidade para iniciar o desenvolvimento do seu projeto. \citep{lilia:16}
-\par Acrescenta-se também a favor do arcabouço Rails sua escalabilidade. Rails é utilizado por empresas de grande porte tais como Groupon, Twitter, Basecamp, mostrando-se um arcabouço robusto capaz de lidar com grandes sistemas sem ter queda de desempenho. (\citep{lilia:16})
+\par Acrescenta-se também a favor do arcabouço Rails sua escalabilidade. Rails é utilizado por empresas de grande porte tais como Groupon, Twitter, Basecamp, mostrando-se um arcabouço robusto capaz de lidar com grandes sistemas sem ter queda de desempenho. \citep{lilia:16}
 \par Rails é também um arcabouço seguro garantindo proteção contra SQL-Injections e XSS (\emph{Cross Site Scripting}).
 \par Além disso, os programadores que contribuem para o arcabouço devem seguir o \emph{Secure Life Cycle Development} (figura \ref{fig:security_dev_lifecycle}) proposto pela Microsoft, um modelo de desenvolvimento de software cujo principal objetivo é ajudar a construir softwares mais seguros e confiáveis e reduzir custos \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Microsoft_Security_Development_Lifecycle} Acesso em: 22 out. 2016.}.
 \begin{figure}[htb]
@@ -107,7 +107,7 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 \caption{\label{fig:security_dev_lifecycle} Fases do Secure Life Cycle Development.}
 \end{figure}
 \section{Kanban}
-\par Kanban é uma palavra japonesa que significa cartão visual para prover informação de regulamentação do fluxo de estoque e materiais. Possui três regras principais (KNIBERG, H., 2009): visualizar o fluxo de trabalho; limitar o trabalho em cada estágio do fluxo e medir o tempo de avanço (tempo médio para se completar cada item).    \citep{francisco:14}
+\par Kanban é uma palavra japonesa que significa cartão visual. Possui três regras principais (KNIBERG, H., 2009): visualizar o fluxo de trabalho; limitar o trabalho em cada estágio do fluxo e medir o tempo de avanço (tempo médio para se completar cada item).    \citep{francisco:14}
 \par No contexto de Métodos Ágeis e \emph{Lean Startup} foi utilizado uma abordagem com Kanban para definir as hipóteses de produtos, o escopo de desenvolvimento e as tarefas para serem executadas durante as etapas de desenvolvimento.
 \par Tradicionalmente o Kanban para desenvolvimento de Software possui 3 estágios: \citep{francisco:14}
 \begin{itemize}
@@ -244,7 +244,7 @@ revisados e testados.
 \item Verificar se as alterações visuais foram bem aceitas;
 \item Testar a hipótese da necessidade de Filtro para Eventos.
 \end{itemize}
-\par Foi criado um filtro para a página de eventos baseado na utilização de \emph{tags}. Dessa forma ao criar um novo evento (figura \ref{fig:event_newv2} )o usuário agora pode escolher 3 dentre 12 tags pré-definidas que servirão como filtro na página principal de eventos.
+\par Foi criado um filtro para a página de eventos baseado na utilização de \emph{tags}. Dessa forma ao criar um novo evento (figura \ref{fig:event_newv2}) o usuário agora pode escolher 3 dentre 12 tags pré-definidas que servirão como filtro na página principal de eventos.
         \begin{figure}[htb]
         \centering
 		\includegraphics[width=15cm]{figuras/event_newv2}
@@ -286,7 +286,7 @@ revisados e testados.
 \par Em conjunto com a criação das \emph{tags} para eventos foi criado um mecanismo de preferências para o usuário. Agora na página de cadastro ou edição de usuário é possível selecionar as \emph{tags} com as quais o usuário tenha maior afinidade, com o intuito de exibir uma listagem personalizada de eventos segundo esses critérios.
 \par Em julho ocorreu o lançamento do jogo para smartphone Pokemon GO, baseado em georreferenciamento, cujo objetivo era explorar localidades reais em busca dos
 Pokemons para capturá-los. Esse lançamento movimentou uma enorme quantidade de pessoas pelo campus na época.
-\par Visando aproveitar essa movimentação foi criada uma página chamada Alertas (\ref{fig:alert_page}) para atingir o público que estava jogando com intuito de que eles pudessem divulgar a localização dos Pokemons utilizando o USP Eventos.
+\par Visando aproveitar essa movimentação foi criada uma página chamada Alertas (figura \ref{fig:alert_page}) para atingir o público que estava jogando com intuito de que eles pudessem divulgar a localização dos Pokemons utilizando o USP Eventos.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=15cm]{figuras/alert_page}
