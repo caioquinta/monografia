@@ -1,8 +1,9 @@
-%% ------------------------------------------------------------------------- %\chapter{Usp Eventos}
+%% ------------------------------------------------------------------------- %
+\chapter{Usp Eventos}
 \label{cap:uspeventos}
 \section{Definição do Projeto}
 \subsection{Motivação}
-        \par A idéia de desenvolver um sistema utilizando Métodos Ágeis e conceitos de \emph{Lean Startup} surgiu em dezembro de 2015. O objetivo era desenvolver um sistema \emph{web} ou aplicativo voltado para a comunidade USP com a intenção de facilitar de alguma forma o dia-a-dia dos usuários. Inicialmente existiam algumas propostas de projeto que foram então formalizadas em uma enquete realizada junto a comunidade USP.
+        \par A ideia de desenvolver um sistema utilizando Métodos Ágeis e conceitos de \emph{Lean Startup} surgiu em dezembro de 2015. O objetivo era desenvolver um sistema \emph{web} ou aplicativo voltado para a comunidade USP com a intenção de facilitar de alguma forma o dia-a-dia dos usuários. Inicialmente existiam algumas propostas de projeto que foram então formalizadas em uma enquete realizada junto a comunidade USP.
 \subsection{Enquete e definição do projeto}
         \par  No início as seguintes hipóteses de interesse de projeto foram disponibilizadas para votação:
                 \begin{itemize}
@@ -51,7 +52,7 @@ Baladas USP                                & 15000
 \par Em paralelo a essa pesquisa, também foi definida a plataforma sobre a qual o projeto seria desenvolvido.
 \subsection{Pesquisa de Sistemas Semelhantes}
 \par Definido o tema do projeto, teve início uma pesquisa para levantar a existência de sistemas que tivessem uma proposta semelhante de divulgação de eventos e atividades.
-\par Ao realizar essa pesquisa expandimos o escopo para os sistemas não necessariamente fossem voltados para fins acadêmicos, apenas tendo como objetivo principal obter uma base de conhecimento de quais funcionalidades um sistema de divulgação possui ou mesmo encontrar uma solução em código aberto que pudesse ser utilizada como base.
+\par Ao realizar essa pesquisa expandimos o escopo para os sistemas não necessariamente fossem voltados para fins acadêmicos. O objetivo principal era obter uma base de conhecimento de quais funcionalidades um sistema de divulgação possui ou  encontrar uma solução em código aberto que pudesse servir como base.
  \par Foi enviado um e-mail em março para a lista de Representantes Discentes do próprio IME questionando sobre funcionalidades e sugestões.
 \par Das compilações sobre a pesquisa e resposta obtidas por e-mail, destacam-se 3 sites com proposta e conteúdos semelhantes:
 \begin{itemize}
@@ -83,7 +84,7 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 \item Não seria possível utilizar a plataforma em Desktops, restringindo o público-alvo.
 \end{itemize}
 \par A escolha de uma aplicação web deu-se principalmente pela facilidade de atualização, por não necessitar da aprovação de uma loja online, ganhando em agilidade para realizar novos experimentos.
-\par Apesar da escolha de um sistema web ao analisar o crescimento do acesso móvel no Brasil~\ref{fig:mobile_internet}, que vem aumentando a passos largos no país, houve a preocupação em desenvolver uma aplicação web híbrida com uma interface totalmente responsiva \footnote{ Uma interface responsiva de um site ou página é uma versão do layout adaptada para uso em telas menores comumente refere-se a visualização em smartphones} desde o princípio.
+\par Apesar da escolha de um sistema web ao analisar o crescimento do acesso móvel no Brasil (figura \ref{fig:mobile_internet}), que vem aumentando a passos largos no país, houve a preocupação em desenvolver uma aplicação web híbrida com uma interface totalmente responsiva \footnote{ Uma interface responsiva de um site ou página é uma versão do layout adaptada para uso em telas menores comumente refere-se a visualização em smartphones} desde o princípio.
 \begin{figure}[htb]
 \centering
 \includegraphics[height=10cm]{figuras/mobile_internet}
@@ -95,7 +96,7 @@ Pontos Fracos: Os eventos estão distribuídos por um mapa georreferenciado, dan
 \par Um dos principais pontos do Ruby on Rails, o CoC, permite que o desenvolvedor possa, a partir de um conjunto pré-definido de configurações padrões, agilizar o desenvolvimento do código ao tirar de sua responsabilidade fatores de configuração em detrimento de um padrão já estabelecido. \citep{morrice:15}
 \par Dessa forma, o desenvolvedor possui mais tempo para concentrar-se em decisões sobre o produto. Essa agilidade em codificar rapidamente resulta em interações mais rápidas, contribuindo para maior agilidade dentro do ciclo de Construir-Medir-Aprender.
 \par Outro fator a favor do arcabouço Rails é o grande enfoque em testes automatizados. \citep{morrice:15}
-\par Para o desenvolvimento da plataforma USP Eventos foram utilizadas as gems Rspec e Capybara que permitem não só a realização de testes unitários como também testes de integração, de modo muito rápido e direto, garantindo assim a confiabilidade do projeto. Soma-se a isso a quantidade enorme de ferramentas que auxiliam na integração contínua do código, como por exemplo o Travis CI, utilizado durante o desenvolvimento da plataforma.
+\par Para o desenvolvimento da plataforma USP Eventos foram utilizadas as gems Rspec e Capybara que permitem não só a realização de testes de unidade como também testes de integração, de modo muito rápido e direto, garantindo assim a confiabilidade do projeto. Soma-se a isso a quantidade enorme de ferramentas que auxiliam na integração contínua do código, como por exemplo o Travis CI, utilizado durante o desenvolvimento da plataforma.
 \par O Travis CI era responsável para que a cada \emph{commit} realizado fosse executada toda a bateria de testes automatizados, enviando um e-mail contendo um relatório sobre o seu resultado, inclusive em caso de falha, garantindo dessa forma que todos tivessem sempre conhecimento das alterações sobre o código, além de evitar problemas de conflitos de versões ou mesmo que uma atualização de projeto fosse colocada no ambiente de produção contendo alguma falha.
 \par O fator comunidade é outra vantagem do RoR. Destacando-se pelo seu tamanho, interesse e acessibilidade em tirar dúvidas, sempre contribuindo para promover o arcabouço, a comunidade que orbita ao redor do Rails foi capaz de criar ferramentas prontas para uso com uma ótima documentação, tutoriais, cursos e guias, garantindo assim que qualquer desenvolvedor interessado sempre tenha em mãos materiais e ferramentas de qualidade para iniciar o desenvolvimento do seu projeto. \citep{lilia:16}
 \par Acrescenta-se também a favor do arcabouço Rails sua escalabilidade. Rails é utilizado por empresas de grande porte tais como Groupon, Twitter, Basecamp, mostrando-se um arcabouço robusto capaz de lidar com grandes sistemas sem ter queda de desempenho. \citep{lilia:16}
@@ -168,7 +169,7 @@ revisados e testados.
 		\includegraphics[width=5cm]{figuras/events_pagev1_responsive}
 		\caption{\label{fig:events_pagev1_responsive} Página de Eventos versão responsiva}
 		\end{figure}
-\par Visando evitar que os usuários se depararem com uma página de eventos vazia foi feita uma \emph{Rake Task} \footnote{Rake é um programa implementado em \emph{Ruby} que permite ao usuário implementar \emph{tasks} que são executadas ao serem chamadas} para consumir o xml gerado pelo \emph{feed} RSS do site www.eventos.usp.br. Dessa forma seria possível adicionar de forma mais ágil alguns eventos dentro da plataforma.
+\par Visando evitar que os usuários se deparassem com uma página de eventos vazia foi feita uma \emph{Rake Task} \footnote{Rake é um programa implementado em \emph{Ruby} que permite ao usuário implementar \emph{tasks} que são executadas ao serem chamadas} para consumir o xml gerado pelo \emph{feed} RSS do site www.eventos.usp.br. Dessa forma seria possível adicionar de forma mais ágil alguns eventos dentro da plataforma.
 \par Cada \emph{thumbnail} de eventos presente na página principal de listagem de eventos incluía o nome do evento, localização, data de início e fim, além de um botão de ``Participar'' para os usuários que tivessem realizado \emph{login} e também botões para compartilhar nas redes sociais.
 \par Houve também a preocupação de espalhar formulários de Sugestões do site com o intuito de facilitar a coleta de informações do usuário.
 \subsection{Divulgação}
