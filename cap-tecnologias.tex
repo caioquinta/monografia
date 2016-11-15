@@ -6,7 +6,7 @@
     \par A criação da linguagem Ruby data de 1995 no Japão por Yukihiro ``Matz'' Matsumoto sob forte influência de outras linguagens como Perl, SmallTalk, Eiffel, Ada e Lisp.  Inicialmente o objetivo era equilibrar programação funcional, imperativa e orientação a objetos. \citep{rubydocs}
 \begin{itemize}
 \item{Flexibilidade}
-    \par A Linguagem Ruby cresceu devido a sua grande flexibilidade. Sendo possível alterar, remover ou acrescentar partes da linguagem a vontade.
+    \par A Linguagem Ruby cresceu devido à sua grande flexibilidade. Sendo possível alterar, remover ou acrescentar partes da linguagem a vontade.
     \par Como no seguinte exemplo: um usuário prefere utilizar a palavra \emph{plus} ao invés do operador matemático `` + '', ele poderia então adicionar esse método à classe nativa do Ruby Numeric pois os operadores matemáticos são considerados açúcares sintáticos nesta linguagem.
 \\Exemplo:
 \begin{lstlisting}[frame=single]
@@ -78,7 +78,7 @@ class MyArray
 \end{figure}
 \section{Heroku}
 \par Heroku é uma PaaS implementada utilizando \emph{cloud computing} criada em 2007 e utilizada como um modelo de \emph{Deployment} para Aplicações Web\footnote{Fonte: Heroku \url{https://en.wikipedia.org/wiki/Heroku} Acesso em: 29 ago. 2016.}.
-\par  A aplicação é enviada para o Heroku por meio de uma conexão direta via GitHub, Dropbox ou alguma outra API e então rede do Heroku executa os aplicativos em containers virtuais.
+\par  A aplicação é enviada para o Heroku por meio de uma conexão direta via GitHub, Dropbox ou alguma outra API que permite ao Heroku executar os aplicativos em containers virtuais.
 \par Enviado o código-fonte, este então é convertido em uma aplicação interpretando as dependências de outras bibliotecas seguindo o padrão de cada linguagem. No caso do USP Eventos, que foi feito utilizando Ruby, as dependências ficam armazenadas no próprio Gemfile da aplicação.
 \par Feito o \emph{upload} da aplicação, um container com uma virtualização de Unix é disponibilizado, chamado de Dyno da aplicação. Tal container é pré-carregado com algumas configurações da aplicação, tais como um nome gerado automaticamente, variáveis de ambiente e \emph{add-ons}, se existirem.
 \par O Heroku então inicializa o Dyno com a aplicação, carrega-a e então realiza o \emph{deploy} da mesma. Dessa forma, através do DNS \emph{Server} oferecido pelo próprio Heroku, a aplicação fica acessível por meio de um domínio na forma <nome da aplicação>.herokuapp.com, sendo possível redirecionar seu domínio particular para refletir o DNS disponibilizado.
@@ -91,7 +91,7 @@ class MyArray
 \end{figure}
 
 \section{Trello}
-\par Trello (www.trello.com) é um gerenciador de projetos online desenvolvido pela Fog Creek Software lançado em 2011. Possui uma interface amigável na qual é possível criar tarefas e colunas conforme as preferências do usuário, sendo bastante utilizado em conjunto com uma abordagem \emph{kanban} para gerenciamento.
+\par Trello\footnote{ Disponível em: www.trello.com} é um gerenciador de projetos online desenvolvido pela Fog Creek Software lançado em 2011. Possui uma interface amigável na qual é possível criar tarefas e colunas conforme as preferências do usuário, sendo bastante utilizado em conjunto com uma abordagem \emph{kanban} para gerenciamento.
 \par A ferramenta permite que em cada tarefa (figura \ref{fig:trello-task}) sejam adicionadas sua descrição, arquivos relevantes, prazo de término, uma etiqueta personalizável para identificação e também uma opção para os membros conversarem sobre o andamento da mesma.
 
 \begin{figure}[htb]
@@ -116,7 +116,7 @@ class MyArray
 \par Dentro do projeto foi utilizado as informações obtidas pelo Google Analytics para validação de aprendizado entre as iterações.
 
 \section{Painel de opiniões Populares - POP}
-\par Com o intuito de definir o interesse do público alvo por meio de uma enquete colaborativa, foi utilizado o POP como sistema de votação devido a possibilidade dos usuários poderem adicionar itens à enquete principal.
+\par Com o intuito de definir o interesse do público alvo por meio de uma enquete colaborativa, foi utilizado o POP como sistema de votação devido à possibilidade dos usuários poderem adicionar itens à enquete principal.
 \par Desenvolvido por estudantes do próprio IME dentro da disciplina de Laboratório de Programação Extrema à pedido da INDX o POP é uma plataforma de pesquisa de opinião pública que possui o objetivo de realizar enquetes junto à comunidades para auxiliar na tomada de decisões e encaminhamento de opiniões para as autoridades responsáveis.
 \par Foi permitida a utilização da plataforma implementada em uma instância separada com o nome de POP-TCC realizando apenas uma pequena modificação no sistema POP original.
 \par No POP-TCC os usuários só poderiam votar de maneira positiva nas opções, ao contrário do sistema original, que permitia votos negativos e até ocultamento dos itens que obtivessem um grande número de negativações pelos usuários.
