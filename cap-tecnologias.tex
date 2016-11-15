@@ -65,7 +65,7 @@ class MyArray
 \par Um dos principais pontos do Ruby on Rails, o CoC, permite que o desenvolvedor possa, a partir de um conjunto pré-definido de configurações padrões, agilizar o desenvolvimento do código ao tirar de sua responsabilidade fatores de configuração em detrimento de um padrão já estabelecido. \citep{morrice:15}
 \par Dessa forma, o desenvolvedor possui mais tempo para concentrar-se em decisões sobre o produto. Essa agilidade em codificar rapidamente resulta em interações mais rápidas, contribuindo para maior agilidade dentro do ciclo de Construir-Medir-Aprender.
 \par Outro fator a favor do arcabouço Rails é o grande enfoque em testes automatizados. \citep{morrice:15}
-\par Para o desenvolvimento da plataforma USP Eventos foram utilizadas as gems Rspec e Capybara que permitem não só a realização de testes de unidade como também testes de integração, de modo muito rápido e direto, garantindo assim a confiabilidade do projeto. Soma-se a isso a quantidade enorme de ferramentas que auxiliam na integração contínua do código, como por exemplo o Travis CI, utilizado durante o desenvolvimento da plataforma.
+\par Para o desenvolvimento da plataforma USP Eventos foram utilizadas as gems Rspec e Capybara que permitem não só a realização de testes de unidade como também testes de aceitação, de modo muito rápido e direto, garantindo assim a confiabilidade do projeto. Soma-se a isso a quantidade enorme de ferramentas que auxiliam na integração contínua do código, como por exemplo o Travis CI, utilizado durante o desenvolvimento da plataforma.
 \par O Travis CI era responsável para que a cada \emph{commit} realizado fosse executada toda a bateria de testes automatizados, enviando um e-mail contendo um relatório sobre o seu resultado, inclusive em caso de falha, garantindo dessa forma que todos tivessem sempre conhecimento das alterações sobre o código, além de evitar problemas de conflitos de versões ou mesmo que uma atualização de projeto fosse colocada no ambiente de produção contendo alguma falha.
 \par O fator comunidade é outra vantagem do RoR. Destacando-se pelo seu tamanho, interesse e acessibilidade em tirar dúvidas, sempre contribuindo para promover o arcabouço, a comunidade que orbita ao redor do Rails foi capaz de criar ferramentas prontas para uso com uma ótima documentação, tutoriais, cursos e guias, garantindo assim que qualquer desenvolvedor interessado sempre tenha em mãos materiais e ferramentas de qualidade para iniciar o desenvolvimento do seu projeto. \citep{lilia:16}
 \par Acrescenta-se também a favor do arcabouço Rails sua escalabilidade. Rails é utilizado por empresas de grande porte tais como Groupon, Twitter, Basecamp, mostrando-se um arcabouço robusto capaz de lidar com grandes sistemas sem ter queda de desempenho. \citep{lilia:16}
@@ -92,6 +92,13 @@ class MyArray
 
 \section{Trello}
 \par Trello (www.trello.com) é um gerenciador de projetos online desenvolvido pela Fog Creek Software lançado em 2011. Possui uma interface amigável na qual é possível criar tarefas e colunas conforme as preferências do usuário, sendo bastante utilizado em conjunto com uma abordagem \emph{kanban} para gerenciamento.
+\par A ferramenta permite que em cada tarefa (figura \ref{fig:trello-task}) sejam adicionadas sua descrição, arquivos relevantes, prazo de término, uma etiqueta personalizável para identificação e também uma opção para os membros conversarem sobre o andamento da mesma.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=15cm]{figuras/trello-task}
+\caption{\label{fig:trello-task} Uma tarefa definida no Trello.}
+\end{figure}
 
 \section{Github}
 \par Github é um serviço que disponibiliza repositórios git baseado na \emph{web} lançado em 2008. O serviço de controle de versão é implementado pelo git enquanto o Github implementa outras funcionalidades próprias, como gerenciamento de tarefas, wikis próprias e \emph{bug tracking}.
