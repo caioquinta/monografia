@@ -95,3 +95,20 @@
 \par Uma das grandes críticas dessa abordagem é que dificilmente um desenvolvimento de software segue todas as etapas da forma como o modelo propõe  e nem sempre o cliente sabe definir bem os requisitos antes de ver o software funcionando, resultando em tempo e desenvolvimento desperdiçado em funcionalidades que não resolvem o problema. \citep{pressman:11}
 \par Mudanças tardias no escopo do projeto encarecem o custo total e poderiam ter sido evitadas e contornadas de maneira mais satisfatória em um modelo com um processo de desenvolvimento iterativo \footnote{ Fonte: Wikipedia - Waterfall Model \url {https://en.wikipedia.org/wiki/Waterfall_model} Acesso em: 12 set. 2016.}.
 \par O Desenvolvimento Ágil tem pouco em comum com o Modelo em Cascata. Na visão de alguns este modelo é desacreditado, apesar de ser um modelo de uso comum. O modelo em Cascata é uma das metodologias com maior ênfase no planejamento, seguindo seus passos a partir da captura dos requisitos, análise, projeto, codificação e testes em uma seqüência pré-planejada e restrita. \footnote {Fonte: Wikipedia - Desenvolvimento Ágil de Software: \url{https://pt.wikipedia.org/wiki/Desenvolvimento_\%C3\%A1gil_de_software#Compara.C3.A7.C3.A3o_com_o_modelo_em_cascata} Acesso em: 12 set. 2016.}
+
+\section{Conceitos Utilizados}
+
+\par A organização do projeto foi feita utilizando uma abordagem com Kanban, separando as tarefas em 4 colunas: BACKLOG, TO DO, DOING, DONE.
+
+\par Foram construídos testes de unidade para as funcionalidades e também testes de aceitação com o intuito de testar o sistema como um tudo, simulando o seu funcionamento real.  As bibliotecas Rspec e Capybara, desenvolvidas para o arcabouço Rails, foram utilizadas para construção dos testes.  A biblioteca SimpleCov (figura \ref{fig:simplecov}) oferece uma interface gráfica para visualizar as partes do código testadas e a porcentagem de cobertura total.
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15cm]{figuras/simplecov}
+\caption{\label{fig:simplecov} 93.13\% do Sistema com cobertura de testes }
+\end{figure}
+\par Em conjunto com os testes foi implementado um processo de integração contínua na qual, a cada commit realizado, o sistema passava por toda a bateria de testes e, no caso de sucesso (figura \ref{fig:travis-passed}), era atualizado automaticamente.
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15cm]{figuras/travis-passed}
+\caption{\label{fig:travis-passed} Travis CI com todos os testes aprovados}
+\end{figure}
