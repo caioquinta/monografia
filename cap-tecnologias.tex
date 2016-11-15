@@ -42,7 +42,6 @@ class MyArray
 
 \end{itemize}
 \subsection{Rails}
-
 \par Ruby on Rails é um arcabouço escrito em linguagem Ruby, implementado seguindo o padrão MVC\footnote{Modelo-Visão-Controlador: Na qual o Modelo é a camada que contém os dados e lógica da aplicação, a Visão é a camada de entrada e saída de dados e o Controlador faz a conexão entre ambas camadas, fonte: \url{https://pt.wikipedia.org/wiki/MVC} Acesso em: 29 ago. 2016.} totalmente \emph{server-side}, sendo considerado portanto um arcabouço \emph{back-end}.
 \par Este arcabouço oferece também uma estrutura para banco de dados \emph{web service} e \emph{web pages}, além de encorajar padrões de engenharia de software já consagrados tais como\footnote{Fonte: Ruby on Rails \url{https://en.wikipedia.org/wiki/Ruby_on_Rails} Acesso em: 29 ago. 2016.}
 \begin{itemize}
@@ -61,7 +60,22 @@ class MyArray
 \end{itemize}
     \par Em um sentido mais amplo Rails é mais que uma biblioteca de software ou API, é um projeto central de uma vasta comunidade que produz \emph{plugins} para facilitar e construir projetos complexos.
 	\par As bibliotecas criadas pela comunidade para serem usadas em conjunto com o Rails são distribuídas em código aberto e chamadas de Ruby Gems ou apenas Gems\footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/RubyGems} Acesso em: 29 ago. 2016.}.
-
+\subsection{Porque escolher Ruby on Rails }
+\par O uso do \emph{Ruby on Rails} entre \emph{startups} tem crescido nos últimos anos devido a alguns fatores intrinsecamente ligados à própria estrutura do arcabouço Rails e também à necessidade que \emph{startups} e o próprio modelo de \emph{Lean Startup} exigem para iterações e alterações de códigos rápidas. \citep{lilia:16}
+\par Um dos principais pontos do Ruby on Rails, o CoC, permite que o desenvolvedor possa, a partir de um conjunto pré-definido de configurações padrões, agilizar o desenvolvimento do código ao tirar de sua responsabilidade fatores de configuração em detrimento de um padrão já estabelecido. \citep{morrice:15}
+\par Dessa forma, o desenvolvedor possui mais tempo para concentrar-se em decisões sobre o produto. Essa agilidade em codificar rapidamente resulta em interações mais rápidas, contribuindo para maior agilidade dentro do ciclo de Construir-Medir-Aprender.
+\par Outro fator a favor do arcabouço Rails é o grande enfoque em testes automatizados. \citep{morrice:15}
+\par Para o desenvolvimento da plataforma USP Eventos foram utilizadas as gems Rspec e Capybara que permitem não só a realização de testes de unidade como também testes de integração, de modo muito rápido e direto, garantindo assim a confiabilidade do projeto. Soma-se a isso a quantidade enorme de ferramentas que auxiliam na integração contínua do código, como por exemplo o Travis CI, utilizado durante o desenvolvimento da plataforma.
+\par O Travis CI era responsável para que a cada \emph{commit} realizado fosse executada toda a bateria de testes automatizados, enviando um e-mail contendo um relatório sobre o seu resultado, inclusive em caso de falha, garantindo dessa forma que todos tivessem sempre conhecimento das alterações sobre o código, além de evitar problemas de conflitos de versões ou mesmo que uma atualização de projeto fosse colocada no ambiente de produção contendo alguma falha.
+\par O fator comunidade é outra vantagem do RoR. Destacando-se pelo seu tamanho, interesse e acessibilidade em tirar dúvidas, sempre contribuindo para promover o arcabouço, a comunidade que orbita ao redor do Rails foi capaz de criar ferramentas prontas para uso com uma ótima documentação, tutoriais, cursos e guias, garantindo assim que qualquer desenvolvedor interessado sempre tenha em mãos materiais e ferramentas de qualidade para iniciar o desenvolvimento do seu projeto. \citep{lilia:16}
+\par Acrescenta-se também a favor do arcabouço Rails sua escalabilidade. Rails é utilizado por empresas de grande porte tais como Groupon, Twitter, Basecamp, mostrando-se um arcabouço robusto capaz de lidar com grandes sistemas sem ter queda de desempenho. \citep{lilia:16}
+\par Rails é também um arcabouço seguro garantindo proteção contra SQL-Injections e XSS (\emph{Cross Site Scripting}).
+\par Além disso, os programadores que contribuem para o arcabouço devem seguir o \emph{Secure Life Cycle Development} (figura \ref{fig:security_dev_lifecycle}) proposto pela Microsoft, um modelo de desenvolvimento de software cujo principal objetivo é ajudar a construir softwares mais seguros e confiáveis e reduzir custos \footnote{Fonte: Wikipedia \url{https://en.wikipedia.org/wiki/Microsoft_Security_Development_Lifecycle} Acesso em: 22 out. 2016.}.
+\begin{figure}[htb]
+\centering
+\includegraphics[width=15cm]{figuras/security_dev_lifecycle}
+\caption{\label{fig:security_dev_lifecycle} Fases do Secure Life Cycle Development.}
+\end{figure}
 \section{Heroku}
 \par Heroku é uma PaaS implementada utilizando \emph{cloud computing} criada em 2007 e utilizada como um modelo de \emph{Deployment} para Aplicações Web\footnote{Fonte: Heroku \url{https://en.wikipedia.org/wiki/Heroku} Acesso em: 29 ago. 2016.}.
 \par  A aplicação é enviada para o Heroku por meio de uma conexão direta via GitHub, Dropbox ou alguma outra API e então rede do Heroku executa os aplicativos em containers virtuais.
