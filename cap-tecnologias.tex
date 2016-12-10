@@ -83,7 +83,7 @@ class MyArray
 \par Feito o \emph{upload} da aplicação, um container com uma virtualização de Unix é disponibilizado, chamado de Dyno da aplicação. Tal container é pré-carregado com algumas configurações da aplicação, tais como um nome gerado automaticamente, variáveis de ambiente e \emph{add-ons}, se existirem.
 \par O Heroku então inicializa o Dyno com a aplicação, carrega-a e então realiza o \emph{deploy} da mesma. Dessa forma, através do DNS \emph{Server} oferecido pelo próprio Heroku, a aplicação fica acessível por meio de um domínio na forma <nome da aplicação>.herokuapp.com, sendo possível redirecionar seu domínio particular para refletir o DNS disponibilizado.
 \section{Travis CI}
-\par Travis CI é um serviço de integração contínua usado para testar projetos hospedados no Github. Toda vez que um commit é feito para o repositório selecionado no Gitbhub, o Travis executa as diretrizes especificadas no arquivo travis.yml que contém os comandos necessários para rodar os testes automatizados da aplicação, como é o caso do USP Eventos (figura \ref{fig:travis}).
+\par Travis CI é um serviço de integração contínua usado para testar projetos hospedados no Github. Toda vez que um commit é feito para o repositório selecionado no Github, o Travis executa as diretrizes especificadas no arquivo travis.yml que contém os comandos necessários para rodar os testes automatizados da aplicação, como é o caso do USP Eventos (figura \ref{fig:travis}).
 \begin{figure}[htb]
 \centering
 \includegraphics[width=15cm]{figuras/travis}
